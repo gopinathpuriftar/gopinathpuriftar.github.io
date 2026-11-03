@@ -169,8 +169,21 @@ h2.serif::before{background:linear-gradient(var(--ac1),var(--ac2))!important}
 #iosDlg ol{padding-left:22px;margin:10px 0;line-height:1.9}#iosDlg .k{display:inline-block;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--bg);font-weight:600}
 .gbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:12px;background:#fff!important;color:#3c4043!important;border:1px solid #dadce0!important;box-shadow:none!important}
 .gbtn svg{width:18px;height:18px;flex:none}
+
+/* ভূমিকা: দর্শক / অ্যাডমিন / প্রধান অ্যাডমিন */
+body.noadm .admg,body.noadm .admonly,body.noadm .fab,body.noadm #qrow button[data-q]{display:none!important}
+body.noadm #qrow{grid-template-columns:1fr 1fr}
+body.noown .ownonly,body.noown #pyup{display:none!important}
+.card #net.pill{margin:0;font-size:14px;padding:7px 14px;color:var(--ink)!important;background:var(--bg)!important;-webkit-backdrop-filter:none;backdrop-filter:none}
+.card #net.pill.off{background:rgba(245,169,74,.3)!important}
+/* হালকা রং */
+:root[data-theme=dark]{--bg:#27337a;--card:#35439c;--line:#5866b8;--gl:rgba(255,255,255,.16);--glb:rgba(255,255,255,.28)}
+:root[data-theme=dark] .glass{background:linear-gradient(135deg,rgba(84,98,196,.93),rgba(62,76,172,.93))!important}
+.hero{background:linear-gradient(160deg,#27338a 0%,var(--ac1) 75%,var(--ac2) 125%)!important}
+.skyline g:nth-of-type(2){fill:#2a3688}
+:root[data-theme=dark] .tab{background:rgba(48,62,150,.95)!important;border-color:rgba(255,255,255,.28)!important}
 </style></head><body>
-<header class="hero"><svg class="sky" id="sky" aria-hidden="true"></svg><svg class="moon2" viewBox="0 0 100 100" aria-hidden="true"><defs><mask id="mk2"><rect width="100" height="100" fill="#fff"/><circle cx="64" cy="40" r="33" fill="#000"/></mask></defs><circle cx="46" cy="52" r="38" fill="#f6d98a" mask="url(#mk2)"/></svg><div class="top"><div class="brand"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lgG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe5a0"/><stop offset="1" stop-color="#c9962e"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="#0f1b3d" stroke="url(#lgG)" stroke-width="2.5"/><circle cx="32" cy="32" r="25" fill="none" stroke="url(#lgG)" stroke-width=".8" opacity=".6"/><g fill="url(#lgG)"><path d="M33.4 10.5a5.2 5.2 0 1 0 0 9.6a4.2 4.2 0 1 1 0-9.6z"/><rect x="31.4" y="19" width="1.2" height="5"/><path d="M19 42c0-10 6-16 13-16s13 6 13 16z"/><rect x="12" y="30" width="4.6" height="16" rx="1"/><path d="M12 30l2.3-7 2.3 7z"/><rect x="47.4" y="30" width="4.6" height="16" rx="1"/><path d="M47.4 30l2.3-7 2.3 7z"/><rect x="11" y="42" width="42" height="5" rx="1.5"/></g><path d="M28 47v-4.5a4 4 0 0 1 8 0V47z" fill="#0f1b3d"/></svg><div class="bt"><h1 class="serif">গোপীনাথপুর জামে মসজিদ</h1><p>রমজানের পূর্ণাঙ্গ হিসাব</p></div></div><div class="tools"><button id="lng" aria-label="ভাষা">EN</button><button id="thm" aria-label="থিম">🌓</button><button onclick="go(5)" aria-label="সেটিংস">⚙</button></div></div><div class="bis" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><div class="pillw"><div id="net" class="pill"></div></div><svg class="skyline" viewBox="0 0 400 110" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#5a52b8" opacity=".5"><path d="M0 110V84q16-24 32 0v26zM352 110V80q18-26 36 0v30z"/><rect x="62" y="48" width="5" height="62"/><path d="M62 48l2.5-18 2.5 18z"/><rect x="333" y="48" width="5" height="62"/><path d="M333 48l2.5-18 2.5 18z"/></g><g fill="#0f1b3d"><path d="M118 110V76C118 42 156 24 200 24S282 42 282 76V110Z"/><path d="M62 110V92C62 72 84 62 104 62S138 74 138 92V110Z"/><path d="M262 110V92C262 74 276 62 296 62S338 72 338 92V110Z"/><path d="M199.2 24V8h1.6v16z"/><path d="M201.5 3.5a4.5 4.5 0 1 0 0 8.8a3.6 3.6 0 1 1 0-8.8z"/><rect x="26" y="38" width="6" height="72"/><rect x="23" y="56" width="12" height="3.5" rx="1"/><path d="M26 38l3-26 3 26z"/><rect x="368" y="38" width="6" height="72"/><rect x="365" y="56" width="12" height="3.5" rx="1"/><path d="M368 38l3-26 3 26z"/><rect x="84" y="56" width="5" height="54"/><path d="M84 56l2.5-18 2.5 18z"/><rect x="311" y="56" width="5" height="54"/><path d="M311 56l2.5-18 2.5 18z"/><rect y="100" width="400" height="10"/></g><g fill="#f3cf7a" opacity=".9"><circle cx="160" cy="84" r="1.8"/><circle cx="180" cy="84" r="1.8"/><circle cx="200" cy="84" r="1.8"/><circle cx="220" cy="84" r="1.8"/><circle cx="240" cy="84" r="1.8"/><circle cx="104" cy="88" r="1.6"/><circle cx="296" cy="88" r="1.6"/><circle cx="29" cy="70" r="1.4"/><circle cx="371" cy="70" r="1.4"/></g></svg></header>
+<header class="hero"><svg class="sky" id="sky" aria-hidden="true"></svg><svg class="moon2" viewBox="0 0 100 100" aria-hidden="true"><defs><mask id="mk2"><rect width="100" height="100" fill="#fff"/><circle cx="64" cy="40" r="33" fill="#000"/></mask></defs><circle cx="46" cy="52" r="38" fill="#f6d98a" mask="url(#mk2)"/></svg><div class="top"><div class="brand"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lgG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe5a0"/><stop offset="1" stop-color="#c9962e"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="#0f1b3d" stroke="url(#lgG)" stroke-width="2.5"/><circle cx="32" cy="32" r="25" fill="none" stroke="url(#lgG)" stroke-width=".8" opacity=".6"/><g fill="url(#lgG)"><path d="M33.4 10.5a5.2 5.2 0 1 0 0 9.6a4.2 4.2 0 1 1 0-9.6z"/><rect x="31.4" y="19" width="1.2" height="5"/><path d="M19 42c0-10 6-16 13-16s13 6 13 16z"/><rect x="12" y="30" width="4.6" height="16" rx="1"/><path d="M12 30l2.3-7 2.3 7z"/><rect x="47.4" y="30" width="4.6" height="16" rx="1"/><path d="M47.4 30l2.3-7 2.3 7z"/><rect x="11" y="42" width="42" height="5" rx="1.5"/></g><path d="M28 47v-4.5a4 4 0 0 1 8 0V47z" fill="#0f1b3d"/></svg><div class="bt"><h1 class="serif">গোপীনাথপুর জামে মসজিদ</h1><p>রমজানের পূর্ণাঙ্গ হিসাব</p></div></div><div class="tools"><button id="lng" aria-label="ভাষা">EN</button><button id="thm" aria-label="থিম">🌓</button><button onclick="go(5)" aria-label="সেটিংস">⚙</button></div></div><div class="bis" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><svg class="skyline" viewBox="0 0 400 110" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#5a52b8" opacity=".5"><path d="M0 110V84q16-24 32 0v26zM352 110V80q18-26 36 0v30z"/><rect x="62" y="48" width="5" height="62"/><path d="M62 48l2.5-18 2.5 18z"/><rect x="333" y="48" width="5" height="62"/><path d="M333 48l2.5-18 2.5 18z"/></g><g fill="#0f1b3d"><path d="M118 110V76C118 42 156 24 200 24S282 42 282 76V110Z"/><path d="M62 110V92C62 72 84 62 104 62S138 74 138 92V110Z"/><path d="M262 110V92C262 74 276 62 296 62S338 72 338 92V110Z"/><path d="M199.2 24V8h1.6v16z"/><path d="M201.5 3.5a4.5 4.5 0 1 0 0 8.8a3.6 3.6 0 1 1 0-8.8z"/><rect x="26" y="38" width="6" height="72"/><rect x="23" y="56" width="12" height="3.5" rx="1"/><path d="M26 38l3-26 3 26z"/><rect x="368" y="38" width="6" height="72"/><rect x="365" y="56" width="12" height="3.5" rx="1"/><path d="M368 38l3-26 3 26z"/><rect x="84" y="56" width="5" height="54"/><path d="M84 56l2.5-18 2.5 18z"/><rect x="311" y="56" width="5" height="54"/><path d="M311 56l2.5-18 2.5 18z"/><rect y="100" width="400" height="10"/></g><g fill="#f3cf7a" opacity=".9"><circle cx="160" cy="84" r="1.8"/><circle cx="180" cy="84" r="1.8"/><circle cx="200" cy="84" r="1.8"/><circle cx="220" cy="84" r="1.8"/><circle cx="240" cy="84" r="1.8"/><circle cx="104" cy="88" r="1.6"/><circle cx="296" cy="88" r="1.6"/><circle cx="29" cy="70" r="1.4"/><circle cx="371" cy="70" r="1.4"/></g></svg></header>
 <div class="wrap">
 <section class="v on" id="v0">
 <div class="glass reveal"><div class="ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="var(--line)" stroke-width="11"/><circle id="rg" cx="60" cy="60" r="52" fill="none" stroke="url(#gr)" stroke-width="11" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7" style="transition:stroke-dashoffset 1.2s ease"/><defs><linearGradient id="gr"><stop offset="0" stop-color="#f3cf7a"/><stop offset="1" stop-color="#0f8a65"/></linearGradient></defs></svg><b><div><span id="pc"></span><br>ব্যবহৃত</div></b></div>
@@ -209,15 +222,15 @@ h2.serif::before{background:linear-gradient(var(--ac1),var(--ac2))!important}
 <div class="lbl" style="margin-top:18px">থিম</div><div class="seg" id="thseg"><button data-v="light">☀️ লাইট</button><button data-v="dark">🌙 ডার্ক</button></div>
 <div class="lbl" style="margin-top:18px">লেখার সাইজ</div><div class="seg" id="txseg"><button data-v="0">সাধারণ</button><button data-v="1">বড়</button><button data-v="2">অতি বড়</button></div></div>
 <h2 class="serif">অ্যাপ ইনস্টল</h2><div class="card" style="padding:16px"><div id="instS" class="note" style="font-size:15px;margin:0 0 10px">ফোনের হোম স্ক্রিনে অ্যাপ হিসেবে রাখুন — দ্রুত খুলবে, অফলাইনেও চলবে।</div><button class="btn" id="instBtn">📲 অ্যাপ ইনস্টল করুন</button></div><h2 class="serif">সাইন ইন</h2><div class="card acc" style="padding:16px"><div id="auS" class="note" style="font-size:15px">সাইন ইন করা নেই</div><button class="btn sm gbtn" id="agg"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.4-.8-3-.8-4.7s.3-3.2.8-4.7l-7.9-6.1C.9 16.4 0 20.1 0 24s.9 7.6 2.6 10.8l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg><span>Google দিয়ে সাইন ইন</span></button><button class="btn sm" id="aout" style="width:100%;margin-top:10px;background:var(--line)!important;color:var(--ink)!important;box-shadow:none!important;display:none">সাইন আউট</button></div>
-<h2 class="serif">শেয়ার ও PDF রিপোর্ট</h2><div class="card" style="padding:16px"><div><button class="btn" id="share">হিসাব শেয়ার করুন</button><button class="btn" id="dl2" style="margin-top:12px">পিডিএফ রিপোর্ট ডাউনলোড (A4)</button></div>
+<h2 class="serif">সিঙ্ক অবস্থা</h2><div class="card" style="padding:16px"><div id="net" class="pill"></div></div><div class="ownonly" id="admBox"><h2 class="serif">অ্যাডমিন ব্যবস্থাপনা</h2><div class="card" style="padding:16px"><div class="note" style="margin:0 0 8px">আপনি প্রধান অ্যাডমিন। অ্যাডমিনরা আয়-ব্যয়, বুকিং ইত্যাদি সবই বদলাতে পারবেন; কিন্তু কাউকে অ্যাডমিন করা/সরানো, আপনাকে সরানো, বিগত বছরের হিসাব বদলানো পারবেন না।</div><div class="lbl">বর্তমান অ্যাডমিন</div><div id="admL"></div><div class="lbl" style="margin-top:14px">Google দিয়ে সাইন ইন করেছেন এমন সদস্য</div><div id="usrL"></div><div class="lbl" style="margin-top:14px">ইমেইল দিয়ে সরাসরি যোগ</div><input id="admE" type="email" inputmode="email" placeholder="example@gmail.com"><button class="btn" id="admA" style="margin-top:10px">অ্যাডমিন যোগ করুন</button></div></div><h2 class="serif">শেয়ার ও PDF রিপোর্ট</h2><div class="card" style="padding:16px"><div><button class="btn" id="share">হিসাব শেয়ার করুন</button><button class="btn" id="dl2" style="margin-top:12px">পিডিএফ রিপোর্ট ডাউনলোড (A4)</button></div>
 </div>
-<h2 class="serif">বিগত বছরের হিসাব</h2><div class="card" style="padding:16px"><div class="note" style="font-size:15px;margin-bottom:12px">আগের বছরের PDF বা Excel আপলোড করে হিসাব যোগ করুন (শুধু অ্যাডমিন)।</div><button class="btn adm7" style="width:100%" onclick="PYnew()">✍️ বিগত বছরের হিসাব তুলুন (ফর্ম)</button><button class="btn adm7" style="width:100%;margin-top:10px" onclick="go(6)">📄 PDF/Excel থেকে পড়ুন</button></div>
+<h2 class="serif">বিগত বছরের হিসাব</h2><div class="card" style="padding:16px"><div class="note" style="font-size:15px;margin-bottom:12px">আগের বছরগুলোর হিসাব সবাই দেখতে পারবেন। নতুন যোগ বা বদল শুধু প্রধান অ্যাডমিন করতে পারেন।</div><button class="btn" style="width:100%" onclick="go(6)">📚 আগের বছরের হিসাব দেখুন</button><button class="btn ownonly" style="width:100%;margin-top:10px" onclick="PYnew()">✍️ বিগত বছরের হিসাব তুলুন (ফর্ম)</button><button class="btn ownonly" style="width:100%;margin-top:10px" onclick="go(6)">📄 PDF/Excel থেকে পড়ুন</button></div>
 <h2 class="serif">QR কোড</h2><div class="card" style="padding:14px"><label for="lk" style="font-size:13px;color:var(--mut)">অ্যাপের লিংক (এখানে আসল লিংক বসান)</label><input id="lk" placeholder="https://...">
 <div style="display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:14px;text-align:center"><div><div id="qa" style="background:#fff;padding:8px;border-radius:10px;display:inline-block"></div><div class="note">স্ক্যান করে আজকের ইফতার দেখুন</div></div><div><div id="qb" style="background:#fff;padding:8px;border-radius:10px;display:inline-block"></div><div class="note">স্ক্যান করে ইফতার বুকিং দিন</div></div><div><div id="qq" style="background:#fff;padding:8px;border-radius:10px;display:inline-block"></div><div class="note">স্ক্যান করে দান করুন</div></div></div></div>
-<h2 class="serif">রমজান শুরুর তারিখ</h2><div class="card" style="padding:14px"><input id="st" type="date" aria-label="রমজান শুরুর তারিখ"></div>
-<h2 class="serif">ইফতারের সময় ও লক্ষ্য</h2><div class="card set"><label for="it">ইফতারের সময় (কাউন্টডাউনের জন্য)</label><input id="it" type="time"><label for="gl">সংগ্রহের লক্ষ্যমাত্রা (টাকা)</label><input id="gl" type="number" inputmode="numeric" placeholder="যেমন: ৫০০০০"></div>
-<h2 class="serif">দান গ্রহণের নম্বর</h2><div class="card set"><label for="pbk">বিকাশ নম্বর</label><input id="pbk" type="tel" inputmode="tel"><label for="png">নগদ নম্বর</label><input id="png" type="tel" inputmode="tel"><label for="pot">অন্যান্য (ব্যাংক হিসাব ইত্যাদি)</label><input id="pot"></div><h2 class="serif">নিরাপত্তা</h2><div class="card set"><label for="pn">অ্যাডমিন পিন (খালি রাখলে পিন বন্ধ)</label><input id="pn" type="password" inputmode="numeric" placeholder="নতুন পিন"><div class="two"><button class="btn sm" id="pset" style="width:100%">পিন সেট করুন</button><button class="btn sm" id="plock" style="width:100%;background:var(--line);color:var(--ink)">লক / আনলক</button></div></div>
-<h2 class="serif">ব্যাকআপ ও এক্সপোর্ট</h2><div class="card set"><div class="two"><button class="btn sm" id="bk" style="width:100%">JSON ব্যাকআপ</button><button class="btn sm" id="csv" style="width:100%">Excel (CSV)</button></div><label for="rs">ব্যাকআপ থেকে রিস্টোর</label><input id="rs" type="file" accept=".json,application/json"></div></section>
+<div class="admonly"><h2 class="serif">রমজান শুরুর তারিখ</h2><div class="card" style="padding:14px"><input id="st" type="date" aria-label="রমজান শুরুর তারিখ"></div>
+<h2 class="serif">ইফতারের সময় ও লক্ষ্য</h2><div class="card set"><label for="it">ইফতারের সময় (কাউন্টডাউনের জন্য)</label><input id="it" type="time"><label for="gl">সংগ্রহের লক্ষ্যমাত্রা (টাকা)</label><input id="gl" type="number" inputmode="numeric" placeholder="যেমন: ৫০০০০"></div></div>
+<div class="ownonly"><h2 class="serif">দান গ্রহণের নম্বর</h2><div class="card set"><label for="pbk">বিকাশ নম্বর</label><input id="pbk" type="tel" inputmode="tel"><label for="png">নগদ নম্বর</label><input id="png" type="tel" inputmode="tel"><label for="pot">অন্যান্য (ব্যাংক হিসাব ইত্যাদি)</label><input id="pot"></div></div><div class="admonly"><h2 class="serif">নিরাপত্তা</h2><div class="card set"><label for="pn">অ্যাডমিন পিন (খালি রাখলে পিন বন্ধ)</label><input id="pn" type="password" inputmode="numeric" placeholder="নতুন পিন"><div class="two"><button class="btn sm" id="pset" style="width:100%">পিন সেট করুন</button><button class="btn sm" id="plock" style="width:100%;background:var(--line);color:var(--ink)">লক / আনলক</button></div></div></div>
+<div class="admonly"><h2 class="serif">ব্যাকআপ ও এক্সপোর্ট</h2><div class="card set"><div class="two"><button class="btn sm" id="bk" style="width:100%">JSON ব্যাকআপ</button><button class="btn sm" id="csv" style="width:100%">Excel (CSV)</button></div><div class="ownonly"><label for="rs">ব্যাকআপ থেকে রিস্টোর</label><input id="rs" type="file" accept=".json,application/json"></div></div></div></section>
 </div>
 <section class="v" id="v6"><div style="display:flex;justify-content:space-between;align-items:center"><h2 class="serif" style="margin-top:22px">বিগত বছরের হিসাব</h2><button class="x" onclick="go(0)">← ফিরে যান</button></div>
 <div class="card" style="padding:16px"><div class="lbl">সাল বেছে নিন</div><select id="pys" style="width:100%;font-size:18px;padding:12px;border-radius:14px"></select><button class="btn" id="pyd" style="width:100%;margin-top:14px;display:none">📄 এই সালের PDF ডাউনলোড</button></div><div id="pyb"></div>
@@ -324,30 +337,57 @@ $("bgo").onclick=async()=>{const n=$("bn").value.trim(),p=$("bp").value.trim(),d
 $("bl").onclick=e=>{const o=e.target.dataset.ok,r=e.target.dataset.rm;if(o)put("ok",o).catch(()=>{});if(r&&confirm("এই বুকিং মুছবেন?"))put("rm",r).catch(()=>{})};
 $("lk").value=S.cfg.link;$("lk").oninput=()=>{S.cfg.link=$("lk").value.trim();save();qr()};
 $("st").value=S.cfg.start;$("st").onchange=()=>{if($("st").value){S.cfg.start=$("st").value;save();render()}};
-/* ===== Firebase: ডাটাবেস + Google সাইন ইন ===== */
+/* ===== Firebase: ডাটাবেস + Google সাইন ইন + ভূমিকা ===== */
+var OWN=true,ADMS=[],USRS=[];
 (function(){
-const cfg=window.FIREBASE_CONFIG,ok=cfg&&cfg.apiKey&&!/^PASTE/i.test(cfg.apiKey)&&typeof firebase!="undefined";
-const gE=document.getElementById("agg"),oE=document.getElementById("aout"),sE=document.getElementById("auS");
+const cfg=window.FIREBASE_CONFIG,OE=(window.OWNER_EMAIL||"").toLowerCase(),ok=cfg&&cfg.apiKey&&!/^PASTE/i.test(cfg.apiKey)&&typeof firebase!="undefined";
+const gE=$("agg"),oE=$("aout"),sE=$("auS");let PR=null,un=[];
+function roles(){document.body.classList.toggle("noadm",!adm);document.body.classList.toggle("noown",!OWN);try{$("lk").readOnly=!adm}catch(e){}}
 function ui(u){if(!ok){sE.textContent="Firebase সেট করা হয়নি — শুধু এই ফোনে সংরক্ষিত হচ্ছে";gE.style.display="none";return}
  gE.style.display=u?"none":"";oE.style.display=u?"":"none";
- sE.textContent=u?("সাইন ইন: "+(u.email||u.displayName)+(adm?" · অ্যাডমিন ✓":" · শুধু দেখার অনুমতি")):"সাইন ইন করা নেই (শুধু দেখতে পারবেন)"}
+ sE.textContent=u?("সাইন ইন: "+(u.email||u.displayName)+" · "+(OWN?"প্রধান অ্যাডমিন ✓":adm?"অ্যাডমিন ✓":"সদস্য (শুধু দেখার অনুমতি)")):"সাইন ইন করা নেই (সবকিছু দেখতে পারবেন, বদলাতে পারবেন না)"}
+function admUI(){const L=$("admL"),U=$("usrL");if(!L||!OWN)return;
+ L.innerHTML='<div class="row"><div class="av">★</div><div class="nm"><span>'+esc(OE)+'</span><small style="color:var(--mut)">প্রধান অ্যাডমিন (আপনি)</small></div></div>'+[...ADMS].sort().map(e=>`<div class="row"><div class="av">${esc(e[0].toUpperCase())}</div><div class="nm"><span>${esc(e)}</span></div><button class="x" data-rm="${esc(e)}">সরান</button></div>`).join("");
+ const c=USRS.filter(u=>u.email&&u.email!=OE&&!ADMS.includes(u.email));
+ U.innerHTML=c.map(u=>`<div class="row"><div class="av">${esc((u.name||u.email)[0].toUpperCase())}</div><div class="nm"><span>${esc(u.name||u.email)}</span><small style="color:var(--mut)">${esc(u.email)}</small></div><button class="x" data-add="${esc(u.email)}">অ্যাডমিন করুন</button></div>`).join("")||'<div class="row nm">এখনো কেউ সাইন ইন করেনি।</div>'}
+function watch(){if(un.length||!DB)return;
+ un.push(DB.collection("admins").onSnapshot(sn=>{ADMS=sn.docs.map(d=>d.id);admUI()},()=>{}));
+ un.push(DB.collection("users").onSnapshot(sn=>{USRS=sn.docs.map(d=>({id:d.id,...d.data()}));admUI()},()=>{}))}
+function unwatch(){un.forEach(f=>f());un=[];ADMS=[];USRS=[]}
+S.pq=S.pq||{};
+async function pushPast(){if(!DB||!OWN||!navigator.onLine)return;for(const y of Object.keys(S.pq)){try{if(S.past[y])await DB.collection("past").doc(y).set(JSON.parse(JSON.stringify(S.past[y])));delete S.pq[y];save()}catch(e){break}}}
+function qLocal(){if(!OWN||!PR)return;Object.keys(S.past).forEach(y=>{if(!(y in PR))S.pq[y]=1});save();pushPast()}
+window.PQ=y=>{S.pq[y]=1;save();pushPast()};
 setTimeout(function init(){
- if(!ok){adm=true;ui(null);return}
- let app;try{app=firebase.apps.length?firebase.app():firebase.initializeApp(cfg)}catch(e){adm=false;ui(null);return}
+ roles();
+ if(!ok){adm=true;OWN=true;roles();ui(null);return}
+ try{firebase.apps.length?firebase.app():firebase.initializeApp(cfg)}catch(e){adm=false;OWN=false;roles();ui(null);return}
  DB=firebase.firestore();const au=firebase.auth();au.useDeviceLanguage();
- adm=false;startSync();BK=[];
+ adm=false;OWN=false;roles();startSync();BK=[];
  DB.collection("bookings").onSnapshot(sn=>{BK=sn.docs.map(x=>({id:x.id,...x.data()}));rb()},()=>{});
+ DB.collection("past").onSnapshot(sn=>{if(sn.metadata.fromCache)return;const R={};sn.docs.forEach(d=>R[d.id]=d.data());PR=R;
+  Object.keys(R).forEach(y=>{if(!S.pq[y])S.past[y]=R[y]});save();if(window.PYrp)window.PYrp();qLocal()},()=>{});
  au.onAuthStateChanged(async u=>{
-  adm=false;
-  if(u&&u.email){const k="iftar-adm-"+u.uid;
-   try{const d=await DB.collection("admins").doc(u.email.toLowerCase()).get();adm=d.exists;try{localStorage.setItem(k,adm?"1":"0")}catch(e){}}
-   catch(e){try{adm=localStorage.getItem(k)=="1"}catch(x){}}}
-  ui(u);try{push();stat();render()}catch(e){}});
+  adm=false;OWN=false;
+  if(u&&u.email){const em=u.email.toLowerCase(),k="iftar-adm-"+u.uid;
+   OWN=!!OE&&em==OE&&u.emailVerified;
+   if(OWN)adm=true;
+   else{try{const d=await DB.collection("admins").doc(em).get();adm=d.exists;try{localStorage.setItem(k,adm?"1":"0")}catch(e){}}
+    catch(e){try{adm=localStorage.getItem(k)=="1"}catch(x){}}}
+   DB.collection("users").doc(u.uid).set({email:em,name:u.displayName||"",ts:Date.now()}).catch(()=>{})}
+  if(OWN)watch();else unwatch();
+  ui(u);roles();try{push();qLocal();stat();render()}catch(e){}});
  gE.onclick=async()=>{const p=new firebase.auth.GoogleAuthProvider();p.setCustomParameters({prompt:"select_account"});
   try{await au.signInWithPopup(p)}catch(e){
    if(e&&/popup-blocked|operation-not-supported|cancelled-popup/.test(e.code||"")){try{await au.signInWithRedirect(p)}catch(x){toast("সাইন ইন হয়নি")}}
    else if(e&&e.code!="auth/popup-closed-by-user")toast("সাইন ইন হয়নি: "+(e.code||"").replace("auth/",""))}};
  oE.onclick=async()=>{try{await au.signOut();unl=false;toast("সাইন আউট হয়েছে")}catch(e){}};
+ $("admBox").onclick=async e=>{const a=e.target.dataset.add,r=e.target.dataset.rm;
+  if(a&&await ask(a+" কে অ্যাডমিন করবেন?")){try{await DB.collection("admins").doc(a).set({email:a,by:OE,ts:Date.now()});toast("অ্যাডমিন করা হয়েছে ✓")}catch(x){toast("হয়নি — ইন্টারনেট/Rules দেখুন")}}
+  if(r&&await ask(r+" কে অ্যাডমিন থেকে সরাবেন?")){try{await DB.collection("admins").doc(r).delete();toast("সরানো হয়েছে")}catch(x){toast("হয়নি")}}};
+ $("admA").onclick=async()=>{const v=$("admE").value.trim().toLowerCase();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){toast("সঠিক ইমেইল দিন");return}if(v==OE){toast("এটা আপনারই ইমেইল");return}
+  try{await DB.collection("admins").doc(v).set({email:v,by:OE,ts:Date.now()});$("admE").value="";toast("অ্যাডমিন করা হয়েছে ✓")}catch(x){toast("হয়নি — ইন্টারনেট/Rules দেখুন")}};
+ addEventListener("online",()=>{pushPast()});
 },0);
 ui(null);
 })();
@@ -840,5 +880,13 @@ $("instGo").onclick=doInstall;$("instBtn").onclick=doInstall;
 $("instNo").onclick=()=>{try{localStorage.setItem(KEY,Date.now())}catch(e){}paint()};
 matchMedia("(display-mode: standalone)").addEventListener&&matchMedia("(display-mode: standalone)").addEventListener("change",paint);
 paint();
+})();
+
+/* ===== বিগত বছরের হিসাব: শুধু প্রধান অ্যাডমিন বদলাতে পারবেন ===== */
+;(()=>{const deny=()=>toast("শুধু প্রধান অ্যাডমিন বিগত বছরের হিসাব বদলাতে পারেন");
+const pn=window.PYnew;window.PYnew=function(){if(!OWN)return deny();return pn.apply(this,arguments)};
+const pe=window.PYedit;window.PYedit=function(){if(!OWN)return deny();return pe.apply(this,arguments)};
+const sv=$("e7sv"),o=sv.onclick;
+sv.onclick=function(ev){if(!OWN)return deny();const bef={};Object.keys(S.past).forEach(y=>bef[y]=JSON.stringify(S.past[y]));const r=o.call(this,ev);Object.keys(S.past).forEach(y=>{if(bef[y]!==JSON.stringify(S.past[y])&&window.PQ)window.PQ(y)});return r};
 })();
 </script></body></html>

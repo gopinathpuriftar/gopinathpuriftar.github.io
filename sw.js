@@ -1,4 +1,4 @@
-const C="iftar-v2";
+const C="iftar-v3";
 const PRE=["./","index.html","manifest.webmanifest","firebase-config.js","icon-192.png","icon-512.png","apple-touch-icon.png"];
 self.addEventListener("install",e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>Promise.all(PRE.map(u=>c.add(u).catch(()=>{})))))});
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>clients.claim())));

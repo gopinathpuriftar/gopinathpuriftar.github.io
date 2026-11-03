@@ -1,4 +1,5 @@
 // Firebase কনফিগ (গোপন নয়; সুরক্ষা আসে firestore.rules থেকে)
+window.OWNER_EMAIL = "shironamhinantor@gmail.com"; // প্রধান অ্যাডমিন
 window.FIREBASE_CONFIG = {
   apiKey: "AIzaSyDln73lJBvW4hgzbo9aFEF4y63gIwOAEXc",
   authDomain: "gopinathpuriftar.firebaseapp.com",
