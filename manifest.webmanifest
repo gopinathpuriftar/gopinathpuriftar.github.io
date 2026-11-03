@@ -1,0 +1,20 @@
+{
+  "name": "গোপীনাথপুর জামে মসজিদ – ইফতার ফান্ড",
+  "short_name": "ইফতার ফান্ড",
+  "description": "রমজানের ইফতার ফান্ডের হিসাব, দাতা ও ইফতারদাতার তালিকা",
+  "lang": "bn",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f1b3d",
+  "theme_color": "#0f1b3d",
+  "categories": ["finance", "lifestyle"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

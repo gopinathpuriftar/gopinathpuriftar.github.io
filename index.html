@@ -1,0 +1,844 @@
+<!DOCTYPE html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><script>try{if(localStorage.getItem("iftar-lang")=="en")document.documentElement.lang="en";var _t=localStorage.getItem("iftar-th");if(_t)document.documentElement.dataset.theme=_t}catch(e){}</script><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="ইফতার ফান্ড"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="application-name" content="ইফতার ফান্ড"><title>গোপীনাথপুর জামে মসজিদ</title>
+<meta name="theme-color" content="#0f1b3d">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600&family=Noto+Serif+Bengali:wght@600;800&family=Amiri:wght@400;700&family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef0f8;--card:#fff;--ink:#14183a;--mut:#667090;--line:#dde1f0;--amber:#f5a94a;--amberD:#a8651a;--mint:#1f9d80;--mintBg:#dff4ee;--hostBg:#fff1da;--sky:#0f1b3d;--vio:#2d2670;color-scheme:light}
+:root[data-theme=dark]{--bg:#0b1230;--card:#151e48;--ink:#eef0ff;--mut:#9aa5d4;--line:#273062;--amberD:#f5b765;--mint:#5ad1b0;--mintBg:#143a47;--hostBg:#3b2f3d;color-scheme:dark}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;min-height:100%}html{background:var(--sky)}
+body{font-family:"Hind Siliguri",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+.serif{font-family:"Noto Serif Bengali",serif}
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(180deg,#0f1b3d 0%,#2d2670 55%,#a24f6a 88%,#f5a94a 120%);padding:calc(28px + env(safe-area-inset-top,0px)) 20px 92px}
+.hero svg.sky{position:absolute;inset:0;width:100%;height:100%}
+.hero .in{position:relative;max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.hero h1{margin:0;font-size:30px;line-height:1.2;font-weight:800}
+.hero p{margin:6px 0 0;color:#d6d2ee;font-size:14px}
+.moon{flex:none;width:76px;height:76px;filter:drop-shadow(0 0 18px rgba(245,169,74,.55))}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+.v{display:none}.v.on{display:block}
+.glass{margin-top:-62px;position:relative;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:16px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;box-shadow:0 18px 40px -22px rgba(15,27,61,.55)}
+.ring{position:relative;width:118px;height:118px}.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring b{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-size:12px;color:var(--mut);line-height:1.2}.ring b span{font-size:24px;color:var(--ink);font-weight:800}
+.kv{display:grid;gap:10px}.kv div{display:flex;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:1px dashed var(--line);padding-bottom:8px}.kv div:last-child{border:0;padding:0}
+.kv small{color:var(--mut);font-size:13px}.kv strong{font-size:21px;font-weight:800}
+.in-c{color:var(--mint)}.out-c{color:var(--amberD)}
+h2{font-size:18px;margin:26px 0 10px;font-weight:800}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:6px 14px}
+.row{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}.row:last-child{border:0}
+.av{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--vio),#a24f6a)}
+.row .nm{flex:1;min-width:0}.row .nm span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar{height:5px;border-radius:4px;background:var(--line);margin-top:5px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--amber),#e0707f)}
+.amt{font-weight:700;white-space:nowrap}
+.btn{font:inherit;font-weight:600;border:0;border-radius:14px;padding:12px 18px;background:linear-gradient(135deg,var(--amber),#e8806a);color:#2a1606;cursor:pointer;width:100%}
+.btn.sm{width:auto;padding:10px 16px}
+.x{font:inherit;border:1px solid var(--line);background:none;color:var(--mut);border-radius:9px;padding:2px 9px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+@media(min-width:560px){.grid{grid-template-columns:repeat(6,1fr)}}
+.d{position:relative;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:16px;padding:9px 2px 8px;text-align:center;font:inherit;cursor:pointer;min-height:84px}
+.d i{display:block;font-style:normal;font-size:20px;font-weight:800;font-family:"Noto Serif Bengali",serif;line-height:1.2}
+.d small{display:block;font-size:10.5px;color:var(--mut);line-height:1.15;margin:2px 3px;height:24px;overflow:hidden}
+.d em{font-style:normal;font-size:11.5px;font-weight:600}
+.d.m{background:var(--mintBg);border-color:transparent}.d.m em{color:var(--mint)}
+.d.h{background:var(--hostBg);border-color:var(--amber)}.d.h em{color:var(--amberD)}
+.d.e{border-style:dashed;color:var(--mut)}
+.d.h::after{content:"✦";position:absolute;top:4px;right:7px;font-size:10px;color:var(--amber)}
+.leg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--mut);margin:14px 0 12px}.leg s{display:inline-block;width:11px;height:11px;border-radius:4px;margin-right:5px;vertical-align:-1px}
+.f{display:grid;grid-template-columns:1fr 100px;gap:8px;margin:16px 0 10px}.f .btn{grid-column:1/-1}
+input,select,textarea{font:inherit;padding:12px 13px;border:1px solid var(--line);border-radius:13px;background:var(--card);color:var(--ink);width:100%}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.tab{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--card);border-top:1px solid var(--line);display:flex;justify-content:center;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px))}
+.tab div{display:flex;width:100%;max-width:520px}
+.tab button{flex:1;font:inherit;font-size:12px;background:none;border:0;color:var(--mut);display:grid;justify-items:center;gap:2px;padding:6px 0;border-radius:14px;cursor:pointer}
+.tab svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tab button.on{color:var(--amberD);font-weight:600}.tab button.on svg{stroke:var(--amber)}
+dialog{border:0;padding:20px 18px calc(20px + env(safe-area-inset-bottom,0px));margin:auto auto 0;width:100%;max-width:520px;border-radius:24px 24px 0 0;background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(8,12,34,.6)}
+dialog h3{margin:0 0 4px;font-size:20px}
+dialog label{display:block;font-size:13px;color:var(--mut);margin:12px 0 4px}
+.note{font-size:12.5px;color:var(--mut);margin:12px 2px}
+.top{margin-top:0}
+.bd{font-size:11px;padding:1px 8px;border-radius:9px;background:var(--hostBg);color:var(--amberD)}.bd.ok{background:var(--mintBg);color:var(--mint)}
+#rep{position:fixed;left:-10000px;top:0;width:794px;height:1123px;box-sizing:border-box;padding:40px 42px;background:#fff;color:#111;font-size:var(--fs,13px);line-height:1.45;font-family:"Hind Siliguri",sans-serif;overflow:hidden}
+#rep .rh{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid #2d2670;padding-bottom:.6em}
+#rep .rt{font-size:2em;font-weight:700;color:#2d2670;font-family:"Noto Serif Bengali",serif}#rep .rs{font-size:.9em;color:#555}
+#rep .r3{display:grid;grid-template-columns:repeat(3,1fr);gap:.7em;margin:1em 0}
+#rep .r3 div{border:1.5px solid #2d2670;border-radius:.6em;padding:.5em .8em;font-size:.95em}#rep .r3 b{display:block;font-size:1.7em}
+#rep .r2{display:grid;grid-template-columns:1fr 1fr;gap:1.4em}
+#rep h4{margin:.9em 0 .3em;font-size:1.05em;color:#2d2670;border-bottom:1px solid #bbb;padding-bottom:.15em}
+#rep .rr{display:flex;justify-content:space-between;gap:.6em;padding:.12em 0;border-bottom:1px dotted #ccc}
+#rep .rc{column-count:2;column-gap:1.4em}#rep .rc .rr{break-inside:avoid}
+#rep .rg{display:flex;justify-content:space-between;margin-top:2.4em;padding:0 2em}#rep .rg span{border-top:1px solid #111;padding-top:.3em;min-width:9em;text-align:center}
+.reveal{animation:up .7s ease both}@keyframes up{from{opacity:0;transform:translateY(14px)}}
+@media(prefers-reduced-motion:reduce){.reveal{animation:none}}
+
+.tools{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:14px;display:flex;gap:8px;z-index:2}
+.tools button{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.12);color:#fff;font-size:17px;cursor:pointer}
+.hero{padding-top:calc(56px + env(safe-area-inset-top,0px))}
+.pill{display:inline-block;margin-top:8px;font-size:12px;padding:3px 11px;border-radius:99px;background:rgba(255,255,255,.14);color:#fff}.pill.off{background:rgba(245,169,74,.3)}
+.qrow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.qrow button{font:inherit;font-weight:600;font-size:14px;padding:11px 4px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.qrow button:first-child{background:var(--mintBg);color:var(--mint);border-color:transparent}.qrow button:nth-child(2){background:var(--hostBg);color:var(--amberD);border-color:transparent}
+.gl{padding:14px;margin-top:14px}.cdw{font-weight:800;font-size:19px;color:var(--amberD);margin-bottom:8px}
+.dn{display:flex;gap:16px;align-items:center;padding:14px 0}.dng{flex:none;width:112px;height:112px;border-radius:50%;display:grid;place-items:center;position:relative}
+.dng::before{content:"";position:absolute;inset:20px;border-radius:50%;background:var(--card)}.dng span{position:relative;font-weight:800;font-size:14px}
+.dn>div:last-child{flex:1}.lg{font-size:13px;display:flex;align-items:center;gap:6px;margin:3px 0}.lg s{width:10px;height:10px;border-radius:3px}.lg b{margin-left:auto;padding-left:10px}
+.chips{display:flex;gap:7px;overflow-x:auto;padding:2px 0 8px;scrollbar-width:none}
+.chip{flex:none;font:inherit;font-size:13px;padding:6px 12px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--mut);cursor:pointer}.chip.on{background:var(--amber);border-color:var(--amber);color:#2a1606;font-weight:600}
+.tap{cursor:pointer}.mu{color:var(--mut)}.pend{font-style:normal;color:var(--amberD)}
+.fab{position:fixed;right:18px;bottom:calc(86px + env(safe-area-inset-bottom,0px));z-index:19;width:56px;height:56px;border-radius:50%;border:0;font-size:28px;background:linear-gradient(135deg,var(--amber),#e8806a);color:#2a1606;box-shadow:0 10px 24px -8px rgba(232,128,106,.8);cursor:pointer}
+.d.tod{outline:2px solid var(--amber);outline-offset:1px}
+.seg{display:flex;background:var(--bg);border-radius:14px;padding:4px;margin-bottom:10px}.seg button{flex:1;font:inherit;border:0;background:none;color:var(--mut);padding:8px;border-radius:11px;cursor:pointer}.seg button.on{background:var(--card);color:var(--ink);font-weight:700;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+#ts{position:fixed;left:50%;bottom:calc(150px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:99px;font-size:14px;z-index:60;transition:.25s}#ts.on{opacity:1;transform:translate(-50%,0)}
+.set{display:grid;gap:10px;padding:14px}.set label{font-size:13px;color:var(--mut)}.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chk{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:14px}.chk input{width:auto}
+.qi{display:grid;grid-template-columns:1fr 84px 34px;gap:6px;margin-top:6px}.qi input{padding:10px 9px}input[readonly]{opacity:.75}
+.hero h1{font-size:27px}
+.xr{display:grid;grid-template-columns:1fr 110px;gap:8px;align-items:center;min-height:46px;border-bottom:1px solid var(--line)}.xr .chk{margin:0;padding:8px 0}.xr input.ea{padding:9px}.chk input[type=checkbox]{width:20px;height:20px;accent-color:var(--mint)}
+.d.free{border:1.5px dashed var(--mint);background:transparent}.d.free em{color:var(--mint)}
+.d.pnd{background:rgba(122,108,240,.16);border-color:transparent}.d.pnd em{color:#7a6cf0}
+.d.sel{outline:3px solid var(--amber);outline-offset:1px;background:var(--hostBg)}.d.past{opacity:.45}.d:disabled{cursor:default}
+.bsel{font-weight:700;color:var(--mint);background:var(--mintBg);padding:10px 12px;border-radius:12px}.bform input{margin-top:8px}
+.qrow{grid-template-columns:repeat(4,1fr)}.qrow button{font-size:15px;font-weight:700;padding:14px 4px}.qrow button:nth-child(4){background:rgba(224,112,127,.14);color:#c4455a;border-color:transparent}
+.vis .fab,.vis #qrow button[data-q],.vis .tools button:nth-child(3){display:none!important}.vis #qrow{grid-template-columns:1fr 1fr}
+.row .nm small{display:block}
+
+:root{--bg:#eef0f8;--card:#fff;--ink:#14183a;--mut:#4a5373;--line:#cfd5ea;--amber:#f5a94a;--amberD:#8a4f0c;--mint:#0f7d64;--mintBg:#dff4ee;--hostBg:#fff1da;--sky:#0f1b3d;--vio:#2d2670;color-scheme:light}
+:root[data-theme=dark]{--bg:#0b1230;--card:#151e48;--ink:#eef0ff;--mut:#b3bce6;--line:#273062;--amberD:#f5b765;--mint:#5ad1b0;--mintBg:#143a47;--hostBg:#3b2f3d;color-scheme:dark}
+body{font-size:17px;background:radial-gradient(800px 360px at 100% 0,rgba(245,169,74,.14),transparent 60%),var(--bg);padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
+html[lang=en] body{font-family:Inter,"Hind Siliguri",system-ui,sans-serif}html[lang=en] .serif,html[lang=en] .hero h1{font-family:"Playfair Display","Noto Serif Bengali",serif}
+.hero{padding:calc(14px + env(safe-area-inset-top,0px)) 16px 104px;background:linear-gradient(180deg,#0f1b3d 0%,#2d2670 55%,#a24f6a 88%,#f5a94a 120%);border-radius:0 0 30px 30px}
+.hero::before{content:"";position:absolute;inset:0;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56'%3E%3Cpath d='M28 0l6.5 21.5L56 28l-21.5 6.5L28 56l-6.5-21.5L0 28l21.5-6.5z' fill='none' stroke='white' stroke-width='1'/%3E%3C/svg%3E")}
+.top{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;max-width:760px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:11px;min-width:0}.logo{flex:none;width:54px;height:54px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.45))}
+.hero h1{font-size:clamp(19px,5.6vw,28px);line-height:1.15;background:linear-gradient(90deg,#fff3cf,#f0c460 55%,#fff3cf);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin:3px 0 0;color:#e4e1f6;font-size:15px;letter-spacing:.3px}
+.tools{position:static;flex:none;gap:7px}.tools button{width:36px;height:36px;font-size:15px;border-color:rgba(240,196,96,.45);background:rgba(255,255,255,.08);backdrop-filter:blur(6px);font-weight:600}
+.bis{position:relative;text-align:center;font-family:Amiri,serif;font-size:21px;color:#f0d58a;margin:14px 0 0}
+.pillw{position:relative;text-align:center}
+.moon2{position:absolute;right:16px;top:calc(76px + env(safe-area-inset-top,0px));width:50px;height:50px;filter:drop-shadow(0 0 14px rgba(245,169,74,.7));opacity:.92}
+.skyline{position:absolute;left:0;right:0;bottom:0;width:100%;height:112px}
+.glass{margin-top:-58px;border-color:rgba(245,169,74,.55);box-shadow:0 22px 44px -24px rgba(15,27,61,.6);border-radius:26px}
+.card{border-radius:22px;box-shadow:0 14px 30px -24px rgba(15,27,61,.5)}
+.btn{background:linear-gradient(135deg,#ffc978,#f5a94a);color:#2b1703;box-shadow:0 10px 20px -10px rgba(245,169,74,.8);transition:transform .15s}.btn:active{transform:scale(.98)}
+.av{background:linear-gradient(135deg,#2d2670,#a24f6a)}.bar i{background:linear-gradient(90deg,#f5a94a,#e0707f)}
+h2.serif::before{content:"";display:inline-block;width:4px;height:18px;border-radius:3px;margin-right:9px;vertical-align:-3px;background:linear-gradient(var(--amber),var(--vio))}
+.d{border-radius:18px;box-shadow:0 6px 14px -12px rgba(15,27,61,.4)}
+.tab{left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));padding:6px;border:1px solid var(--line);border-radius:28px;background:color-mix(in srgb,var(--card) 84%,transparent);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:0 18px 40px -14px rgba(0,0,0,.45)}
+.tab button{font-size:12.5px;line-height:1.15;border-radius:20px;padding:7px 0}.tab button.on{background:var(--mintBg);color:var(--mint)}.tab button.on svg{stroke:var(--mint)}
+.fab{bottom:calc(92px + env(safe-area-inset-bottom,0px))}#ts{bottom:calc(160px + env(safe-area-inset-bottom,0px))}
+dialog{border-radius:30px 30px 0 0}dialog::before{content:"";display:block;width:44px;height:4px;border-radius:4px;background:var(--line);margin:-8px auto 14px}
+@media(prefers-reduced-motion:no-preference){.card,.qrow,.grid{animation:up .5s ease both}}
+
+/* ===== Glass UI (Ontor-style) ===== */
+:root{--ac1:#5b6cff;--ac2:#1aa3ff;--gl:rgba(255,255,255,.62);--glb:rgba(255,255,255,.75)}
+:root[data-theme=dark]{--gl:rgba(22,30,66,.58);--glb:rgba(255,255,255,.13)}
+html{background:#0f1b3d}
+body{background:radial-gradient(520px 420px at 0 0,rgba(168,140,255,.55),transparent 70%),radial-gradient(520px 420px at 100% 30%,rgba(90,190,255,.5),transparent 70%),linear-gradient(160deg,#dcdcff,#cfe6ff 55%,#eadcff)!important;background-attachment:fixed!important}
+:root[data-theme=dark] body{background:radial-gradient(520px 420px at 0 0,rgba(91,108,255,.35),transparent 70%),radial-gradient(520px 420px at 100% 100%,rgba(168,85,247,.3),transparent 70%),linear-gradient(160deg,#050816,#0b1232 60%,#1a0f33)!important;background-attachment:fixed!important}
+.card,.glass,.tab,dialog,.d,.pill{background:var(--gl)!important;-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5);border:1px solid var(--glb)!important}
+.card,.glass{border-radius:28px;box-shadow:0 16px 40px -22px rgba(40,50,140,.45)}
+.hero{background:linear-gradient(160deg,#141a4d 0%,var(--ac1) 75%,var(--ac2) 125%)!important}
+.btn{background:linear-gradient(135deg,var(--ac1),var(--ac2))!important;color:#fff!important;box-shadow:0 12px 24px -12px var(--ac1)!important;font-weight:700}
+.tab button.on{background:color-mix(in srgb,var(--ac1) 20%,transparent)!important;color:var(--ac1)!important}.tab button.on svg{stroke:var(--ac1)!important}
+h2.serif::before{background:linear-gradient(var(--ac1),var(--ac2))!important}
+.bar i{background:linear-gradient(90deg,var(--ac1),var(--ac2))!important}
+.av{background:linear-gradient(135deg,var(--ac1),var(--ac2))!important}
+.sw{display:flex;gap:12px;flex-wrap:wrap}.sw button{width:58px;height:58px;border-radius:18px;border:3px solid transparent;cursor:pointer}.sw button.on{border-color:var(--ink);box-shadow:0 0 0 3px var(--glb)}
+.seg{display:flex;gap:8px;flex-wrap:wrap}.seg button{flex:1;min-width:84px;padding:13px 10px;border-radius:16px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-weight:700;font-size:15px;font-family:inherit;cursor:pointer}.seg button.on{background:linear-gradient(135deg,var(--ac1),var(--ac2));color:#fff;border-color:transparent}
+.lbl{font-size:12.5px;letter-spacing:1.4px;font-weight:800;color:var(--mut);text-transform:uppercase;margin:0 0 12px}
+.acc input{margin-top:8px}.acc .two{margin-top:12px}
+
+/* softer dark */
+:root[data-theme=dark]{--bg:#1b2455;--card:#2a3575;--ink:#f4f6ff;--mut:#c6cdf0;--line:#46529a;--gl:rgba(255,255,255,.13);--glb:rgba(255,255,255,.24)}
+:root[data-theme=dark] body{background:radial-gradient(520px 420px at 0 0,rgba(110,130,255,.45),transparent 70%),radial-gradient(520px 420px at 100% 100%,rgba(190,110,255,.35),transparent 70%),linear-gradient(160deg,#1d2760,#2a3680 55%,#3b2f86)!important;background-attachment:fixed!important}
+:root[data-theme=dark] html,html:has(:root[data-theme=dark]){background:#1d2760}
+.vis #pyup{display:none}.pyr{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}.pyr:last-child{border:0}.pyr b{white-space:nowrap}
+.pyq{margin-top:12px;padding:12px;border-radius:16px;background:var(--card);font-size:15px}
+.vis .admg,.vis .adm7{display:none}
+/* readable bottom bar */
+.tab{background:rgba(255,255,255,.95)!important;border:1px solid rgba(90,100,200,.25)!important;box-shadow:0 14px 34px -12px rgba(20,24,80,.5)}
+:root[data-theme=dark] .tab{background:rgba(18,24,66,.96)!important;border-color:rgba(255,255,255,.22)!important}
+.tab button{color:#2a3158!important;font-weight:600;font-size:13px}
+:root[data-theme=dark] .tab button{color:#e9ecff!important}
+.tab button svg{stroke:currentColor!important;stroke-width:2}
+.tab button.on,:root[data-theme=dark] .tab button.on{background:linear-gradient(135deg,var(--ac1),var(--ac2))!important;color:#fff!important;font-weight:700}
+.tab button.on svg{stroke:#fff!important}
+
+#instChip{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(86px + env(safe-area-inset-bottom,0px));z-index:30;display:none;align-items:center;gap:6px;background:linear-gradient(135deg,var(--amber),#e8806a);color:#2a1606;border-radius:999px;padding:6px 6px 6px 16px;font:inherit;font-weight:600;box-shadow:0 10px 26px -8px rgba(0,0,0,.5);max-width:calc(100% - 24px)}
+#instChip.on{display:flex}#instChip button{font:inherit;border:0;background:none;color:inherit;cursor:pointer;padding:6px 4px}
+#instChip .go{font-weight:700}#instChip .no{width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.12);display:grid;place-items:center;padding:0}
+#iosDlg ol{padding-left:22px;margin:10px 0;line-height:1.9}#iosDlg .k{display:inline-block;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--bg);font-weight:600}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:12px;background:#fff!important;color:#3c4043!important;border:1px solid #dadce0!important;box-shadow:none!important}
+.gbtn svg{width:18px;height:18px;flex:none}
+</style></head><body>
+<header class="hero"><svg class="sky" id="sky" aria-hidden="true"></svg><svg class="moon2" viewBox="0 0 100 100" aria-hidden="true"><defs><mask id="mk2"><rect width="100" height="100" fill="#fff"/><circle cx="64" cy="40" r="33" fill="#000"/></mask></defs><circle cx="46" cy="52" r="38" fill="#f6d98a" mask="url(#mk2)"/></svg><div class="top"><div class="brand"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lgG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe5a0"/><stop offset="1" stop-color="#c9962e"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="#0f1b3d" stroke="url(#lgG)" stroke-width="2.5"/><circle cx="32" cy="32" r="25" fill="none" stroke="url(#lgG)" stroke-width=".8" opacity=".6"/><g fill="url(#lgG)"><path d="M33.4 10.5a5.2 5.2 0 1 0 0 9.6a4.2 4.2 0 1 1 0-9.6z"/><rect x="31.4" y="19" width="1.2" height="5"/><path d="M19 42c0-10 6-16 13-16s13 6 13 16z"/><rect x="12" y="30" width="4.6" height="16" rx="1"/><path d="M12 30l2.3-7 2.3 7z"/><rect x="47.4" y="30" width="4.6" height="16" rx="1"/><path d="M47.4 30l2.3-7 2.3 7z"/><rect x="11" y="42" width="42" height="5" rx="1.5"/></g><path d="M28 47v-4.5a4 4 0 0 1 8 0V47z" fill="#0f1b3d"/></svg><div class="bt"><h1 class="serif">গোপীনাথপুর জামে মসজিদ</h1><p>রমজানের পূর্ণাঙ্গ হিসাব</p></div></div><div class="tools"><button id="lng" aria-label="ভাষা">EN</button><button id="thm" aria-label="থিম">🌓</button><button onclick="go(5)" aria-label="সেটিংস">⚙</button></div></div><div class="bis" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><div class="pillw"><div id="net" class="pill"></div></div><svg class="skyline" viewBox="0 0 400 110" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#5a52b8" opacity=".5"><path d="M0 110V84q16-24 32 0v26zM352 110V80q18-26 36 0v30z"/><rect x="62" y="48" width="5" height="62"/><path d="M62 48l2.5-18 2.5 18z"/><rect x="333" y="48" width="5" height="62"/><path d="M333 48l2.5-18 2.5 18z"/></g><g fill="#0f1b3d"><path d="M118 110V76C118 42 156 24 200 24S282 42 282 76V110Z"/><path d="M62 110V92C62 72 84 62 104 62S138 74 138 92V110Z"/><path d="M262 110V92C262 74 276 62 296 62S338 72 338 92V110Z"/><path d="M199.2 24V8h1.6v16z"/><path d="M201.5 3.5a4.5 4.5 0 1 0 0 8.8a3.6 3.6 0 1 1 0-8.8z"/><rect x="26" y="38" width="6" height="72"/><rect x="23" y="56" width="12" height="3.5" rx="1"/><path d="M26 38l3-26 3 26z"/><rect x="368" y="38" width="6" height="72"/><rect x="365" y="56" width="12" height="3.5" rx="1"/><path d="M368 38l3-26 3 26z"/><rect x="84" y="56" width="5" height="54"/><path d="M84 56l2.5-18 2.5 18z"/><rect x="311" y="56" width="5" height="54"/><path d="M311 56l2.5-18 2.5 18z"/><rect y="100" width="400" height="10"/></g><g fill="#f3cf7a" opacity=".9"><circle cx="160" cy="84" r="1.8"/><circle cx="180" cy="84" r="1.8"/><circle cx="200" cy="84" r="1.8"/><circle cx="220" cy="84" r="1.8"/><circle cx="240" cy="84" r="1.8"/><circle cx="104" cy="88" r="1.6"/><circle cx="296" cy="88" r="1.6"/><circle cx="29" cy="70" r="1.4"/><circle cx="371" cy="70" r="1.4"/></g></svg></header>
+<div class="wrap">
+<section class="v on" id="v0">
+<div class="glass reveal"><div class="ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="var(--line)" stroke-width="11"/><circle id="rg" cx="60" cy="60" r="52" fill="none" stroke="url(#gr)" stroke-width="11" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7" style="transition:stroke-dashoffset 1.2s ease"/><defs><linearGradient id="gr"><stop offset="0" stop-color="#f3cf7a"/><stop offset="1" stop-color="#0f8a65"/></linearGradient></defs></svg><b><div><span id="pc"></span><br>ব্যবহৃত</div></b></div>
+<div class="kv"><div><small>ইফতার ফান্ড</small><strong class="in-c" id="sIn"></strong></div><div><small>মোট খরচ</small><strong class="out-c" id="sOut"></strong></div><div><small>অবশিষ্ট</small><strong id="sBal"></strong></div></div></div>
+<div class="qrow" id="qrow"><button data-q="d">＋ দাতা</button><button data-q="e">− খরচ</button><button onclick="go(4);sec('b')">⭐ বুকিং</button><button onclick="go(4);sec('g')">💝 দান</button></div><div id="goal"></div><div id="today"></div><h2 class="serif">খরচের খাত</h2><div class="card" id="donut" style="padding:0 14px"></div><h2 class="serif">শীর্ষ দাতা</h2><div class="card" id="top"></div>
+<h2 class="serif">এক নজরে</h2><div class="card" id="glance"></div>
+<div class="card" style="padding:14px;margin-top:18px;display:flex;align-items:center;gap:12px;justify-content:space-between"><div><b style="font-size:17px">📚 বিগত বছরের হিসাব</b><div class="note" style="font-size:14px">আগের সালের আয়-ব্যয় দেখুন</div></div><button class="btn sm" onclick="go(6)">দেখুন</button></div>
+</section>
+<section class="v" id="v1"><h2 class="serif top" style="margin-top:22px">ইফতারদাতা তালিকা</h2>
+<div class="card" id="hosts"></div>
+<div class="admg"><h2 class="serif">দিন অনুযায়ী ব্যবস্থাপনা (অ্যাডমিন)</h2><p class="note" id="csum" style="margin:0 2px 4px"></p><div class="leg"><span><s style="background:var(--mint)"></s>ইফতার ফান্ড</span><span><s style="background:var(--amber)"></s>কারো ইফতার</span><span><s style="border:1px dashed var(--mut)"></s>ফাঁকা</span></div>
+<div class="grid" id="grid"></div><p class="note">যেকোনো দিনে চাপ দিয়ে ইফতারদাতা, মেনু ও খরচ যোগ বা বদলান।</p></div></section>
+<section class="v" id="v2"><h2 class="serif" style="margin-top:22px">দাতা তালিকা</h2>
+<div class="f" style="display:none"><input id="dn" placeholder="দাতার নাম"><input id="da" type="number" inputmode="numeric" placeholder="টাকা"><button class="btn" id="dadd">দাতা যোগ করুন</button></div>
+<div id="plw"></div><div class="note" id="dsum" style="margin:0 2px 10px"></div><input id="q" placeholder="নাম দিয়ে খুঁজুন" style="margin-bottom:12px"><div class="card" id="dl"></div></section>
+<section class="v" id="v3"><h2 class="serif" style="margin-top:22px">খরচের হিসাব</h2>
+<div class="card" style="padding:14px;display:none"><div class="note" id="eb" style="margin:0 0 10px"></div>
+<div class="f" style="grid-template-columns:1fr 1fr;margin:0"><select id="ec" aria-label="খাত"></select><input id="ea" type="number" inputmode="numeric" placeholder="টাকা"><input id="en" placeholder="বিবরণ / মন্তব্য (ঐচ্ছিক)" style="grid-column:1/-1"><select id="ed" aria-label="কোন দিনের খরচ" style="grid-column:1/-1"></select><button class="btn" id="eadd" style="grid-column:1/-1">খরচ যোগ করুন</button></div></div>
+<h2 class="serif">খাত অনুযায়ী খরচ</h2><div class="card" id="sum"></div>
+<h2 class="serif">খরচের তালিকা</h2><div class="chips" id="chips"></div><div class="card" id="dayx"></div></section>
+<section class="v" id="v4">
+<div class="seg" id="bseg" style="margin-top:18px"><button data-s="b" class="on">🌙 ইফতার বুকিং</button><button data-s="g">💝 দান করুন</button></div>
+<div id="bsec"><h2 class="serif top" style="margin-top:6px">কোন দিন ইফতার দিবেন?</h2>
+<p class="note" id="bsum" style="margin:0 2px 8px"></p>
+<div class="leg" style="margin-top:0"><span><s style="border:1.5px dashed var(--mint)"></s>ফাঁকা (বুক করা যাবে)</span><span><s style="background:var(--amber)"></s>দেওয়া আছে</span><span><s style="background:#7a6cf0"></s>অপেক্ষমান</span></div>
+<div class="grid" id="bgrid"></div>
+<div class="card bform" id="bform" style="padding:14px;margin-top:14px"><div class="bsel" id="bsel"></div>
+<input id="bn" placeholder="আপনার নাম"><input id="bp" type="tel" inputmode="tel" placeholder="ফোন নম্বর"><select id="bd" style="display:none"></select>
+<button class="btn" id="bgo" style="margin-top:12px">বুকিং নিশ্চিত করুন</button><p class="note" id="bmsg" style="margin:8px 2px 0"></p></div>
+<h2 class="serif">বুকিং তালিকা</h2><div class="card" id="bl"></div></div>
+<div id="gsec" style="display:none"><h2 class="serif top" style="margin-top:6px">মসজিদে দান করুন</h2>
+<div class="card" style="padding:6px 14px"><div id="pays"></div><p class="note" style="margin:8px 0 6px">উপরের নম্বরে সেন্ড মানি করার পর নিচের ফর্মটি পূরণ করুন। হাতে দিতে চাইলে কমিটির কাছে জমা দিন।</p></div>
+<h2 class="serif">আমি দান করেছি</h2><div class="card set"><input id="gn" placeholder="আপনার নাম"><label class="chk" style="margin:0"><input type="checkbox" id="gan">নাম প্রকাশ করতে চাই না</label>
+<div class="two"><input id="ga" type="number" inputmode="numeric" placeholder="টাকা"><select id="gm"><option>বিকাশ</option><option>নগদ</option><option>ব্যাংক</option><option>হাতে নগদ</option></select></div>
+<input id="gt" placeholder="ট্রানজেকশন আইডি / শেষ ৪ ডিজিট (ঐচ্ছিক)"><button class="btn" id="ggo">দানের তথ্য জমা দিন</button><p class="note" id="gmsg" style="margin:0"></p></div></div></section><section class="v" id="v5"><div style="display:flex;justify-content:space-between;align-items:center"><h2 class="serif" style="margin-top:22px">সেটিংস</h2><button class="x" onclick="go(0)">← ফিরে যান</button></div><h2 class="serif">রং ও চেহারা</h2><div class="card" style="padding:16px"><div class="lbl">অ্যাকসেন্ট কালার</div><div class="sw" id="sw"><button style="background:linear-gradient(135deg,#5b6cff,#1aa3ff)" aria-label="নীল"></button><button style="background:linear-gradient(135deg,#ff5e7e,#ff9a4d)" aria-label="কমলা"></button><button style="background:linear-gradient(135deg,#00c896,#00b4f0)" aria-label="সবুজ"></button><button style="background:linear-gradient(135deg,#a855f7,#ec4899)" aria-label="বেগুনি"></button></div>
+<div class="lbl" style="margin-top:18px">থিম</div><div class="seg" id="thseg"><button data-v="light">☀️ লাইট</button><button data-v="dark">🌙 ডার্ক</button></div>
+<div class="lbl" style="margin-top:18px">লেখার সাইজ</div><div class="seg" id="txseg"><button data-v="0">সাধারণ</button><button data-v="1">বড়</button><button data-v="2">অতি বড়</button></div></div>
+<h2 class="serif">অ্যাপ ইনস্টল</h2><div class="card" style="padding:16px"><div id="instS" class="note" style="font-size:15px;margin:0 0 10px">ফোনের হোম স্ক্রিনে অ্যাপ হিসেবে রাখুন — দ্রুত খুলবে, অফলাইনেও চলবে।</div><button class="btn" id="instBtn">📲 অ্যাপ ইনস্টল করুন</button></div><h2 class="serif">সাইন ইন</h2><div class="card acc" style="padding:16px"><div id="auS" class="note" style="font-size:15px">সাইন ইন করা নেই</div><button class="btn sm gbtn" id="agg"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.4-.8-3-.8-4.7s.3-3.2.8-4.7l-7.9-6.1C.9 16.4 0 20.1 0 24s.9 7.6 2.6 10.8l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg><span>Google দিয়ে সাইন ইন</span></button><button class="btn sm" id="aout" style="width:100%;margin-top:10px;background:var(--line)!important;color:var(--ink)!important;box-shadow:none!important;display:none">সাইন আউট</button></div>
+<h2 class="serif">শেয়ার ও PDF রিপোর্ট</h2><div class="card" style="padding:16px"><div><button class="btn" id="share">হিসাব শেয়ার করুন</button><button class="btn" id="dl2" style="margin-top:12px">পিডিএফ রিপোর্ট ডাউনলোড (A4)</button></div>
+</div>
+<h2 class="serif">বিগত বছরের হিসাব</h2><div class="card" style="padding:16px"><div class="note" style="font-size:15px;margin-bottom:12px">আগের বছরের PDF বা Excel আপলোড করে হিসাব যোগ করুন (শুধু অ্যাডমিন)।</div><button class="btn adm7" style="width:100%" onclick="PYnew()">✍️ বিগত বছরের হিসাব তুলুন (ফর্ম)</button><button class="btn adm7" style="width:100%;margin-top:10px" onclick="go(6)">📄 PDF/Excel থেকে পড়ুন</button></div>
+<h2 class="serif">QR কোড</h2><div class="card" style="padding:14px"><label for="lk" style="font-size:13px;color:var(--mut)">অ্যাপের লিংক (এখানে আসল লিংক বসান)</label><input id="lk" placeholder="https://...">
+<div style="display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:14px;text-align:center"><div><div id="qa" style="background:#fff;padding:8px;border-radius:10px;display:inline-block"></div><div class="note">স্ক্যান করে আজকের ইফতার দেখুন</div></div><div><div id="qb" style="background:#fff;padding:8px;border-radius:10px;display:inline-block"></div><div class="note">স্ক্যান করে ইফতার বুকিং দিন</div></div><div><div id="qq" style="background:#fff;padding:8px;border-radius:10px;display:inline-block"></div><div class="note">স্ক্যান করে দান করুন</div></div></div></div>
+<h2 class="serif">রমজান শুরুর তারিখ</h2><div class="card" style="padding:14px"><input id="st" type="date" aria-label="রমজান শুরুর তারিখ"></div>
+<h2 class="serif">ইফতারের সময় ও লক্ষ্য</h2><div class="card set"><label for="it">ইফতারের সময় (কাউন্টডাউনের জন্য)</label><input id="it" type="time"><label for="gl">সংগ্রহের লক্ষ্যমাত্রা (টাকা)</label><input id="gl" type="number" inputmode="numeric" placeholder="যেমন: ৫০০০০"></div>
+<h2 class="serif">দান গ্রহণের নম্বর</h2><div class="card set"><label for="pbk">বিকাশ নম্বর</label><input id="pbk" type="tel" inputmode="tel"><label for="png">নগদ নম্বর</label><input id="png" type="tel" inputmode="tel"><label for="pot">অন্যান্য (ব্যাংক হিসাব ইত্যাদি)</label><input id="pot"></div><h2 class="serif">নিরাপত্তা</h2><div class="card set"><label for="pn">অ্যাডমিন পিন (খালি রাখলে পিন বন্ধ)</label><input id="pn" type="password" inputmode="numeric" placeholder="নতুন পিন"><div class="two"><button class="btn sm" id="pset" style="width:100%">পিন সেট করুন</button><button class="btn sm" id="plock" style="width:100%;background:var(--line);color:var(--ink)">লক / আনলক</button></div></div>
+<h2 class="serif">ব্যাকআপ ও এক্সপোর্ট</h2><div class="card set"><div class="two"><button class="btn sm" id="bk" style="width:100%">JSON ব্যাকআপ</button><button class="btn sm" id="csv" style="width:100%">Excel (CSV)</button></div><label for="rs">ব্যাকআপ থেকে রিস্টোর</label><input id="rs" type="file" accept=".json,application/json"></div></section>
+</div>
+<section class="v" id="v6"><div style="display:flex;justify-content:space-between;align-items:center"><h2 class="serif" style="margin-top:22px">বিগত বছরের হিসাব</h2><button class="x" onclick="go(0)">← ফিরে যান</button></div>
+<div class="card" style="padding:16px"><div class="lbl">সাল বেছে নিন</div><select id="pys" style="width:100%;font-size:18px;padding:12px;border-radius:14px"></select><button class="btn" id="pyd" style="width:100%;margin-top:14px;display:none">📄 এই সালের PDF ডাউনলোড</button></div><div id="pyb"></div>
+<div id="pyup"><h2 class="serif">পুরোনো হিসাব আপলোড (অ্যাডমিন)</h2><div class="card" style="padding:16px"><div class="note" style="font-size:15px;margin-bottom:10px">আগের বছরের হিসাবের PDF বা Excel (.xlsx/.xls/.csv) ফাইল দিন। অ্যাপ নিজে পড়ে দাতা ও খরচ আলাদা করে দেখাবে; আপনি মিলিয়ে নিয়ে সংরক্ষণ করবেন। PDF-এ লেখা সিলেক্ট করা যেতে হবে (ছবি/স্ক্যান নয়)।</div><input id="pyf" type="file" accept="application/pdf,.pdf,.xlsx,.xls,.csv"><label for="pyy" style="display:block;margin-top:10px">সাল</label><input id="pyy" type="number" inputmode="numeric" placeholder="যেমন: 2025"><div id="pyp"></div></div></div></section>
+<section class="v" id="v7"><div style="display:flex;justify-content:space-between;align-items:center"><h2 class="serif" style="margin-top:22px">বিগত বছরের হিসাব তুলুন</h2><button class="x" onclick="go(6)">← ফিরে যান</button></div>
+<div class="card acc" style="padding:16px"><div class="lbl">সাল ও শুরুর তারিখ</div><input id="e7y" type="number" inputmode="numeric" placeholder="সাল, যেমন: 2025"><label for="e7s" style="display:block;margin-top:10px">রমজান শুরুর তারিখ</label><input id="e7s" type="date"><label for="e7l" style="display:block;margin-top:10px">আগে সংরক্ষিত সাল ঠিক করতে চাইলে</label><div class="two"><select id="e7l"></select><button class="btn sm" id="e7lb" type="button" style="width:100%">লোড করুন</button></div></div>
+<h2 class="serif">রমজানের ৩০ দিন — চাপ দিয়ে ইফতারদাতা বসান</h2><div class="leg"><span><s style="background:var(--amber)"></s>কারো ইফতার</span><span><s style="background:var(--mint)"></s>ইফতার ফান্ড</span><span><s style="border:1px dashed var(--mut)"></s>ফাঁকা</span></div><div class="grid" id="e7g"></div>
+<div class="card acc" id="e7p" style="padding:16px;margin-top:12px;display:none"><div class="lbl" id="e7pt"></div><input id="e7w" placeholder="ইফতারদাতার নাম (ফাঁকা রাখলে কেউ নেই)"><select id="e7k" style="margin-top:8px"><option value="h">কারো ইফতার</option><option value="m">ইফতার ফান্ড</option></select><input id="e7m" placeholder="মেনু (ঐচ্ছিক)"><input id="e7c" type="number" inputmode="numeric" placeholder="কত জনের ইফতার (ঐচ্ছিক)"></div>
+<h2 class="serif">দাতা যোগ করুন</h2><div class="card acc" style="padding:16px"><input id="e7dn" placeholder="দাতার নাম"><input id="e7da" type="number" inputmode="numeric" placeholder="টাকা"><button class="btn" id="e7db" type="button" style="width:100%;margin-top:10px">দাতা যোগ করুন</button></div><div class="card" id="e7dl" style="margin-top:10px"></div>
+<h2 class="serif">খরচ যোগ করুন</h2><div class="card acc" style="padding:16px"><select id="e7ec"></select><input id="e7ea" type="number" inputmode="numeric" placeholder="টাকা"><input id="e7en" placeholder="বিবরণ (ঐচ্ছিক)"><select id="e7ed" style="margin-top:8px"></select><button class="btn" id="e7eb" type="button" style="width:100%;margin-top:10px">খরচ যোগ করুন</button></div><div class="card" id="e7el" style="margin-top:10px"></div>
+<button class="btn" id="e7sv" type="button" style="width:100%;margin:22px 0 10px">✅ এই সালের হিসাব সংরক্ষণ করুন</button></section>
+<nav class="tab"><div>
+<button class="on" data-t="0"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>হোম</button>
+<button data-t="1"><svg viewBox="0 0 24 24"><path d="M4 12h16a8 8 0 0 1-16 0zM9 8c0-1.5 1-2 1-3.5M14 8c0-1.5 1-2 1-3.5"/></svg>ইফতারদাতা</button>
+<button data-t="4"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .7-4.4 4.1 1.2 6L12 16.4 6.6 19.4l1.2-6L3.4 9.3l6-.7z"/></svg>বুকিং ও দান</button>
+<button data-t="2"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 5a3.5 3.5 0 0 1 0 7M18 14c2 .7 3.5 2.5 3.5 5"/></svg>দাতা</button>
+<button data-t="3"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg>খরচ</button></div></nav>
+<dialog id="dlg"><form method="dialog" id="df"><h3 class="serif" id="dt"></h3><div id="dinfo"></div>
+<label for="x1">ইফতারদাতার নাম</label><input id="x1"><label for="x2">ধরন</label><select id="x2"><option value="h">কারো ইফতার</option><option value="m">ইফতার ফান্ড</option></select><label for="x3">মেনু</label><input id="x3" placeholder="যেমন: খিচুড়ি, বেগুনি, জিলাপি"><label for="x4">কত জনের ইফতার</label><input id="x4" type="number" inputmode="numeric"><button type="button" class="btn" id="xw" style="margin-top:12px;background:var(--mintBg);color:var(--mint)">হোয়াটসঅ্যাপে রিমাইন্ডার</button>
+<button type="button" class="btn" id="dx" style="margin-top:14px;background:var(--line);color:var(--ink)">এই দিনে খরচ যোগ করুন</button>
+<div style="display:flex;gap:10px;margin-top:12px"><button class="btn" value="ok">সংরক্ষণ করুন</button><button class="btn" value="x" style="background:var(--line);color:var(--ink);width:40%">বাদ দিন</button></div></form></dialog>
+<div id="instChip" role="region" aria-label="ইনস্টল"><button class="go" id="instGo">📲 অ্যাপ ইনস্টল করুন</button><button class="no" id="instNo" aria-label="বন্ধ করুন">✕</button></div>
+<dialog id="iosDlg"><h3 class="serif">হোম স্ক্রিনে যোগ করুন</h3><div class="note" style="margin:6px 0">আইফোনে Safari ব্রাউজারে এভাবে করুন:</div><ol><li>স্ক্রিনের নিচে <span class="k">শেয়ার ⎙</span> বাটনে চাপুন (Chrome হলে উপরের ডানে)</li><li>নিচে নামিয়ে <span class="k">হোম স্ক্রিনে যোগ করুন</span> (Add to Home Screen) চাপুন</li><li>উপরের ডানে <span class="k">যোগ করুন</span> (Add) চাপুন</li></ol><div class="note" style="margin:6px 0">এরপর হোম স্ক্রিনের আইকন থেকে অ্যাপ খুলুন।</div><form method="dialog"><button class="btn" value="ok">বুঝেছি</button></form></dialog>
+<button class="fab" id="fab" aria-label="যোগ করুন">＋</button><div id="ts" role="status"></div>
+<dialog id="qdg"><div class="seg" id="qseg"><button data-k="d">দাতা</button><button data-k="e">খরচ</button></div><h3 class="serif" id="qt"></h3>
+<label for="qn" id="qnl">নাম</label><input id="qn"><label for="qamt" id="qal">টাকা</label><input id="qamt" type="number" inputmode="numeric">
+<div class="qd-d"><label for="qm">মাধ্যম</label><select id="qm"></select><label class="chk"><input type="checkbox" id="qan">নাম প্রকাশে অনিচ্ছুক (বেনামী)</label></div>
+<div class="qd-e"><select id="qc" style="display:none"></select><label id="qil">🛒 বাজার — কেনা জিনিসের তালিকা</label><div id="qitems"></div><button type="button" class="x" id="qadd" style="margin-top:8px">＋ জিনিস যোগ করুন</button><div id="qextw"><label style="margin-top:18px">অন্যান্য খরচ — ওই দিন থাকলে টিক দিন</label><div id="qext"></div></div><label>কোন দিনের খরচ</label><div class="note" id="qdaytxt" style="margin:0 0 6px;font-size:15px;color:var(--ink)"></div><button type="button" class="x" id="qother">অন্য দিনের হিসাব লিখুন</button><select id="qy" style="display:none"></select></div>
+<label for="qdt">তারিখ</label><input id="qdt" type="date">
+<div style="display:flex;gap:10px;margin-top:16px"><button class="btn" id="qsave">সংরক্ষণ করুন</button><button class="btn" id="qdel" style="background:#f3d3d3;color:#8a1c1c;width:34%">মুছুন</button><button class="btn" style="background:var(--line);color:var(--ink);width:34%" onclick="$('qdg').close()">বাদ</button></div></dialog>
+<dialog id="cf"><form method="dialog"><p id="cfm" style="font-size:17px;margin:4px 0 10px"></p><input id="cfi" type="password" inputmode="numeric" style="display:none"><div style="display:flex;gap:10px;margin-top:14px"><button class="btn" value="ok">হ্যাঁ</button><button class="btn" value="no" style="background:var(--line);color:var(--ink)">না</button></div></form></dialog>
+<div id="rep" aria-hidden="true"></div>
+<script src="firebase-config.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+const CATS=["বাজার","বাবুর্চি","ড্যাগ ও পাত্র ভাড়া","কাঠ ও জ্বালানি","ভাড়া","অন্যান্য"];
+let S={days:Array.from({length:30},()=>({w:"",k:"h"})),don:[],exp:[],cfg:{start:"2026-02-19",link:""},book:[]},cur=0,first=true,DB=null,adm=true;
+try{const x=localStorage.getItem("iftar26b");if(x)S=Object.assign(S,JSON.parse(x))}catch(e){}
+let BK=S.book;
+const save=()=>{try{localStorage.setItem("iftar26b",JSON.stringify(S))}catch(e){}};
+const LANG=(()=>{try{return localStorage.getItem("iftar-lang")||"bn"}catch(e){return"bn"}})(),LOCL=LANG=="en"?"en-US":"bn-BD";
+const $=i=>document.getElementById(i),bn=n=>Number(n).toLocaleString(LOCL),tk=n=>"৳"+bn(n);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const calm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+const sm=a=>a.reduce((s,x)=>s+x.a,0),tot=()=>sm(S.don),isF=x=>{const d=S.days[x.day];return !(d&&d.w&&d.k=="h")},spent=()=>sm(S.exp.filter(isF)),dayExp=i=>S.exp.filter(x=>x.day==i);
+const balAfter=i=>tot()-sm(S.exp.filter(x=>isF(x)&&((x.day>=0&&x.day<=i)||(i==S.days.length-1&&x.day<0))));
+const fmt=i=>{const[y,m,d]=S.cfg.start.split("-");return new Date(+y,m-1,+d+i,12).toLocaleDateString(LOCL,{weekday:"long",day:"numeric",month:"long"})};
+(function(){let h="";for(let i=0;i<46;i++){const x=(i*73)%100,y=(i*37)%70,r=.5+(i%4)*.35;h+=`<circle cx="${x}%" cy="${y}%" r="${r}" fill="#fff" opacity="${.25+(i%5)*.12}"/>`}$("sky").innerHTML=h})();
+function cnt(el,v,pre){if(!first||calm){el.textContent=pre+bn(v);return}const t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/900);el.textContent=pre+bn(Math.round(v*(1-Math.pow(1-p,3))));if(p<1)requestAnimationFrame(f)})(t0)}
+function go(i){document.querySelectorAll(".tab button").forEach(e=>e.classList.toggle("on",e.dataset.t==i));document.querySelectorAll(".v").forEach((s,k)=>s.classList.toggle("on",k==i));scrollTo(0,0)}
+function render(){
+const inn=tot(),out=spent();
+cnt($("sIn"),inn,"৳");cnt($("sOut"),out,"৳");cnt($("sBal"),inn-out,"৳");
+const pct=inn?Math.min(100,Math.round(out/inn*100)):0;$("pc").textContent=bn(pct)+"%";
+setTimeout(()=>$("rg").style.strokeDashoffset=326.7*(1-pct/100),60);
+const max=Math.max(1,...S.don.map(x=>x.a)),by=CATS.map(c=>[c,sm(S.exp.filter(x=>isF(x)&&x.c==c))]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]);
+$("top").innerHTML=[...S.don].sort((a,b)=>b.a-a.a).slice(0,5).map(x=>`<div class="row"><div class="av">${esc(x.n[0])}</div><div class="nm"><span>${esc(x.n)}</span><div class="bar"><i style="width:${x.a/max*100}%"></i></div></div><div class="amt in-c">${tk(x.a)}</div></div>`).join("")||'<div class="row nm">এখনো কোনো দাতা নেই। "দাতা" ট্যাবে যোগ করুন।</div>';
+$("glance").innerHTML=[["দাতা",bn(S.don.length)+" জন"],["খরচের এন্ট্রি",bn(S.exp.length)+" টি"],["সবচেয়ে বেশি খরচের খাত",by[0]?by[0][0]:"–"]].map(([a,b])=>`<div class="row"><span class="nm">${a}</span><b>${b}</b></div>`).join("");
+$("grid").innerHTML=S.days.map((d,i)=>{const c=sm(dayExp(i));return `<button class="d ${d.w?d.k:c?"m":"e"}" data-i="${i}"><i>${bn(i+1)}</i><small>${d.w?esc(d.w):"ফাঁকা"}</small><em>${c?tk(c):d.w?"নিজ খরচে":"+"}</em></button>`}).join("");
+const q=$("q").value.trim();
+$("dl").innerHTML=S.don.map((x,i)=>[x,i]).filter(([x])=>x.n.includes(q)).map(([x,i])=>`<div class="row"><div class="av">${esc(x.n[0])}</div><div class="nm"><span>${esc(x.n)}</span></div><div class="amt in-c">${tk(x.a)}</div><button class="x" data-del="${i}" aria-label="মুছুন">✕</button></div>`).join("")||'<div class="row nm">কোনো দাতা নেই।</div>';
+$("eb").innerHTML=`ফান্ডে এখন <b>${tk(inn-out)}</b> · ইফতার ফান্ডের দিনের খরচ ফান্ড থেকে কাটা যাবে; ইফতারদাতার দিনের খরচ কাটা যাবে না।`;
+$("sum").innerHTML=by.map(([n,v])=>`<div class="row" style="display:block"><div style="display:flex;justify-content:space-between"><span>${esc(n)}</span><b class="out-c">${tk(v)}</b></div><div class="bar"><i style="width:${out?v/out*100:0}%"></i></div></div>`).join("")+(by.length?`<div class="row"><b class="nm">মোট খরচ</b><b>${tk(out)}</b></div>`:'<div class="row nm">এখনো কোনো খরচ নেই।</div>');
+$("dayx").innerHTML=S.exp.map((x,i)=>[x,i]).reverse().map(([x,i])=>`<div class="row"><div class="av" style="width:34px;height:34px">${x.day>=0?bn(x.day+1):"–"}</div><div class="nm"><span>${esc(x.c)}${x.n?" · "+esc(x.n):""}</span><small style="color:var(--mut)">${x.day>=0?fmt(x.day):"দিন ছাড়া"}${isF(x)?"":" · ইফতারদাতার খরচ (ফান্ড থেকে কাটা হয়নি)"}</small></div><div class="amt out-c">−${tk(x.a)}</div><button class="x" data-xd="${i}" aria-label="মুছুন">✕</button></div>`).join("")||'<div class="row nm">এখনো কোনো খরচ নেই।</div>';
+rb();first=false}
+function info(){const ex=dayExp(cur);$("dinfo").innerHTML='<div class="note" style="margin:2px 0 6px"><b>'+fmt(cur)+'</b><br>এই দিনের খরচ <b>'+tk(sm(ex))+'</b> · ফান্ডে থাকল <b>'+tk(balAfter(cur))+'</b></div>'+ex.map(x=>'<div class="row" style="padding:6px 0"><span class="nm">'+esc(x.c)+(x.n?" · "+esc(x.n):"")+'</span><b>'+tk(x.a)+'</b></div>').join("")}
+function qr(){const b=(S.cfg.link||location.href).split("#")[0];[["qa",b+"#today"],["qb",b+"#book"]].forEach(([id,t])=>{const el=$(id);el.innerHTML="";if(typeof QRCode!="undefined"){try{new QRCode(el,{text:t,width:132,height:132})}catch(e){}}})}
+function rb(){
+const c=S.cfg,taken=new Set(S.days.map((d,i)=>d.w?i:-1).concat(BK.map(b=>b.day)));
+$("bd").innerHTML=S.days.map((d,i)=>taken.has(i)?"":`<option value="${i}">${bn(i+1)} রমজান · ${fmt(i)}</option>`).join("")||'<option value="">সব দিন বুক হয়ে গেছে</option>';
+const ec=$("ec").value,ed=$("ed").value;$("ec").innerHTML=CATS.map(x=>`<option>${x}</option>`).join("");$("ed").innerHTML='<option value="-1">কোন দিনের নয়</option>'+S.days.map((d,i)=>`<option value="${i}">${bn(i+1)} রমজান · ${fmt(i)}</option>`).join("");if(ec)$("ec").value=ec;if(ed)$("ed").value=ed;
+const hosts=[...S.days.map((d,i)=>({i,n:d.w,a:sm(dayExp(i)),h:d.k=="h"&&d.w})).filter(x=>x.h),...BK.filter(b=>b.st=="ok").map(b=>({i:b.day,n:b.n,a:0}))].sort((a,b)=>a.i-b.i);
+$("hosts").innerHTML=hosts.map(x=>`<div class="row"><div class="av">${bn(x.i+1)}</div><div class="nm"><span>${esc(x.n)}</span><small style="color:var(--mut)">${bn(x.i+1)} রমজান · ${fmt(x.i)}</small></div><div class="amt out-c">${x.a?tk(x.a):"নিজ খরচে"}</div></div>`).join("")||'<div class="row nm">এখনো কেউ নেই।</div>';
+$("bl").innerHTML=[...BK].sort((a,b)=>a.day-b.day).map(b=>`<div class="row"><div class="av">${bn(b.day+1)}</div><div class="nm"><span>${esc(b.n)} <span class="bd ${b.st=="ok"?"ok":""}">${b.st=="ok"?"নিশ্চিত":"অপেক্ষমান"}</span></span><small style="color:var(--mut)">${fmt(b.day)}${adm?" · "+esc(b.p):""}</small></div>${adm?`${b.st=="ok"?"":`<button class="x" data-ok="${b.id}">নিশ্চিত</button>`}<button class="x" data-rm="${b.id}" aria-label="মুছুন">✕</button>`:""}</div>`).join("")||'<div class="row nm">এখনো কোনো বুকিং নেই।</div>';
+const t0=new Date(),s=c.start.split("-"),ti=Math.round((new Date(t0.getFullYear(),t0.getMonth(),t0.getDate(),12)-new Date(+s[0],s[1]-1,+s[2],12))/864e5),d=S.days[ti],bk=BK.find(b=>b.day==ti&&b.st=="ok"),who=d&&(d.w||(bk&&bk.n)),ex=d?dayExp(ti):[];
+$("today").innerHTML='<h2 class="serif">আজকের ইফতার</h2><div class="card" style="padding:14px">'+(d?`<div style="font-weight:700">${bn(ti+1)} রমজান · ${fmt(ti)}</div><div style="margin-top:6px">${who?"ইফতার দিচ্ছেন: <b>"+esc(who)+"</b>":"আজকের ইফতারদাতা এখনো ঠিক হয়নি"}</div>`+(ex.length?'<div class="note">'+ex.map(x=>esc(x.c)+(x.n?" "+esc(x.n):"")+" "+tk(x.a)).join(" · ")+`</div><div class="note">খরচ ${tk(sm(ex))} · ফান্ডে ${tk(balAfter(ti))}</div>`:""):`<div class="note" style="margin:0">আজ রমজানের দিন নয়। রমজান ২০২৬: ${fmt(0)} থেকে ${fmt(29)}।</div>`)+'<button class="btn sm" style="margin-top:12px" onclick="go(4)">ইফতার বুকিং দিন</button></div>'}
+async function put(op,id,data){if(DB){const c=DB.collection("bookings");if(op=="add")await c.add(data);else if(op=="ok")await c.doc(id).update({st:"ok"});else await c.doc(id).delete()}else{if(op=="add")S.book.push({id:"l"+Date.now(),...data});else if(op=="ok")S.book.find(b=>b.id==id).st="ok";else S.book=S.book.filter(b=>b.id!=id);BK=S.book;save();rb()}}
+function repHtml(){const inn=tot(),out=spent(),by=CATS.map(c=>[c,sm(S.exp.filter(x=>isF(x)&&x.c==c))]).filter(x=>x[1]),now=new Date().toLocaleDateString(LOCL,{day:"numeric",month:"long",year:"numeric"}),hosts=S.days.map((d,i)=>[d,i]).filter(([d])=>d.w);
+const row=(a,b)=>`<div class="rr"><span>${a}</span><b>${b}</b></div>`;
+return `<div class="rh"><div><div class="rt">গোপীনাথপুর জামে মসজিদ</div><div class="rs">রমজানের পূর্ণাঙ্গ হিসাব · প্রতিবেদন ২০২৬</div></div><div class="rs">তারিখ: ${now}</div></div>
+<div class="r3"><div>ইফতার ফান্ড<b>${tk(inn)}</b></div><div>মোট খরচ<b>${tk(out)}</b></div><div>অবশিষ্ট<b>${tk(inn-out)}</b></div></div>
+<div class="r2"><div><h4>খাত অনুযায়ী খরচ</h4>${by.map(([c,v])=>row(esc(c),tk(v))).join("")||"<i>কোনো খরচ নেই</i>"}${row("মোট খরচ",tk(out))}<h4>ইফতারদাতা</h4>${hosts.map(([d,i])=>row(bn(i+1)+" রমজান · "+esc(d.w),tk(sm(dayExp(i))))).join("")||"<i>–</i>"}</div>
+<div><h4>দাতা তালিকা (${bn(S.don.length)} জন)</h4>${S.don.map(x=>row(esc(x.an?"বেনামী দাতা":x.n),tk(x.a))).join("")||"<i>–</i>"}${row("ইফতার ফান্ড",tk(inn))}</div></div>
+<h4>খরচের বিবরণ</h4><div class="rc">${S.exp.map(x=>row((x.day>=0?bn(x.day+1)+" রমজান · ":"")+esc(x.c)+(x.n?" · "+esc(x.n):""),tk(x.a))).join("")||"<i>–</i>"}</div>
+<div class="rg"><span>কোষাধ্যক্ষ</span><span>সভাপতি</span></div>`}
+$("dl2").onclick=async()=>{const b=$("dl2"),t=b.textContent;b.textContent="পিডিএফ তৈরি হচ্ছে…";try{const r=$("rep");r.innerHTML=repHtml();await document.fonts.ready;for(let f=13;f>=6;f-=.5){r.style.setProperty("--fs",f+"px");if(r.scrollHeight<=1123)break}const cv=await html2canvas(r,{scale:2,backgroundColor:"#fff",width:794,height:1123,windowWidth:794});const P=new window.jspdf.jsPDF({unit:"mm",format:"a4"});P.addImage(cv.toDataURL("image/jpeg",.95),"JPEG",0,0,210,297);const bl=P.output("blob"),fn="iftar-fund-2026-report.pdf",fl=new File([bl],fn,{type:"application/pdf"});if(navigator.canShare&&navigator.canShare({files:[fl]})){try{await navigator.share({files:[fl]})}catch(e){}}else{const a=document.createElement("a");a.href=URL.createObjectURL(bl);a.download=fn;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},4000)}}catch(e){b.textContent="পিডিএফ হয়নি, আবার চেষ্টা করুন";setTimeout(()=>b.textContent=t,2500);return}b.textContent=t};
+document.querySelectorAll(".tab button").forEach(b=>b.onclick=()=>go(+b.dataset.t));
+const hs=()=>{if(location.hash=="#book")go(4);else if(location.hash=="#today")go(0)};addEventListener("hashchange",hs);
+$("grid").onclick=e=>{const b=e.target.closest(".d");if(!b)return;cur=+b.dataset.i;const d=S.days[cur];$("dt").textContent=bn(cur+1)+" রমজান";$("x1").value=d.w;$("x2").value=d.k||"h";info();$("dlg").showModal()};
+$("df").onsubmit=e=>{if(e.submitter&&e.submitter.value=="ok"){S.days[cur]={w:$("x1").value.trim(),k:$("x2").value};save();render()}};
+$("dx").onclick=()=>{$("dlg").close();$("ed").value=String(cur);go(3)};
+$("eadd").onclick=()=>{const a=+$("ea").value,c=$("ec").value,n=$("en").value.trim(),day=+$("ed").value;if(!(a>0))return;if(isF({day})&&a>tot()-spent()&&!confirm("ফান্ডে এত টাকা নেই। তবু খরচ যোগ করবেন?"))return;S.exp.push({c,n,a,day});$("ea").value=$("en").value="";save();render()};
+$("dayx").onclick=e=>{const i=e.target.dataset.xd;if(i!==undefined&&confirm("এই খরচ মুছবেন?")){S.exp.splice(+i,1);save();render()}};
+$("dadd").onclick=()=>{const n=$("dn").value.trim(),a=+$("da").value;if(!n||!(a>0))return;S.don.push({n,a});$("dn").value=$("da").value="";save();render()};
+$("dl").onclick=e=>{const i=e.target.dataset.del;if(i!==undefined&&confirm("এই দাতা মুছবেন?")){S.don.splice(+i,1);save();render()}};
+$("q").oninput=render;
+$("share").onclick=async()=>{const t=`গোপীনাথপুর জামে মসজিদ\nরমজানের পূর্ণাঙ্গ হিসাব\nইফতার ফান্ড: ${tk(tot())}\nমোট খরচ: ${tk(spent())}\nঅবশিষ্ট: ${tk(tot()-spent())}`;try{if(navigator.share)await navigator.share({text:trS(t)});else{await navigator.clipboard.writeText(trS(t));$("share").textContent="কপি হয়েছে"}}catch(e){}};
+$("bgo").onclick=async()=>{const n=$("bn").value.trim(),p=$("bp").value.trim(),day=parseInt($("bd").value);if(!n||!/^[0-9০-৯+ -]{8,}$/.test(p)||isNaN(day)){$("bmsg").textContent="নাম, সঠিক ফোন নম্বর আর একটি দিন বেছে নিন।";return}try{await put("add",0,{n,p,day,st:"w"});$("bmsg").textContent="বুকিং নেওয়া হয়েছে ("+bn(day+1)+" রমজান)। কমিটি নিশ্চিত করবে।";$("bn").value=$("bp").value=""}catch(e){$("bmsg").textContent="বুকিং সেভ হয়নি। আবার চেষ্টা করুন।"}};
+$("bl").onclick=e=>{const o=e.target.dataset.ok,r=e.target.dataset.rm;if(o)put("ok",o).catch(()=>{});if(r&&confirm("এই বুকিং মুছবেন?"))put("rm",r).catch(()=>{})};
+$("lk").value=S.cfg.link;$("lk").oninput=()=>{S.cfg.link=$("lk").value.trim();save();qr()};
+$("st").value=S.cfg.start;$("st").onchange=()=>{if($("st").value){S.cfg.start=$("st").value;save();render()}};
+/* ===== Firebase: ডাটাবেস + Google সাইন ইন ===== */
+(function(){
+const cfg=window.FIREBASE_CONFIG,ok=cfg&&cfg.apiKey&&!/^PASTE/i.test(cfg.apiKey)&&typeof firebase!="undefined";
+const gE=document.getElementById("agg"),oE=document.getElementById("aout"),sE=document.getElementById("auS");
+function ui(u){if(!ok){sE.textContent="Firebase সেট করা হয়নি — শুধু এই ফোনে সংরক্ষিত হচ্ছে";gE.style.display="none";return}
+ gE.style.display=u?"none":"";oE.style.display=u?"":"none";
+ sE.textContent=u?("সাইন ইন: "+(u.email||u.displayName)+(adm?" · অ্যাডমিন ✓":" · শুধু দেখার অনুমতি")):"সাইন ইন করা নেই (শুধু দেখতে পারবেন)"}
+setTimeout(function init(){
+ if(!ok){adm=true;ui(null);return}
+ let app;try{app=firebase.apps.length?firebase.app():firebase.initializeApp(cfg)}catch(e){adm=false;ui(null);return}
+ DB=firebase.firestore();const au=firebase.auth();au.useDeviceLanguage();
+ adm=false;startSync();BK=[];
+ DB.collection("bookings").onSnapshot(sn=>{BK=sn.docs.map(x=>({id:x.id,...x.data()}));rb()},()=>{});
+ au.onAuthStateChanged(async u=>{
+  adm=false;
+  if(u&&u.email){const k="iftar-adm-"+u.uid;
+   try{const d=await DB.collection("admins").doc(u.email.toLowerCase()).get();adm=d.exists;try{localStorage.setItem(k,adm?"1":"0")}catch(e){}}
+   catch(e){try{adm=localStorage.getItem(k)=="1"}catch(x){}}}
+  ui(u);try{push();stat();render()}catch(e){}});
+ gE.onclick=async()=>{const p=new firebase.auth.GoogleAuthProvider();p.setCustomParameters({prompt:"select_account"});
+  try{await au.signInWithPopup(p)}catch(e){
+   if(e&&/popup-blocked|operation-not-supported|cancelled-popup/.test(e.code||"")){try{await au.signInWithRedirect(p)}catch(x){toast("সাইন ইন হয়নি")}}
+   else if(e&&e.code!="auth/popup-closed-by-user")toast("সাইন ইন হয়নি: "+(e.code||"").replace("auth/",""))}};
+ oE.onclick=async()=>{try{await au.signOut();unl=false;toast("সাইন আউট হয়েছে")}catch(e){}};
+},0);
+ui(null);
+})();
+/* ===== v2: অফলাইন-ফার্স্ট, সিঙ্ক, এডিট, সেটিংস ===== */
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const COL={d:"donors",e:"expenses"},arr=c=>c=="donors"?S.don:c=="pledges"?S.pl:S.exp;
+const MET=["হাতে নগদ","বিকাশ","নগদ","ব্যাংক"],ICON={"বাজার":"🛒","বাবুর্চি":"👨‍🍳","ড্যাগ ও পাত্র ভাড়া":"🍲","কাঠ ও জ্বালানি":"🔥","ভাড়া":"🚐","অন্যান্য":"📦"};
+let F="",unl=false,cv=0,Q={k:"d",id:null},pushing=false;
+S.q=S.q||{};S.pl=S.pl||[];
+[["donors",S.don],["expenses",S.exp]].forEach(([c,a])=>a.forEach(x=>{if(!x.id){x.id=uid();x.ts=Date.now();x.s=0;S.q[c+"/"+x.id]={c,id:x.id,op:"set"}}}));save();
+S.exp.forEach(x=>{const m={"বখশিস":"অন্যান্য"}[x.c];if(m){x.c=m;x.s=0;S.q["expenses/"+x.id]={c:"expenses",id:x.id,op:"set"}}});save();
+let VIS=/^#(book|donate)$/.test(location.hash),BS=null;document.body.classList.toggle("vis",VIS);
+const pub=()=>{const{pin,...r}=S.cfg;return r};
+const todayS=()=>new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
+const fdt=s=>s?new Date(s+"T12:00").toLocaleDateString(LOCL,{day:"numeric",month:"short"}):"";
+const can=()=>adm&&!VIS&&(!S.cfg.pin||unl);
+
+function toast(m){const t=$("ts");t.textContent=m;t.classList.add("on");clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove("on"),2200)}
+function ask(m,inp){return new Promise(r=>{const d=$("cf"),i=$("cfi");$("cfm").textContent=m;i.style.display=inp?"":"none";i.value="";d.returnValue="";d.onclose=()=>r(d.returnValue=="ok"?(inp?i.value:true):(inp?null:false));d.showModal()})}
+async function need(){if(can())return true;if(VIS||!adm){toast("সম্পাদনার অনুমতি নেই");return false}const p=await ask("অ্যাডমিন পিন দিন",1);if(p===S.cfg.pin){unl=true;return true}if(p!==null)toast("পিন ভুল");return false}
+
+/* সিঙ্ক */
+function stat(){const n=Object.keys(S.q).length+(S.mq?1:0),on=navigator.onLine,el=$("net");el.className="pill"+(on?"":" off");el.textContent=!on?"● অফলাইন"+(n?" · "+bn(n)+" টি অপেক্ষমান":" · সব সংরক্ষিত"):!DB?"💾 এই ফোনে সংরক্ষিত":n?"⟳ "+bn(n)+" টি সিঙ্কের অপেক্ষায়":"✓ সব সিঙ্ক হয়েছে"}
+function mark(c,id,op){S.q[c+"/"+id]={c,id,op};save();push();stat()}
+function touchM(){S.mts=Date.now();S.mq=1;save();push();stat()}
+async function push(){if(!DB||!navigator.onLine||pushing)return;pushing=true;try{
+for(const[k,v]of Object.entries(S.q)){const col=DB.collection(v.c);const it=arr(v.c).find(x=>x.id==v.id);
+if(v.op=="del")await col.doc(v.id).delete();else if(it){const{s,...d}=it;await col.doc(v.id).set(d);it.s=1}
+delete S.q[k];save()}
+if(S.mq){await DB.collection("meta").doc("main").set({days:S.days,cfg:pub(),mts:S.mts});S.mq=0;save()}
+}catch(e){}pushing=false;stat()}
+function pull(c,docs){const a=arr(c),R=new Map(docs.map(d=>[d.id,{...d.data(),id:d.id}]));
+R.forEach((r,id)=>{if(S.q[c+"/"+id])return;r.s=1;const i=a.findIndex(x=>x.id==id);if(i<0)a.push(r);else a[i]=r});
+if(navigator.onLine)for(let i=a.length-1;i>=0;i--){const x=a[i];if(x.s&&!R.has(x.id)&&!S.q[c+"/"+x.id])a.splice(i,1)}
+save();render()}
+function startSync(){try{["donors","expenses","pledges"].forEach(c=>DB.collection(c).onSnapshot(sn=>pull(c,sn.docs),()=>{}));
+DB.collection("meta").onSnapshot(sn=>{const m=sn.docs.find(d=>d.id=="main");if(!m)return;const r=m.data();if(!S.mq&&r.mts>(S.mts||0)){S.days=r.days;S.cfg={...r.cfg,pin:S.cfg.pin};S.mts=r.mts;save();fillSet();render()}},()=>{})}catch(e){}
+push();stat()}
+addEventListener("online",()=>{push();stat()});addEventListener("offline",stat);
+
+/* কাউন্টডাউন */
+const tIdx=()=>{const s=S.cfg.start.split("-"),t=new Date();return Math.round((new Date(t.getFullYear(),t.getMonth(),t.getDate(),12)-new Date(+s[0],s[1]-1,+s[2],12))/864e5)};
+function cd(){const i=tIdx(),c=document.querySelector("#today .card");if(!c||i<0||i>=S.days.length)return;let e=$("cd");
+if(!e){c.insertAdjacentHTML("afterbegin",'<div class="cdw" id="cd"></div>');e=$("cd");const d=S.days[i];if(d.m)c.insertAdjacentHTML("beforeend",`<div class="note">🍽 মেনু: ${esc(d.m)}${d.c?" · "+bn(d.c)+" জনের":""}</div>`)}
+const[hh,mm]=(S.cfg.it||"17:55").split(":"),t=new Date(),T=new Date(t.getFullYear(),t.getMonth(),t.getDate(),+hh,+mm),df=T-t;
+e.textContent=df>0?"🌙 ইফতারের বাকি "+bn(Math.floor(df/36e5))+" ঘণ্টা "+bn(Math.floor(df%36e5/6e4))+" মিনিট":"🌙 আজকের ইফতার হয়ে গেছে"}
+setInterval(cd,30000);
+
+/* এন্ট্রি ডায়ালগ (যোগ/এডিট) */
+const dayISO=i=>{const[y,m,d]=S.cfg.start.split("-"),t=new Date(+y,m-1,+d+i,12);return new Date(t-t.getTimezoneOffset()*6e4).toISOString().slice(0,10)};
+function getItems(){return[...document.querySelectorAll("#qitems .qi")].map(r=>({n:r.children[0].value.trim(),a:+r.children[1].value||0})).filter(x=>x.n||x.a)}
+const getExt=()=>[...document.querySelectorAll("#qext .xr")].filter(r=>r.querySelector("input[type=checkbox]").checked).map(r=>({c:r.dataset.c,a:+r.querySelector(".ea").value||0}));
+function recalc(){const L=getItems(),b=L.reduce((s,x)=>s+x.a,0);if(Q.k=="e"&&!Q.id){$("qamt").value=(b+getExt().reduce((s,x)=>s+x.a,0))||"";$("qamt").readOnly=true;return}
+if(b>0)$("qamt").value=b;else if($("qamt").readOnly)$("qamt").value="";$("qamt").readOnly=b>0}
+function addRow(n,a){const r=document.createElement("div");r.className="qi";r.innerHTML='<input placeholder="জিনিস (যেমন: ছোলা ২ কেজি)"><input type="number" inputmode="numeric" placeholder="টাকা"><button type="button" class="x" aria-label="সরান">✕</button>';r.children[0].value=n||"";r.children[1].value=a||"";$("qitems").appendChild(r)}
+function dayTxt(){const v=+$("qy").value;$("qdaytxt").textContent=v<0?"কোন দিনের নয়":bn(v+1)+" রমজান · "+fmt(v)+(v==tIdx()?" (আজ)":"")}
+function setupE(it,pd){const ti=tIdx(),own=it?it.day:(pd!=null?pd:(ti>=0&&ti<S.days.length?ti:-1));
+const ok=i=>i==own||i>=ti||(!dayExp(i).length&&!(S.days[i].w&&S.days[i].k=="h"));
+$("qy").innerHTML='<option value="-1">কোন দিনের নয়</option>'+S.days.map((d,i)=>ok(i)?`<option value="${i}">${bn(i+1)} রমজান · ${fmt(i)}${i==ti?" (আজ)":i<ti&&!dayExp(i).length?" · হিসাব বাকি":""}</option>`:"").join("");
+$("qy").value=String(own);$("qy").style.display="none";$("qdaytxt").style.display="";$("qother").style.display="";dayTxt();
+if(!it&&own>=0)$("qdt").value=dayISO(own);
+$("qil").textContent=it?(ICON[it.c]||"")+" "+it.c+" — জিনিসের তালিকা":"🛒 বাজার — কেনা জিনিসের তালিকা";
+$("qext").innerHTML=it?"":CATS.filter(c=>c!="বাজার").map(c=>`<div class="xr" data-c="${esc(c)}"><label class="chk"><input type="checkbox"> ${ICON[c]||""} ${esc(c)}</label><input class="ea" type="number" inputmode="numeric" placeholder="টাকা" style="display:none"></div>`).join("");
+$("qitems").innerHTML="";(it&&it.items&&it.items.length?it.items:[{}]).forEach(x=>addRow(x.n,x.a));$("qamt").readOnly=false;recalc()}
+function openQ(k,id,pd){if(VIS)return;Q={k,id};const it=id?arr(COL[k]).find(x=>x.id==id):null;
+document.querySelectorAll("#qseg button").forEach(b=>b.classList.toggle("on",b.dataset.k==k));$("qseg").style.display=id?"none":"";
+document.querySelectorAll(".qd-d").forEach(e=>e.style.display=k=="d"?"":"none");document.querySelectorAll(".qd-e").forEach(e=>e.style.display=k=="e"?"":"none");
+$("qt").textContent=(id?"এডিট · ":"নতুন ")+(k=="d"?"দাতা":"খরচ");$("qnl").textContent=k=="d"?"দাতার নাম":"বিবরণ (যেমন: ছোলা, মুড়ি)";
+$("qc").innerHTML=CATS.map(x=>`<option>${x}</option>`).join("");$("qm").innerHTML=MET.map(x=>`<option>${x}</option>`).join("");
+$("qn").value=it?it.n||"":"";$("qamt").value=it?it.a:"";$("qdt").value=(it&&it.dt)||todayS();
+$("qamt").readOnly=false;if(k=="d"){$("qm").value=(it&&it.m)||MET[0];$("qan").checked=!!(it&&it.an)}else{$("qc").value=(it&&it.c)||CATS[0];setupE(it,pd)}
+{const ne=k=="e"&&!id;$("qnl").style.display=$("qn").style.display=ne?"none":"";$("qal").textContent=ne?"মোট টাকা (নিজে হিসাব হবে)":"টাকা";$("qextw").style.display=ne?"":"none"}
+$("qdel").style.display=id?"":"none";$("qdg").showModal()}
+$("qsave").onclick=async()=>{if(!await need())return;const k=Q.k,c=COL[k],A=arr(c),n=$("qn").value.trim(),dt=$("qdt").value;
+if(k=="e"&&!Q.id){const IT=getItems(),X=getExt().filter(x=>x.a>0),b=IT.reduce((s,x)=>s+x.a,0),a=b+X.reduce((s,x)=>s+x.a,0);
+if(!(a>0)){toast("কোনো খরচের টাকা লিখুন");return}
+if(isF({day:+$("qy").value})&&a>tot()-spent()&&!await ask("ফান্ডে এত টাকা নেই। তবু যোগ করবেন?"))return;
+const day=+$("qy").value,add=(cat,amt,items)=>{const it={id:uid(),c:cat,n:"",a:amt,day,dt,items,ts:Date.now(),s:0};A.push(it);mark(c,it.id,"set")};
+if(b>0)add("বাজার",b,IT);X.forEach(x=>add(x.c,x.a,[]));
+$("qdg").close();render();toast("সংরক্ষণ হয়েছে ✓");return}
+const IT=k=="e"?getItems():[],a=IT.length?IT.reduce((s,x)=>s+x.a,0):+$("qamt").value;
+if(!(a>0)){toast("টাকার পরিমাণ দিন");return}if(k=="d"&&!n&&!$("qan").checked){toast("নাম দিন");return}
+let it=Q.id?A.find(x=>x.id==Q.id):null;if(!it){it={id:uid()};A.push(it)}
+if(k=="d")Object.assign(it,{n:n||"বেনামী দাতা",a,m:$("qm").value,dt,an:$("qan").checked});
+else Object.assign(it,{n,a,day:+$("qy").value,dt,items:IT});
+it.ts=it.ts||Date.now();it.s=0;mark(c,it.id,"set");$("qdg").close();render();toast("সংরক্ষণ হয়েছে ✓")};
+$("qdel").onclick=async()=>{if(!await need())return;if(!await ask("এটি মুছে ফেলবেন?"))return;const c=COL[Q.k],A=arr(c),i=A.findIndex(x=>x.id==Q.id);if(i>=0)A.splice(i,1);mark(c,Q.id,"del");$("qdg").close();render();toast("মুছে ফেলা হয়েছে")};
+$("qseg").onclick=e=>{const b=e.target.closest("button");if(b)openQ(b.dataset.k)};
+$("fab").onclick=()=>openQ(cv==3?"e":"d");
+$("qrow").onclick=e=>{const b=e.target.closest("[data-q]");if(b)openQ(b.dataset.q)};
+["dl","dayx"].forEach(id=>$(id).onclick=e=>{const r=e.target.closest("[data-e]");if(r){const[k,i]=r.dataset.e.split(":");openQ(k,i)}});
+$("chips").onclick=e=>{const b=e.target.closest("[data-f]");if(b){F=b.dataset.f;render()}};
+const _go=go;go=function(i){_go(i);cv=i;$("fab").style.display=[0,2,3].includes(i)?"":"none"};
+
+/* রেন্ডার (আগের রেন্ডারের ওপর) */
+function extra(){const inn=tot(),out=spent(),nm=x=>x.an?"বেনামী দাতা":x.n,g=+S.cfg.goal||0;
+$("goal").innerHTML=g?`<div class="card gl"><div style="display:flex;justify-content:space-between"><b>লক্ষ্যমাত্রা ${tk(g)}</b><span>${bn(Math.min(100,Math.round(inn/g*100)))}%</span></div><div class="bar" style="height:9px"><i style="width:${Math.min(100,inn/g*100)}%"></i></div><div class="note" style="margin:6px 0 0">${inn>=g?"লক্ষ্য পূরণ হয়েছে 🎉":"আরও "+tk(g-inn)+" দরকার"}</div></div>`:"";
+const P=["#f5a94a","#e0707f","#1f9d80","#7a6cf0","#4aa3f5","#9aa5d4"],by=CATS.map(c=>[c,sm(S.exp.filter(x=>isF(x)&&x.c==c))]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]);let ac=0;
+const cg=by.map(([c,v],i)=>{const s=ac/out*100;ac+=v;return`${P[i%6]} ${s}% ${ac/out*100}%`}).join(",");
+$("donut").innerHTML=by.length?`<div class="dn"><div class="dng" style="background:conic-gradient(${cg})"><span>${tk(out)}</span></div><div>${by.map(([c,v],i)=>`<div class="lg"><s style="background:${P[i%6]}"></s>${ICON[c]||""} ${esc(c)} <b>${bn(Math.round(v/out*100))}%</b></div>`).join("")}</div></div>`:'<div class="row nm">এখনো কোনো খরচ নেই।</div>';
+const mx=Math.max(1,...S.don.map(x=>x.a)),av=x=>x.an?"👤":esc((x.n||"?")[0]);
+$("top").innerHTML=[...S.don].sort((a,b)=>b.a-a.a).slice(0,5).map(x=>`<div class="row"><div class="av">${av(x)}</div><div class="nm"><span>${esc(nm(x))}</span><div class="bar"><i style="width:${x.a/mx*100}%"></i></div></div><div class="amt in-c">${tk(x.a)}</div></div>`).join("")||'<div class="row nm">এখনো কোনো দাতা নেই। ＋ চেপে যোগ করুন।</div>';
+const days=new Set(S.exp.filter(x=>x.day>=0).map(x=>x.day)).size;
+$("glance").innerHTML=[["দাতা",bn(S.don.length)+" জন"],["খরচের এন্ট্রি",bn(S.exp.length)+" টি"],["সবচেয়ে বেশি খরচের খাত",by[0]?by[0][0]:"–"],["দিনপ্রতি গড় খরচ",days?tk(Math.round(out/days)):"–"]].map(([a,b])=>`<div class="row"><span class="nm">${a}</span><b>${b}</b></div>`).join("");
+const q=$("q").value.trim(),srt=(a,b)=>(b.ts||0)-(a.ts||0),em='<div class="row nm">কিছু নেই।</div>';
+$("dsum").innerHTML=`${bn(S.don.length)} জন দাতা · মোট <b class="in-c">${tk(inn)}</b>`;
+$("dl").innerHTML=[...S.don].sort(srt).filter(x=>nm(x).includes(q)||(x.n||"").includes(q)).map(x=>`<div class="row tap" data-e="d:${x.id}"><div class="av">${av(x)}</div><div class="nm"><span>${esc(nm(x))}${x.s?"":' <i class="pend">⟳</i>'}</span><small class="mu">${esc(x.m||"")}${x.dt?" · "+fdt(x.dt):""}</small></div><div class="amt in-c">${tk(x.a)}</div></div>`).join("")||em;
+$("chips").innerHTML=["সব",...CATS].map(c=>{const v=c=="সব"?"":c;return`<button class="chip ${F==v?"on":""}" data-f="${esc(v)}">${ICON[c]||""} ${esc(c)}</button>`}).join("");
+$("dayx").innerHTML=[...S.exp].filter(x=>!F||x.c==F).sort(srt).map(x=>`<div class="row tap" data-e="e:${x.id}"><div class="av" style="width:36px;height:36px;background:var(--hostBg)">${ICON[x.c]||"📦"}</div><div class="nm"><span>${esc(x.c)}${x.n?" · "+esc(x.n):""}${x.s?"":' <i class="pend">⟳</i>'}</span><small class="mu">${x.day>=0?bn(x.day+1)+" রমজান":"দিন ছাড়া"}${x.dt?" · "+fdt(x.dt):""}${isF(x)?"":" · ইফতারদাতার খরচ (ফান্ড থেকে কাটা হয়নি)"}</small>${x.items&&x.items.length?`<small class="mu" style="display:block">${esc(x.items.map(i=>i.n).filter(Boolean).join("، "))}</small>`:""}</div><div class="amt out-c">−${tk(x.a)}</div></div>`).join("")||em;
+let H=0,M=0,E=0;S.days.forEach((d,i)=>{if(d.w&&d.k=="h")H++;else if(d.w||sm(dayExp(i)))M++;else E++});
+$("csum").innerHTML=`কারো ইফতার <b>${bn(H)}</b> দিন · ফান্ডের <b>${bn(M)}</b> দিন · ফাঁকা <b>${bn(E)}</b> দিন`;
+const gc=$("grid").children[tIdx()];if(gc)gc.classList.add("tod");stat()}
+const _rd=render;render=function(){_rd();extra()};
+const _rb=rb;rb=function(){_rb();cd();bkGrid()};
+
+/* দিনের ডায়ালগ: মেনু, জন, রিমাইন্ডার */
+$("grid").addEventListener("click",e=>{if(!e.target.closest(".d"))return;const d=S.days[cur];$("x3").value=d.m||"";$("x4").value=d.c||""});
+$("df").onsubmit=e=>{if(e.submitter&&e.submitter.value=="ok"){if(!can()){toast("সেটিংসে গিয়ে পিন দিয়ে আনলক করুন");return}const o=S.days[cur]||{};S.days[cur]={...o,w:$("x1").value.trim(),k:$("x2").value,m:$("x3").value.trim(),c:+$("x4").value||0};save();touchM();render()}};
+$("xw").onclick=()=>{const w=$("x1").value.trim(),bk=BK.find(b=>b.day==cur&&b.p),ph=bk?String(bk.p).replace(/\D/g,""):"",no=ph?(ph.startsWith("88")?ph:"88"+ph):"";
+const t=`আসসালামু আলাইকুম${w?" "+w:""}, ${fmt(cur)} আপনার ইফতার দেওয়ার কথা। আল্লাহ কবুল করুন। — গোপীনাথপুর জামে মসজিদ`;open("https://wa.me/"+no+"?text="+encodeURIComponent(t),"_blank")};
+
+/* সেটিংস, ব্যাকআপ, থিম */
+function fillSet(){$("it").value=S.cfg.it||"17:55";$("gl").value=S.cfg.goal||"";$("lk").value=S.cfg.link||"";$("st").value=S.cfg.start;const p=S.cfg.pay||{};$("pbk").value=p.bk||"";$("png").value=p.ng||"";$("pot").value=p.ot||""}
+$("it").onchange=()=>{S.cfg.it=$("it").value;touchM();cd()};
+$("gl").oninput=()=>{S.cfg.goal=+$("gl").value||0;touchM();render()};
+$("lk").addEventListener("input",touchM);$("st").addEventListener("change",touchM);
+$("pset").onclick=async()=>{if(!await need())return;const v=$("pn").value.trim();S.cfg.pin=v;save();$("pn").value="";toast(v?"পিন সেট হয়েছে":"পিন সরানো হয়েছে")};
+$("plock").onclick=async()=>{if(!S.cfg.pin){toast("আগে পিন সেট করুন");return}if(unl){unl=false;toast("লক হয়েছে")}else if(await need())toast("আনলক হয়েছে")};
+const dl_=(n,t,ty)=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([t],{type:ty}));a.download=n;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),999)};
+$("bk").onclick=()=>dl_("iftar-backup.json",JSON.stringify({...S,cfg:pub()}),"application/json");
+$("csv").onclick=()=>{const L=a=>a.map(v=>`"${String(v==null?"":v).replace(/"/g,'""')}"`).join(",");
+dl_("iftar-hisab.csv","\ufeff"+[L(["ধরন","তারিখ","নাম/বিবরণ","খাত/মাধ্যম","রমজান দিন","টাকা","জিনিসের তালিকা"]),...S.don.map(x=>L(["দাতা",x.dt,x.n,x.m,"",x.a,""])),...S.exp.map(x=>L(["খরচ",x.dt,x.n,x.c,x.day>=0?x.day+1:"",x.a,(x.items||[]).map(i=>i.n+" "+i.a).join("; ")]))].join("\n"),"text/csv")};
+$("rs").onchange=async e=>{const f=e.target.files[0];e.target.value="";if(!f||!await need())return;try{const j=JSON.parse(await f.text());if(!Array.isArray(j.don)||!Array.isArray(j.exp))throw 0;
+if(!await ask("বর্তমান তথ্যের জায়গায় ব্যাকআপ বসবে। চালিয়ে যাবেন?"))return;const pin=S.cfg.pin;delete j.q;delete j.mq;Object.assign(S,j);S.cfg={...S.cfg,pin};
+[["donors",S.don],["expenses",S.exp]].forEach(([c,a])=>a.forEach(x=>{x.id=x.id||uid();x.s=0;S.q[c+"/"+x.id]={c,id:x.id,op:"set"}}));touchM();fillSet();render();toast("রিস্টোর হয়েছে")}catch(_){toast("ফাইলটি ঠিক নয়")}};
+try{const t=localStorage.getItem("iftar-th");if(t)document.documentElement.dataset.theme=t}catch(e){}
+$("thm").onclick=()=>{const r=document.documentElement,dk=r.dataset.theme=="dark",n=dk?"light":"dark";r.dataset.theme=n;try{localStorage.setItem("iftar-th",n)}catch(e){}};
+$("qadd").onclick=()=>addRow();
+$("qext").addEventListener("change",e=>{if(e.target.type!="checkbox")return;const a=e.target.closest(".xr").querySelector(".ea");a.style.display=e.target.checked?"":"none";if(e.target.checked)a.focus();else a.value="";recalc()});
+$("qext").addEventListener("input",recalc);
+$("qitems").addEventListener("input",recalc);
+$("qitems").addEventListener("click",e=>{const b=e.target.closest("button");if(b){b.parentNode.remove();recalc()}});
+$("qother").onclick=()=>{$("qy").style.display="";$("qdaytxt").style.display="none";$("qother").style.display="none"};
+$("qy").onchange=()=>{dayTxt();if(!Q.id&&+$("qy").value>=0)$("qdt").value=dayISO(+$("qy").value)};
+$("dx").onclick=()=>{$("dlg").close();openQ("e",null,cur)};
+info=function(){const ex=dayExp(cur);$("dinfo").innerHTML='<div class="note" style="margin:2px 0 6px"><b>'+fmt(cur)+'</b><br>এই দিনের খরচ <b>'+tk(sm(ex))+'</b> · ফান্ডে থাকল <b>'+tk(balAfter(cur))+'</b></div>'+ex.map(x=>'<div class="row" style="padding:6px 0;display:block"><div style="display:flex;justify-content:space-between"><b>'+esc(x.c)+(x.n?" · "+esc(x.n):"")+'</b><b>'+tk(x.a)+'</b></div>'+(x.items||[]).map(i=>'<div class="note" style="margin:2px 0 0;display:flex;justify-content:space-between"><span>• '+esc(i.n||"–")+'</span><span>'+tk(i.a)+'</span></div>').join("")+'</div>').join("")};
+
+/* বুকিং গ্রিড, দান, দর্শক মোড */
+function sec(s){$("bsec").style.display=s=="b"?"":"none";$("gsec").style.display=s=="g"?"":"none";document.querySelectorAll("#bseg button").forEach(b=>b.classList.toggle("on",b.dataset.s==s));scrollTo(0,0)}
+$("bseg").onclick=e=>{const b=e.target.closest("button");if(b)sec(b.dataset.s)};
+function bkGrid(){const ti=tIdx(),bm=new Map();BK.forEach(b=>bm.set(b.day,b));let F0=0,T0=0;
+const free=i=>S.days[i]&&!S.days[i].w&&!bm.has(i)&&i>=ti;if(BS!=null&&!free(BS))BS=null;
+$("bgrid").innerHTML=S.days.map((d,i)=>{const b=bm.get(i),past=i<ti;let c="d",nm="",em="";
+if(d.w){c+=d.k=="m"?" m":" h";nm=d.w;em="দেওয়া আছে"}else if(b){c+=b.st=="ok"?" h":" pnd";nm=b.n;em=b.st=="ok"?"নিশ্চিত":"অপেক্ষমান"}else{c+=" free";nm="ফাঁকা";em="বুক করুন";if(!past)F0++}
+if(d.w||b)T0++;if(past)c+=" past";if(i==ti)c+=" tod";if(i===BS)c+=" sel";
+return `<button class="${c}" data-i="${i}" ${(d.w||b||past)?"disabled":""}><i>${bn(i+1)}</i><small>${esc(nm)}</small><em>${em}</em></button>`}).join("");
+$("bsum").innerHTML=`ফাঁকা আছে <b>${bn(F0)}</b> দিন · বুক হয়েছে <b>${bn(T0)}</b> দিন`;
+$("bsel").textContent=BS==null?"👆 উপরের তালিকা থেকে একটি ফাঁকা দিন বেছে নিন":"✅ নির্বাচিত দিন: "+bn(BS+1)+" রমজান · "+fmt(BS);
+$("bd").value=BS==null?"":String(BS);
+const ad=can();
+$("bl").innerHTML=[...BK].sort((a,b)=>a.day-b.day).map(b=>`<div class="row"><div class="av">${bn(b.day+1)}</div><div class="nm"><span>${esc(b.n)} <span class="bd ${b.st=="ok"?"ok":""}">${b.st=="ok"?"নিশ্চিত":"অপেক্ষমান"}</span></span><small class="mu">${fmt(b.day)}${ad?" · "+esc(b.p):""}</small></div>${ad?`${b.st=="ok"?"":`<button class="x" data-ok="${b.id}">নিশ্চিত</button>`}<button class="x" data-rm="${b.id}" aria-label="মুছুন">✕</button>`:""}</div>`).join("")||'<div class="row nm">এখনো কোনো বুকিং নেই।</div>';
+const py=S.cfg.pay||{};
+$("pays").innerHTML=[["বিকাশ (পার্সোনাল)",py.bk],["নগদ (পার্সোনাল)",py.ng],["অন্যান্য",py.ot]].filter(x=>x[1]).map(([l,v])=>`<div class="row"><div class="nm"><small class="mu">${l}</small><span style="font-weight:700;font-size:18px">${esc(v)}</span></div><button class="x" data-cp="${esc(v)}">কপি</button></div>`).join("")||'<div class="row nm">দানের নম্বর এখনো যোগ করা হয়নি। কমিটির সাথে যোগাযোগ করুন।</div>';
+const pw=S.pl.filter(x=>x.st=="w");
+$("plw").innerHTML=ad&&pw.length?`<h2 class="serif" style="margin-top:20px">অপেক্ষমান দান (${bn(pw.length)})</h2><div class="card">${pw.map(x=>`<div class="row"><div class="av">${x.an?"👤":esc((x.n||"?")[0])}</div><div class="nm"><span>${esc(x.n)} · ${tk(x.a)}</span><small class="mu">${esc(x.m||"")}${x.t?" · "+esc(x.t):""}</small></div><button class="x" data-pok="${x.id}">যোগ</button><button class="x" data-prm="${x.id}">✕</button></div>`).join("")}</div>`:""}
+$("bgrid").onclick=e=>{const b=e.target.closest(".d");if(!b||b.disabled)return;BS=+b.dataset.i;bkGrid();$("bform").scrollIntoView({behavior:"smooth",block:"center"})};
+$("pays").onclick=e=>{const v=e.target.dataset.cp;if(v)navigator.clipboard.writeText(v).then(()=>toast("কপি হয়েছে ✓")).catch(()=>toast(v))};
+$("ggo").onclick=()=>{const n=$("gn").value.trim(),a=+$("ga").value,an=$("gan").checked;if((!n&&!an)||!(a>0)){$("gmsg").textContent="নাম ও টাকার পরিমাণ দিন।";return}
+const it={id:uid(),n:n||"বেনামী দাতা",a,m:$("gm").value,t:$("gt").value.trim(),an,dt:todayS(),ts:Date.now(),st:"w",s:0};S.pl.push(it);mark("pledges",it.id,"set");
+["gn","ga","gt"].forEach(i=>$(i).value="");$("gan").checked=false;$("gmsg").textContent="ধন্যবাদ! আপনার দানের তথ্য জমা হয়েছে। কমিটি যাচাই করে তালিকায় যোগ করবে।";render()};
+$("plw").onclick=async e=>{const o=e.target.dataset.pok,r=e.target.dataset.prm;if(!o&&!r)return;if(!await need())return;const i=S.pl.findIndex(x=>x.id==(o||r));if(i<0)return;const p=S.pl[i];
+if(o){const d={id:uid(),n:p.n,a:p.a,m:p.m,dt:p.dt,an:p.an,ts:Date.now(),s:0};S.don.push(d);mark("donors",d.id,"set");toast("দাতা তালিকায় যোগ হয়েছে ✓")}else if(!await ask("এই তথ্যটি মুছবেন?"))return;
+S.pl.splice(i,1);mark("pledges",p.id,"del");render()};
+["pbk","png","pot"].forEach(id=>$(id).oninput=()=>{S.cfg.pay={bk:$("pbk").value.trim(),ng:$("png").value.trim(),ot:$("pot").value.trim()};touchM();render()});
+qr=function(){const b=(S.cfg.link||location.href).split("#")[0];[["qa",b+"#today"],["qb",b+"#book"],["qq",b+"#donate"]].forEach(([id,t])=>{const el=$(id);if(!el)return;el.innerHTML="";if(typeof QRCode!="undefined"){try{new QRCode(el,{text:t,width:132,height:132})}catch(e){}}})};
+const hs2=()=>{if(location.hash=="#donate"){go(4);sec("g")}else if(location.hash=="#book")sec("b")};addEventListener("hashchange",hs2);hs2();
+
+/* ===== ভাষা: বাংলা / English ===== */
+const TX=`গোপীনাথপুর জামে মসজিদ|Gopinathpur Jame Masjid
+রমজানের পূর্ণাঙ্গ হিসাব · প্রতিবেদন|Complete Ramadan Accounts · Report
+রমজানের পূর্ণাঙ্গ হিসাব|Complete Ramadan Accounts
+রমজানের ৩০ দিন|30 Days of Ramadan
+আজ রমজানের দিন নয়।|Today is not a Ramadan day.
+রমজান শুরুর তারিখ|Ramadan Start Date
+রমজানের|Ramadan's
+রমজান|Ramadan
+ থেকে | to 
+ব্যবহৃত|Used
+ইফতার ফান্ড|Iftar Fund
+মোট খরচ|Total Spent
+মোট টাকা (নিজে হিসাব হবে)|Total (auto-calculated)
+অবশিষ্ট|Balance
+আজকের ইফতারদাতা এখনো ঠিক হয়নি|Today's iftar host is not decided yet
+আজকের ইফতার হয়ে গেছে|Today's iftar is done
+আজকের ইফতার|Today's Iftar
+ইফতার দিচ্ছেন:|Iftar by:
+ইফতারের বাকি|Iftar in
+শীর্ষ দাতা|Top Donors
+এক নজরে|At a Glance
+হিসাব শেয়ার করুন|Share Summary
+কপি হয়েছে|Copied
+পিডিএফ রিপোর্ট ডাউনলোড (A4)|Download PDF Report (A4)
+পিডিএফ তৈরি হচ্ছে…|Creating PDF…
+পিডিএফ হয়নি, আবার চেষ্টা করুন|PDF failed, try again
+ইফতার বুকিং দিন|Book an Iftar
+ঘণ্টা|hours
+মিনিট|minutes
+মেনু:|Menu:
+জনের|people
+জন দাতা · মোট|donors · total
+জন দাতা|donors
+ জন)| donors)
+ জন|
+ টি অপেক্ষমান| pending
+ টি সিঙ্কের অপেক্ষায়| waiting to sync
+ টি|
+লক্ষ্যমাত্রা|Goal
+লক্ষ্য পূরণ হয়েছে|Goal reached
+আরও |
+ দরকার| more needed
+খরচের এন্ট্রি|Expense entries
+সবচেয়ে বেশি খরচের খাত|Top expense category
+দিনপ্রতি গড় খরচ|Average daily spend
+খরচের খাত|Expense Categories
+এখনো কোনো খরচ নেই।|No expenses yet.
+এখনো কোনো দাতা নেই। ＋ চেপে যোগ করুন।|No donors yet. Tap ＋ to add.
+কোনো দাতা নেই।|No donors.
+কিছু নেই।|Nothing here.
+এখনো কেউ নেই।|No one yet.
+যেকোনো দিনে চাপ দিয়ে কী কেনা হলো, খরচ আর ফান্ডে কত থাকল দেখুন বা বদলান।|Tap any day to see what was bought, the spend and the fund balance, or edit it.
+ইফতার ফান্ড|Iftar Fund
+কারো ইফতার|Hosted by someone
+দিন · ফান্ডের|days · fund's
+দিন · ফাঁকা|days · free
+দিন · বুক হয়েছে|days · booked:
+ফাঁকা আছে|Free:
+ফাঁকা (বুক করা যাবে)|Free (can book)
+নিজ খরচে|Self-funded
+ইফতারদাতা তালিকা|Iftar Hosts
+ইফতারদাতার নাম|Iftar host name
+ইফতারদাতা|Iftar host
+দাতা তালিকা (|Donor list (
+দাতা তালিকা|Donor List
+নাম দিয়ে খুঁজুন|Search by name
+অপেক্ষমান দান|Pending donations
+বেনামী দাতা|Anonymous donor
+নাম প্রকাশে অনিচ্ছুক (বেনামী)|Keep my name hidden (anonymous)
+নাম প্রকাশ করতে চাই না|Keep my name hidden
+খরচের হিসাব|Expense Accounts
+খরচের তালিকা|Expense List
+দিন ছাড়া|No day
+নতুন দাতা|New donor
+নতুন খরচ|New expense
+এডিট · দাতা|Edit · Donor
+এডিট · খরচ|Edit · Expense
+দাতার নাম|Donor name
+বিবরণ / মন্তব্য (ঐচ্ছিক)|Description / note (optional)
+মাধ্যম|Method
+হাতে নগদ|Cash in hand
+বিকাশ (পার্সোনাল)|bKash (Personal)
+নগদ (পার্সোনাল)|Nagad (Personal)
+বিকাশ নম্বর|bKash number
+নগদ নম্বর|Nagad number
+বিকাশ|bKash
+নগদ|Nagad
+ব্যাংক|Bank
+🛒 বাজার — কেনা জিনিসের তালিকা|🛒 Groceries — items bought
+কেনা জিনিসের তালিকা|Items bought
+ — জিনিসের তালিকা| — items
+＋ জিনিস যোগ করুন|＋ Add item
+জিনিস (যেমন: ছোলা ২ কেজি)|Item (e.g. chickpeas 2 kg)
+অন্যান্য খরচ — ওই দিন থাকলে টিক দিন|Other expenses — tick if present that day
+অন্যান্য (ব্যাংক হিসাব ইত্যাদি)|Other (bank account etc.)
+কোন দিনের খরচ|Expense for which day
+অন্য দিনের হিসাব লিখুন|Enter another day's accounts
+কোন দিনের নয়|No specific day
+(আজ)|(today)
+ · হিসাব বাকি| · accounts pending
+তারিখ|Date
+সংরক্ষণ করুন|Save
+সংরক্ষণ হয়েছে ✓|Saved ✓
+টাকার পরিমাণ দিন|Enter the amount
+নাম দিন|Enter a name
+কোনো খরচের টাকা লিখুন|Enter an expense amount
+ফান্ডে এত টাকা নেই। তবু যোগ করবেন?|Not enough in the fund. Add anyway?
+ফান্ডে এত টাকা নেই। তবু খরচ যোগ করবেন?|Not enough in the fund. Add the expense anyway?
+এটি মুছে ফেলবেন?|Delete this?
+মুছে ফেলা হয়েছে|Deleted
+অ্যাডমিন পিন দিন|Enter admin PIN
+পিন ভুল|Wrong PIN
+সম্পাদনার অনুমতি নেই|No permission to edit
+সেটিংসে গিয়ে পিন দিয়ে আনলক করুন|Go to Settings and unlock with the PIN
+পিন সেট হয়েছে|PIN set
+পিন সরানো হয়েছে|PIN removed
+আগে পিন সেট করুন|Set a PIN first
+লক হয়েছে|Locked
+আনলক হয়েছে|Unlocked
+ফাইলটি ঠিক নয়|Invalid file
+রিস্টোর হয়েছে|Restored
+বর্তমান তথ্যের জায়গায় ব্যাকআপ বসবে। চালিয়ে যাবেন?|Backup will replace the current data. Continue?
+এই তথ্যটি মুছবেন?|Delete this entry?
+দাতা তালিকায় যোগ হয়েছে ✓|Added to the donor list ✓
+এই বুকিং মুছবেন?|Delete this booking?
+এই খরচ মুছবেন?|Delete this expense?
+এই দাতা মুছবেন?|Delete this donor?
+ধরন|Type
+ইফতার ফান্ড|Iftar Fund
+মেনু|Menu
+যেমন: খিচুড়ি, বেগুনি, জিলাপি|e.g. khichuri, beguni, jilapi
+কত জনের ইফতার|Iftar for how many people
+হোয়াটসঅ্যাপে রিমাইন্ডার|WhatsApp reminder
+এই দিনে খরচ যোগ করুন|Add expense for this day
+এই দিনের খরচ|This day's spend
+ · ফান্ডে থাকল | · Fund left 
+ফান্ডে ৳|In fund ৳
+খরচ ৳|Spent ৳
+ · ফান্ডে | · In fund 
+🌙 ইফতার বুকিং|🌙 Iftar Booking
+💝 দান করুন|💝 Donate
+কোন দিন ইফতার দিবেন?|Which day will you host iftar?
+দেওয়া আছে|Taken
+অপেক্ষমান|Pending
+বুকিং নিশ্চিত করুন|Confirm booking
+নিশ্চিত|Confirmed
+বুক করুন|Book
+👆 উপরের তালিকা থেকে একটি ফাঁকা দিন বেছে নিন|👆 Pick a free day from the list above
+✅ নির্বাচিত দিন:|✅ Selected day:
+আপনার নাম|Your name
+ফোন নম্বর|Phone number
+নাম, সঠিক ফোন নম্বর আর একটি দিন বেছে নিন।|Enter your name, a valid phone number and pick a day.
+বুকিং নেওয়া হয়েছে (|Booking received (
+কমিটি নিশ্চিত করবে।|The committee will confirm.
+বুকিং সেভ হয়নি। আবার চেষ্টা করুন।|Booking was not saved. Try again.
+বুকিং তালিকা|Booking List
+এখনো কোনো বুকিং নেই।|No bookings yet.
+সব দিন বুক হয়ে গেছে|All days are booked
+বুকিং ও দান|Booking & Donate
+মসজিদে দান করুন|Donate to the Mosque
+উপরের নম্বরে সেন্ড মানি করার পর নিচের ফর্মটি পূরণ করুন। হাতে দিতে চাইলে কমিটির কাছে জমা দিন।|After sending money to the number above, fill in the form below. To give in person, hand it to the committee.
+আমি দান করেছি|I have donated
+ট্রানজেকশন আইডি / শেষ ৪ ডিজিট (ঐচ্ছিক)|Transaction ID / last 4 digits (optional)
+দানের তথ্য জমা দিন|Submit donation details
+নাম ও টাকার পরিমাণ দিন।|Enter your name and amount.
+ধন্যবাদ! আপনার দানের তথ্য জমা হয়েছে। কমিটি যাচাই করে তালিকায় যোগ করবে।|Thank you! Your donation details were submitted. The committee will verify and add them to the list.
+দানের নম্বর এখনো যোগ করা হয়নি। কমিটির সাথে যোগাযোগ করুন।|Donation numbers have not been added yet. Please contact the committee.
+সেটিংস|Settings
+← ফিরে যান|← Back
+QR কোড|QR Codes
+অ্যাপের লিংক (এখানে আসল লিংক বসান)|App link (paste the real link here)
+স্ক্যান করে আজকের ইফতার দেখুন|Scan to see today's iftar
+স্ক্যান করে ইফতার বুকিং দিন|Scan to book iftar
+স্ক্যান করে দান করুন|Scan to donate
+ইফতারের সময় ও লক্ষ্য|Iftar Time & Goal
+ইফতারের সময় (কাউন্টডাউনের জন্য)|Iftar time (for the countdown)
+সংগ্রহের লক্ষ্যমাত্রা (টাকা)|Collection goal (amount)
+যেমন: ৫০০০০|e.g. 50000
+দান গ্রহণের নম্বর|Donation Numbers
+নিরাপত্তা|Security
+অ্যাডমিন পিন (খালি রাখলে পিন বন্ধ)|Admin PIN (leave empty to disable)
+নতুন পিন|New PIN
+পিন সেট করুন|Set PIN
+লক / আনলক|Lock / Unlock
+ব্যাকআপ ও এক্সপোর্ট|Backup & Export
+JSON ব্যাকআপ|JSON Backup
+ব্যাকআপ থেকে রিস্টোর|Restore from backup
+● অফলাইন|● Offline
+ · সব সংরক্ষিত| · all saved
+💾 এই ফোনে সংরক্ষিত|💾 Saved on this phone
+✓ সব সিঙ্ক হয়েছে|✓ All synced
+বাজার|Groceries
+বাবুর্চি|Cook
+ড্যাগ ও পাত্র ভাড়া|Pot & Utensil Rent
+কাঠ ও জ্বালানি|Firewood & Fuel
+ভাড়া|Rent
+অন্যান্য|Others
+বেনামী|Anonymous
+খাত অনুযায়ী খরচ|Expenses by category
+খরচের বিবরণ|Expense details
+কোষাধ্যক্ষ|Treasurer
+সভাপতি|President
+কোনো খরচ নেই|No expenses`.split("\n").map(l=>l.split("|")).sort((a,b)=>b[0].length-a[0].length),XX=Object.fromEntries(`দাতা|Donors
+খরচ|Expenses
+হোম|Home
+ক্যালেন্ডার|Calendar
+বুকিং|Booking
+সব|All
+দিন|days
+ফাঁকা|Free
+টাকা|Amount
+যোগ|Add
+যোগ করুন|Add
+বাদ|Cancel
+বাদ দিন|Cancel
+মুছুন|Delete
+হ্যাঁ|Yes
+না|No
+কপি|Copy
+সরান|Remove
+থিম|Theme
+ভাষা|Language
+ইফতার|Iftar`.split("\n").map(l=>l.split("|"))),BNR=/[\u0980-\u09FF]/;
+const trS=s=>{if(LANG!="en"||typeof s!="string"||!BNR.test(s))return s;const t=s.trim();if(XX[t]!=null)return s.replace(t,XX[t]);for(const[a,b]of TX)if(s.includes(a))s=s.split(a).join(b);return s.replace(/[০-৯]/g,c=>"০১২৩৪৫৬৭৮৯".indexOf(c))};
+function trN(root){if(LANG!="en")return;const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>/^(SCRIPT|STYLE)$/.test(n.parentNode.nodeName)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});let n;while(n=w.nextNode()){const v=n.nodeValue;if(BNR.test(v)){const r=trS(v);if(r!==v)n.nodeValue=r}}
+root.querySelectorAll("[placeholder],[aria-label]").forEach(e=>["placeholder","aria-label"].forEach(a=>{const v=e.getAttribute(a);if(v&&BNR.test(v))e.setAttribute(a,trS(v))}))}
+const _cfm=window.confirm.bind(window);window.confirm=m=>_cfm(trS(m));
+const _rh=repHtml;repHtml=function(){return trS(_rh())};
+$("lng").textContent=LANG=="en"?"বাং":"EN";
+$("lng").onclick=()=>{try{localStorage.setItem("iftar-lang",LANG=="en"?"bn":"en")}catch(e){}location.reload()};
+if(LANG=="en"){document.documentElement.lang="en";let rq=0;new MutationObserver(()=>{if(rq)return;rq=requestAnimationFrame(()=>{rq=0;trN(document.body)})}).observe(document.body,{childList:true,subtree:true,characterData:true});trN(document.body);document.title=trS(document.title)}
+if("serviceWorker"in navigator&&location.protocol.startsWith("http"))navigator.serviceWorker.register("sw.js").catch(()=>{});
+
+render();qr();hs();fillSet();stat();cd();
+;(()=>{const AC=[["#5b6cff","#1aa3ff"],["#ff5e7e","#ff9a4d"],["#00c896","#00b4f0"],["#a855f7","#ec4899"]],R=document.documentElement;let U={ac:0,tx:0};try{Object.assign(U,JSON.parse(localStorage.getItem("iftar-ui")||"{}"))}catch(e){}
+const sv=()=>{try{localStorage.setItem("iftar-ui",JSON.stringify(U))}catch(e){}},mk=(id,f)=>[...$(id).children].forEach((b,i)=>b.classList.toggle("on",f(b,i)));
+function ap(){R.style.setProperty("--ac1",AC[U.ac][0]);R.style.setProperty("--ac2",AC[U.ac][1]);document.body.style.zoom=[1,1.12,1.25][U.tx];mk("sw",(b,i)=>i==U.ac);mk("txseg",b=>+b.dataset.v==U.tx);mk("thseg",b=>b.dataset.v==(R.dataset.theme||"light"))}
+$("sw").onclick=e=>{const i=[...$("sw").children].indexOf(e.target.closest("button"));if(i<0)return;U.ac=i;sv();ap()};
+$("txseg").onclick=e=>{const v=e.target.dataset.v;if(v==null)return;U.tx=+v;sv();ap()};
+$("thseg").onclick=e=>{const v=e.target.dataset.v;if(!v)return;R.dataset.theme=v;try{localStorage.setItem("iftar-th",v)}catch(x){}ap()};
+$("thm").addEventListener("click",()=>setTimeout(ap,0));
+
+
+ap()})();
+
+;(()=>{S.past=S.past||{};const nd=t=>t.replace(/[০-৯]/g,c=>"০১২৩৪৫৬৭৮৯".indexOf(c)),sum=a=>a.reduce((x,y)=>x+y.a,0),T=n=>"৳"+Number(n).toLocaleString("bn-BD");let pend=null;
+function by(e){const m={};e.forEach(x=>m[x.c]=(m[x.c]||0)+x.a);return m}
+function rp(){const ys=Object.keys(S.past).sort().reverse(),sel=$("pys"),old=sel.value;sel.innerHTML=ys.length?ys.map(y=>`<option>${y}</option>`).join(""):"<option>— কোনো সাল নেই —</option>";if(ys.includes(old))sel.value=old;const d=S.past[sel.value];$("pyd").style.display=d?"block":"none";if(!d){$("pyb").innerHTML='<div class="card" style="padding:14px;margin-top:14px">এখনো কোনো বছরের হিসাব যোগ করা হয়নি।</div>';return}
+const isP=x=>{const q=(d.days||[])[x.day];return !(q&&q.w&&q.k=="h")},i=sum(d.don),o=sum(d.exp.filter(isP)),b=by(d.exp.filter(isP)),pct=i?Math.min(100,Math.round(o/i*100)):0,mx=Math.max(1,...d.don.map(x=>x.a)),cs=Object.entries(b).sort((x,y)=>y[1]-x[1]),c="class";
+$("pyb").innerHTML=`<div ${c}="glass" style="margin-top:14px"><div ${c}="ring"><svg viewBox="0 0 120 120"><defs><linearGradient id="gr2"><stop offset="0" style="stop-color:var(--ac1)"/><stop offset="1" style="stop-color:var(--ac2)"/></linearGradient></defs><circle cx="60" cy="60" r="52" fill="none" stroke="var(--line)" stroke-width="11"/><circle cx="60" cy="60" r="52" fill="none" stroke="url(#gr2)" stroke-width="11" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="${326.7*(1-pct/100)}"/></svg><b><div><span>${bn(pct)}%</span><br>ব্যবহৃত</div></b></div><div ${c}="kv"><div><small>ইফতার ফান্ড</small><strong ${c}="in-c">${T(i)}</strong></div><div><small>মোট খরচ</small><strong ${c}="out-c">${T(o)}</strong></div><div><small>অবশিষ্ট</small><strong>${T(i-o)}</strong></div></div></div>
+<h2 ${c}="serif">খরচের খাত</h2><div ${c}="card">${cs.map(([n,v])=>`<div ${c}="row" style="display:block"><div style="display:flex;justify-content:space-between"><span>${esc(n)}</span><b ${c}="out-c">${T(v)}</b></div><div ${c}="bar"><i style="width:${o?v/o*100:0}%"></i></div></div>`).join("")+(cs.length?`<div ${c}="row"><b ${c}="nm">মোট খরচ</b><b>${T(o)}</b></div>`:`<div ${c}="row nm">কোনো খরচ নেই।</div>`)}</div>
+<h2 ${c}="serif">শীর্ষ দাতা</h2><div ${c}="card">${[...d.don].sort((x,y)=>y.a-x.a).slice(0,5).map(x=>`<div ${c}="row"><div ${c}="av">${esc(x.n[0])}</div><div ${c}="nm"><span>${esc(x.n)}</span><div ${c}="bar"><i style="width:${x.a/mx*100}%"></i></div></div><div ${c}="amt in-c">${T(x.a)}</div></div>`).join("")||`<div ${c}="row nm">কোনো দাতা নেই।</div>`}</div>
+<h2 ${c}="serif">এক নজরে</h2><div ${c}="card">${[["দাতা",bn(d.don.length)+" জন"],["খরচের এন্ট্রি",bn(d.exp.length)+" টি"],["সবচেয়ে বেশি খরচের খাত",cs[0]?cs[0][0]:"–"]].map(([x,y])=>`<div ${c}="row"><span ${c}="nm">${x}</span><b>${y}</b></div>`).join("")}</div>
+<h2 ${c}="serif">ইফতারদাতা তালিকা</h2><div ${c}="card">${(d.days||[]).map((x,k)=>[x,k]).filter(([x])=>x.w&&x.k=="h").map(([x,k])=>`<div ${c}="row"><div ${c}="av">${bn(k+1)}</div><div ${c}="nm"><span>${esc(x.w)}</span><small style="color:var(--mut)">${bn(k+1)} রমজান${x.m?" · "+esc(x.m):""}${x.c?" · "+bn(x.c)+" জন":""}</small></div></div>`).join("")||`<div ${c}="row nm">তালিকা নেই।</div>`}</div>
+<h2 ${c}="serif">রমজানের ৩০ দিন</h2><div ${c}="grid">${(d.days&&d.days.length?d.days:Array.from({length:30},()=>({}))).map((x,k)=>{const e=sum(d.exp.filter(z=>z.day==k));return `<button ${c}="d ${x.w?x.k:e?"m":"e"}" tabindex="-1" style="pointer-events:none"><i>${bn(k+1)}</i><small>${x.w?esc(x.w):"ফাঁকা"}</small><em>${e?T(e):x.w?"নিজ খরচে":""}</em></button>`}).join("")}</div>
+<h2 ${c}="serif">দাতা তালিকা (${bn(d.don.length)} জন)</h2><div ${c}="card">${d.don.map(x=>`<div ${c}="row"><div ${c}="av">${esc(x.n[0])}</div><div ${c}="nm"><span>${esc(x.n)}</span></div><div ${c}="amt in-c">${T(x.a)}</div></div>`).join("")||`<div ${c}="row nm">কোনো দাতা নেই।</div>`}</div>
+<h2 ${c}="serif">খরচের তালিকা</h2><div ${c}="card">${d.exp.map(x=>`<div ${c}="row"><div ${c}="av" style="width:34px;height:34px">${esc((x.c||"–")[0])}</div><div ${c}="nm"><span>${esc(x.c)}${x.n&&x.n!=x.c?" · "+esc(x.n):""}</span></div><div ${c}="amt out-c">−${T(x.a)}</div></div>`).join("")||`<div ${c}="row nm">কোনো খরচ নেই।</div>`}</div>`;}
+$("pys").onchange=rp;window.PYrp=rp;
+$("pyd").onclick=()=>{const y=$("pys").value,d=S.past[y];if(!d)return;const w=window.open("","_blank");if(!w){toast("পপ-আপ অনুমতি দিন");return}const r=(a,b)=>`<tr><td>${a}</td><td style="text-align:right">${b}</td></tr>`,isP=x=>{const q=(d.days||[])[x.day];return !(q&&q.w&&q.k=="h")},b=by(d.exp.filter(isP)),i=sum(d.don),o=sum(d.exp.filter(isP));
+w.document.write(`<!doctype html><meta charset=utf-8><title>${y} সালের হিসাব</title><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel=stylesheet><style>body{font-family:'Hind Siliguri',sans-serif;padding:24px;color:#14183a}h2{color:#2d2670;margin:22px 0 6px}table{width:100%;border-collapse:collapse}td{padding:7px 4px;border-bottom:1px solid #ddd}</style><h1 style="margin:0">গোপীনাথপুর জামে মসজিদ</h1><div>${y} সালের রমজানের হিসাব</div><h2>সারসংক্ষেপ</h2><table>${r("ইফতার ফান্ড",T(i))}${r("মোট খরচ",T(o))}${r("অবশিষ্ট",T(i-o))}</table><h2>দাতা তালিকা</h2><table>${d.don.map(x=>r(esc(x.n),T(x.a))).join("")}</table><h2>খরচের খাত</h2><table>${Object.keys(b).map(k=>r(esc(k),T(b[k]))).join("")}</table><h2>খরচের তালিকা</h2><table>${d.exp.map(x=>r(esc(x.c+(x.n&&x.n!=x.c?" – "+x.n:"")),T(x.a))).join("")}</table>`);w.document.close();setTimeout(()=>w.print(),900)};
+function ld(u){return new Promise((ok,no)=>{const e=document.createElement("script");e.src=u;e.onload=ok;e.onerror=no;document.head.appendChild(e)})}
+function parse(lines){const don=[],exp=[];let m="d";for(const raw of lines){const l=nd(raw).replace(/\s+/g," ").trim();if(!l)continue;if(/ব্যয়|খরচ|expense/i.test(l)&&!/\d{2,}/.test(l)){m="e";continue}if(/আয়|সংগ্রহ|দাতা|চাঁদা|income|donat/i.test(l)&&!/\d{2,}/.test(l)){m="d";continue}
+if(/মোট|total|অবশিষ্ট|জের|balance/i.test(l))continue;const mt=l.match(/([\d,]+(?:\.\d+)?)\s*(?:টাকা|৳|\/-|tk)?\s*$/i);if(!mt)continue;const a=parseFloat(mt[1].replace(/,/g,""));if(!(a>0))continue;let n=l.slice(0,mt.index).replace(/^\d+[.)]?\s+/,"").replace(/[:\-–৳]+$/,"").trim();if(!n||/^\d+$/.test(n))continue;
+if(m=="d")don.push({n,a});else exp.push({c:CATS.find(c=>n.includes(c.split(" ")[0]))||"অন্যান্য",n,a,day:0})}return{don,exp}}
+$("pyf").onchange=async e=>{const f=e.target.files[0];if(!f)return;const P=$("pyp");P.innerHTML='<div class="pyq">পড়া হচ্ছে…</div>';try{const lines=[];if(!/\.(xlsx?|csv)$/i.test(f.name)){if(!window.pdfjsLib){await ld("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js");pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"}
+const pdf=await pdfjsLib.getDocument({data:await f.arrayBuffer()}).promise;for(let p=1;p<=pdf.numPages;p++){const c=await(await pdf.getPage(p)).getTextContent(),g={};c.items.forEach(t=>{const y=Math.round(t.transform[5]/4);(g[y]=g[y]||[]).push(t)});Object.keys(g).map(Number).sort((a,b)=>b-a).forEach(y=>lines.push(g[y].sort((a,b)=>a.transform[4]-b.transform[4]).map(t=>t.str).join(" ")))}
+}else{if(!window.XLSX)await ld("https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js");const wb=XLSX.read(await f.arrayBuffer(),{type:"array"});wb.SheetNames.forEach(n=>XLSX.utils.sheet_to_json(wb.Sheets[n],{header:1,raw:true,defval:""}).forEach(r=>{const l=r.map(c=>String(c).trim()).filter(Boolean).join(" ");if(l)lines.push(l)}))}
+if(lines.join("").trim().length<20){P.innerHTML='<div class="pyq">এই ফাইলে পড়ার মতো লেখা পাওয়া যায়নি (PDF হলে সম্ভবত স্ক্যান করা ছবি)।</div>';return}
+pend=parse(lines);if(!$("pyy").value){const y=nd(lines.join(" ")).match(/20\d\d/);if(y)$("pyy").value=y[0]}
+P.innerHTML=`<div class="pyq"><b>পাওয়া গেছে:</b><br>দাতা ${pend.don.length} জন — ${T(sum(pend.don))}<br>খরচ ${pend.exp.length} টি — ${T(sum(pend.exp))}<details style="margin-top:8px"><summary>পাওয়া সারিগুলো দেখুন</summary><div style="max-height:260px;overflow:auto">${pend.don.map(x=>`<div class="pyr"><span>👤 ${esc(x.n)}</span><b>${T(x.a)}</b></div>`).join("")}${pend.exp.map(x=>`<div class="pyr"><span>🧾 ${esc(x.n)}</span><b>${T(x.a)}</b></div>`).join("")}</div></details><div class="note" style="margin-top:6px">আপনার ফাইলের মোট অঙ্কের সাথে মিলিয়ে নিন। না মিললে আমাকে ফাইলের নমুনা দিন, পড়ার নিয়ম ঠিক করে দেব।</div><button class="btn sm" id="pyk" style="width:100%;margin-top:10px">ফর্মে নিয়ে ঠিক করুন</button></div>`;
+$("pyk").onclick=()=>{window.PYedit(pend,$("pyy").value.trim());pend=null;P.innerHTML="";$("pyf").value=""}}catch(err){P.innerHTML='<div class="pyq">ফাইল পড়া যায়নি। ইন্টারনেট চালু আছে কিনা এবং ফাইলটি ঠিক আছে কিনা দেখুন।</div>'}};
+rp()})();
+
+;(()=>{let D=null,sd=-1,ly="";const sum=a=>a.reduce((x,y)=>x+y.a,0),T=n=>"৳"+Number(n).toLocaleString("bn-BD"),nw=()=>({y:"",start:S.cfg.start||"",days:Array.from({length:30},()=>({w:"",k:"h",m:"",c:""})),don:[],exp:[]});
+function eg(){$("e7g").innerHTML=D.days.map((d,i)=>`<button type="button" class="d ${d.w?d.k:"e"}${i==sd?" tod":""}" data-i="${i}"><i>${bn(i+1)}</i><small>${d.w?esc(d.w):"ফাঁকা"}</small></button>`).join("")}
+function el(){$("e7dl").innerHTML=D.don.map((x,i)=>`<div class="row"><div class="av">${esc(x.n[0])}</div><div class="nm"><span>${esc(x.n)}</span></div><div class="amt in-c">${T(x.a)}</div><button class="x" data-d="${i}">✕</button></div>`).join("")+(D.don.length?`<div class="row"><b class="nm">মোট ${bn(D.don.length)} জন</b><b>${T(sum(D.don))}</b></div>`:'<div class="row nm">এখনো কোনো দাতা নেই।</div>');
+$("e7el").innerHTML=D.exp.map((x,i)=>`<div class="row"><div class="av" style="width:34px;height:34px">${x.day>=0?bn(x.day+1):"–"}</div><div class="nm"><span>${esc(x.c)}${x.n&&x.n!=x.c?" · "+esc(x.n):""}</span></div><div class="amt out-c">−${T(x.a)}</div><button class="x" data-e="${i}">✕</button></div>`).join("")+(D.exp.length?`<div class="row"><b class="nm">মোট খরচ</b><b>${T(sum(D.exp))}</b></div>`:'<div class="row nm">এখনো কোনো খরচ নেই।</div>')}
+function ed(){$("e7y").value=D.y;$("e7s").value=D.start||"";$("e7p").style.display="none";sd=-1;eg();el();const ys=Object.keys(S.past).sort().reverse();$("e7l").innerHTML=ys.length?ys.map(y=>`<option>${y}</option>`).join(""):"<option value=''>— নেই —</option>";$("e7ec").innerHTML=(typeof CATS!="undefined"?CATS:["অন্যান্য"]).map(x=>`<option>${x}</option>`).join("");$("e7ed").innerHTML='<option value="-1">কোন দিনের নয়</option>'+D.days.map((d,i)=>`<option value="${i}">${bn(i+1)} রমজান</option>`).join("")}
+window.PYnew=()=>{D=nw();ly="";ed();go(7)};
+window.PYedit=(p,y)=>{D=nw();D.y=y;D.don=p.don.map(x=>({n:x.n,a:x.a}));D.exp=p.exp.map(x=>({c:x.c,n:x.n,a:x.a,day:-1}));ly="";ed();go(7);toast("ফর্মে এসেছে — মিলিয়ে ঠিক করে সংরক্ষণ করুন")};
+$("e7lb").onclick=()=>{const y=$("e7l").value,d=S.past[y];if(!d)return;D=JSON.parse(JSON.stringify(d));D.y=y;D.days=D.days||nw().days;D.start=D.start||"";ly=y;ed()};
+$("e7y").oninput=e=>D.y=e.target.value.trim();$("e7s").onchange=e=>D.start=e.target.value;
+$("e7g").onclick=e=>{const b=e.target.closest(".d");if(!b)return;sd=+b.dataset.i;const d=D.days[sd];$("e7pt").textContent=bn(sd+1)+" রমজান";$("e7w").value=d.w;$("e7k").value=d.k;$("e7m").value=d.m||"";$("e7c").value=d.c||"";$("e7p").style.display="block";eg();$("e7p").scrollIntoView({block:"nearest"})};
+const up=()=>{if(sd<0)return;const d=D.days[sd];d.w=$("e7w").value.trim();d.k=$("e7k").value;d.m=$("e7m").value.trim();d.c=$("e7c").value;eg()};["e7w","e7k","e7m","e7c"].forEach(i=>$(i).oninput=up);$("e7k").onchange=up;
+$("e7db").onclick=()=>{const n=$("e7dn").value.trim(),a=+$("e7da").value;if(!n||!(a>0)){toast("নাম ও টাকা দিন");return}D.don.push({n,a});$("e7dn").value=$("e7da").value="";el()};
+$("e7eb").onclick=()=>{const a=+$("e7ea").value;if(!(a>0)){toast("টাকা দিন");return}D.exp.push({c:$("e7ec").value,n:$("e7en").value.trim(),a,day:+$("e7ed").value});$("e7ea").value=$("e7en").value="";el()};
+$("e7dl").onclick=e=>{const i=e.target.dataset.d;if(i!=null&&confirm("মুছবেন?")){D.don.splice(+i,1);el()}};$("e7el").onclick=e=>{const i=e.target.dataset.e;if(i!=null&&confirm("মুছবেন?")){D.exp.splice(+i,1);el()}};
+$("e7sv").onclick=()=>{const y=String(D.y).trim();if(!/^\d{4}$/.test(y)){toast("সঠিক সাল লিখুন");return}if(S.past[y]&&y!=ly&&!confirm(y+" সালের হিসাব আগে থেকেই আছে। বদলাবেন?"))return;S.past[y]={start:D.start,days:D.days,don:D.don,exp:D.exp};save();window.PYrp();$("pys").value=y;window.PYrp();go(6);toast("সংরক্ষিত ✓")};
+})();
+
+/* ===== অ্যাপ ইনস্টল (Android/Chrome) + iPhone হোম স্ক্রিন গাইড ===== */
+;(()=>{
+const $=i=>document.getElementById(i),KEY="iftar-inst-x";
+const standalone=()=>matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
+const ios=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+let dp=null;
+const dismissed=()=>{try{return Date.now()-(+localStorage.getItem(KEY)||0)<6048e5}catch(e){return false}};
+function paint(){
+ const can=!standalone()&&(dp||ios);
+ $("instChip").classList.toggle("on",!!can&&!dismissed());
+ const b=$("instBtn"),s=$("instS");
+ if(standalone()){b.style.display="none";s.textContent="✓ অ্যাপটি এই ফোনে ইনস্টল করা আছে।"}
+ else if(can){b.style.display="";b.textContent=dp?"📲 অ্যাপ ইনস্টল করুন":"📲 হোম স্ক্রিনে যোগ করুন (iPhone)"}
+ else{b.style.display="none";s.textContent="ইনস্টল করতে Chrome (Android) বা Safari (iPhone) দিয়ে খুলুন। Chrome-এর মেনু ⋮ → “Install app / হোম স্ক্রিনে যোগ করুন”।"}
+}
+async function doInstall(){
+ if(dp){dp.prompt();try{await dp.userChoice}catch(e){}dp=null;paint()}
+ else if(ios)$("iosDlg").showModal()}
+addEventListener("beforeinstallprompt",e=>{e.preventDefault();dp=e;paint()});
+addEventListener("appinstalled",()=>{dp=null;paint()});
+$("instGo").onclick=doInstall;$("instBtn").onclick=doInstall;
+$("instNo").onclick=()=>{try{localStorage.setItem(KEY,Date.now())}catch(e){}paint()};
+matchMedia("(display-mode: standalone)").addEventListener&&matchMedia("(display-mode: standalone)").addEventListener("change",paint);
+paint();
+})();
+</script></body></html>
