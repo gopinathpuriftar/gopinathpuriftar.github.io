@@ -279,6 +279,37 @@ input,select{border-radius:14px!important}
 .mk .x{width:40px;height:100%}
 .mkb{display:grid;gap:8px;margin-top:10px}
 body.noadm .tap{cursor:default}
+
+/* ===== বিগত বছর: PDF ভিউয়ার ও ধাপে ধাপে ফর্ম ===== */
+.wz-steps{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:12px 0 14px;padding:2px}
+.wz-steps::-webkit-scrollbar{display:none}
+.wz-s{flex:1 0 62px;font:inherit;display:grid;justify-items:center;gap:3px;padding:8px 4px;border-radius:16px;border:1px solid var(--line);background:var(--card);color:var(--mut);cursor:pointer;font-size:12px}
+.wz-s b{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--bg);color:var(--ink);font-size:13px}
+.wz-s.ok b{background:var(--mintBg);color:var(--mint)}
+.wz-s.on{border-color:var(--ac1);color:var(--ink);font-weight:700}
+.wz-s.on b{background:linear-gradient(135deg,var(--ac1),var(--ac2));color:#fff}
+.wz{padding:16px;margin-bottom:12px}
+.wz input,.wz select,.wz textarea{margin-top:8px}
+.wz textarea{min-height:110px;resize:vertical}
+.wz-bar{position:sticky;bottom:calc(92px + env(safe-area-inset-bottom,0px));display:flex;gap:10px;margin:14px 0 6px;padding:8px;border-radius:22px;background:var(--card);border:1px solid var(--line);box-shadow:0 14px 30px -18px rgba(30,40,110,.6);z-index:6}
+.wz-bar .btn{flex:1;width:auto}.wz-bar .x{padding:0 16px}
+.wzr{display:grid;grid-template-columns:34px 1fr 98px;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}
+.wzr:last-child{border:0}.wzr b{text-align:center}.wzr small{display:block;color:var(--mut);font-size:11px}.wzr input,.wzr select{margin:0;padding:9px}
+.wzr2{display:grid;grid-template-columns:1fr 92px 36px;gap:6px;margin-bottom:8px}.wzr2 input{margin:0;padding:10px 9px}
+.wzc{padding:9px 12px;border-radius:12px;margin:6px 0;font-size:15px}
+.wzc.bad{background:rgba(214,69,93,.14);color:#c4455a}.wzc.warn{background:var(--hostBg);color:var(--amberD)}.wzc.okk{background:var(--mintBg);color:var(--mint)}
+.pdr{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.pdr:last-child{border:0}.pdr .nm{flex:1;min-width:0}
+.pdr a.x{text-decoration:none;display:inline-block}
+#pdv{max-width:100%;width:100%;height:100%;max-height:100%;margin:0;padding:0;border-radius:0!important;background:#2b2f45!important;color:#fff;border:0!important}
+#pdv[open]{display:flex;flex-direction:column}
+#pdv::before{display:none}
+.pdh{display:flex;align-items:center;gap:8px;padding:calc(10px + env(safe-area-inset-top,0px)) 12px 10px;background:#141a4d}
+.pdh b{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:16px}
+.pdh button,.pdh a{flex:none;min-width:38px;height:38px;border-radius:12px;border:1px solid rgba(255,255,255,.35)!important;background:rgba(255,255,255,.12);color:#fff;font:inherit;font-weight:700;display:grid;place-items:center;text-decoration:none;cursor:pointer;padding:0 10px}
+#pdvb{flex:1;overflow:auto;padding:10px 8px calc(20px + env(safe-area-inset-bottom,0px));-webkit-overflow-scrolling:touch}
+#pdvb .pgs{display:flex;flex-direction:column;align-items:center;gap:10px;min-width:max-content}
+#pdvb canvas{background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.4);display:block}
+#pdvb .pdm{color:#d7dcff;text-align:center;padding:30px 10px}
 </style></head><body>
 <header class="hero"><svg class="sky" id="sky" aria-hidden="true"></svg><svg class="moon2" viewBox="0 0 100 100" aria-hidden="true"><defs><mask id="mk2"><rect width="100" height="100" fill="#fff"/><circle cx="64" cy="40" r="33" fill="#000"/></mask></defs><circle cx="46" cy="52" r="38" fill="#f6d98a" mask="url(#mk2)"/></svg><div class="top"><div class="brand"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lgG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe5a0"/><stop offset="1" stop-color="#c9962e"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="#0f1b3d" stroke="url(#lgG)" stroke-width="2.5"/><circle cx="32" cy="32" r="25" fill="none" stroke="url(#lgG)" stroke-width=".8" opacity=".6"/><g fill="url(#lgG)"><path d="M33.4 10.5a5.2 5.2 0 1 0 0 9.6a4.2 4.2 0 1 1 0-9.6z"/><rect x="31.4" y="19" width="1.2" height="5"/><path d="M19 42c0-10 6-16 13-16s13 6 13 16z"/><rect x="12" y="30" width="4.6" height="16" rx="1"/><path d="M12 30l2.3-7 2.3 7z"/><rect x="47.4" y="30" width="4.6" height="16" rx="1"/><path d="M47.4 30l2.3-7 2.3 7z"/><rect x="11" y="42" width="42" height="5" rx="1.5"/></g><path d="M28 47v-4.5a4 4 0 0 1 8 0V47z" fill="#0f1b3d"/></svg><div class="bt"><h1 class="serif">গোপীনাথপুর জামে মসজিদ</h1><p>রমজানের পূর্ণাঙ্গ হিসাব</p></div></div><div class="tools"><button id="instTop" aria-label="অ্যাপ ইনস্টল"><span class="ic ic-dl"></span>ইনস্টল</button><button id="lng" aria-label="ভাষা">EN</button><button id="thm" aria-label="থিম">🌓</button><button onclick="go(5)" aria-label="সেটিংস">⚙</button></div></div><div class="bis" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><svg class="skyline" viewBox="0 0 400 110" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#5a52b8" opacity=".5"><path d="M0 110V84q16-24 32 0v26zM352 110V80q18-26 36 0v30z"/><rect x="62" y="48" width="5" height="62"/><path d="M62 48l2.5-18 2.5 18z"/><rect x="333" y="48" width="5" height="62"/><path d="M333 48l2.5-18 2.5 18z"/></g><g fill="#0f1b3d"><path d="M118 110V76C118 42 156 24 200 24S282 42 282 76V110Z"/><path d="M62 110V92C62 72 84 62 104 62S138 74 138 92V110Z"/><path d="M262 110V92C262 74 276 62 296 62S338 72 338 92V110Z"/><path d="M199.2 24V8h1.6v16z"/><path d="M201.5 3.5a4.5 4.5 0 1 0 0 8.8a3.6 3.6 0 1 1 0-8.8z"/><rect x="26" y="38" width="6" height="72"/><rect x="23" y="56" width="12" height="3.5" rx="1"/><path d="M26 38l3-26 3 26z"/><rect x="368" y="38" width="6" height="72"/><rect x="365" y="56" width="12" height="3.5" rx="1"/><path d="M368 38l3-26 3 26z"/><rect x="84" y="56" width="5" height="54"/><path d="M84 56l2.5-18 2.5 18z"/><rect x="311" y="56" width="5" height="54"/><path d="M311 56l2.5-18 2.5 18z"/><rect y="100" width="400" height="10"/></g><g fill="#f3cf7a" opacity=".9"><circle cx="160" cy="84" r="1.8"/><circle cx="180" cy="84" r="1.8"/><circle cx="200" cy="84" r="1.8"/><circle cx="220" cy="84" r="1.8"/><circle cx="240" cy="84" r="1.8"/><circle cx="104" cy="88" r="1.6"/><circle cx="296" cy="88" r="1.6"/><circle cx="29" cy="70" r="1.4"/><circle cx="371" cy="70" r="1.4"/></g></svg></header>
 <div class="wrap">
@@ -319,21 +350,19 @@ body.noadm .tap{cursor:default}
 <div class="two"><input id="ga" type="number" inputmode="numeric" placeholder="টাকা"><select id="gm"><option>বিকাশ</option><option>নগদ</option><option>ব্যাংক</option><option>হাতে নগদ</option></select></div>
 <input id="gt" placeholder="ট্রানজেকশন আইডির শেষ ৪ ডিজিট (আবশ্যক)" maxlength="40" autocomplete="off"><label for="gs">📎 পেমেন্টের স্ক্রিনশট (ঐচ্ছিক)</label><input type="file" id="gs" accept="image/*"><div id="gsp"></div><button class="btn" id="ggo">দানের তথ্য জমা দিন</button><p class="note" id="gmsg" style="margin:0"></p></div></div></section><section class="v" id="v5"><div style="display:flex;justify-content:space-between;align-items:center"><h2 class="serif" style="margin-top:22px">সেটিংস</h2><button class="x" onclick="go(0)">← ফিরে যান</button></div><div class="grp"><span>👤</span>আমার জন্য</div><h2 class="serif">সাইন ইন</h2><div class="card acc" style="padding:16px"><div id="auS" class="note" style="font-size:15px">সাইন ইন করা নেই</div><button class="btn sm gbtn" id="agg"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.4-.8-3-.8-4.7s.3-3.2.8-4.7l-7.9-6.1C.9 16.4 0 20.1 0 24s.9 7.6 2.6 10.8l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg><span>Google দিয়ে সাইন ইন</span></button><button class="btn sm" id="aout" style="width:100%;margin-top:10px;background:var(--line)!important;color:var(--ink)!important;box-shadow:none!important;display:none">সাইন আউট</button></div><h2 class="serif">রং ও চেহারা</h2><div class="card" style="padding:16px"><div class="lbl">অ্যাকসেন্ট কালার</div><div class="sw" id="sw"><button style="background:linear-gradient(135deg,#5b6cff,#1aa3ff)" aria-label="নীল"></button><button style="background:linear-gradient(135deg,#ff5e7e,#ff9a4d)" aria-label="কমলা"></button><button style="background:linear-gradient(135deg,#00c896,#00b4f0)" aria-label="সবুজ"></button><button style="background:linear-gradient(135deg,#a855f7,#ec4899)" aria-label="বেগুনি"></button></div>
 <div class="lbl" style="margin-top:18px">থিম</div><div class="seg" id="thseg"><button data-v="light">☀️ লাইট</button><button data-v="dark">🌙 ডার্ক</button></div>
-<div class="lbl" style="margin-top:18px">লেখার সাইজ</div><div class="seg" id="txseg"><button data-v="0">সাধারণ</button><button data-v="1">বড়</button><button data-v="2">অতি বড়</button></div></div><div id="instBox"><h2 class="serif">অ্যাপ ইনস্টল</h2><div class="card" style="padding:16px"><div id="instS" class="note" style="font-size:15px;margin:0 0 10px">ফোনের হোম স্ক্রিনে অ্যাপ হিসেবে রাখুন — দ্রুত খুলবে, অফলাইনেও চলবে।</div><button class="btn" id="instBtn"><span class="ic ic-dl"></span>অ্যাপ ইনস্টল করুন</button></div></div><h2 class="serif">QR কোড</h2><div class="card" style="padding:16px"><div class="note" style="font-size:15px;margin:0 0 12px">আজকের ইফতার, ইফতার বুকিং ও দানের QR কোড দেখুন বা প্রিন্টের জন্য ডাউনলোড করুন।</div><button class="btn" id="qrOpen" style="width:100%"><span class="ic ic-qr"></span>QR কোড দেখুন</button><div class="admonly"><label for="lk" style="display:block;font-size:13px;color:var(--mut);margin-top:14px">অ্যাপের লিংক (অ্যাডমিন বদলাতে পারবেন)</label><input id="lk" placeholder="https://..."></div></div><h2 class="serif">বিগত বছরের হিসাব</h2><div class="card" style="padding:16px"><div class="note" style="font-size:15px;margin-bottom:12px">আগের বছরগুলোর হিসাব সবাই দেখতে পারবেন। নতুন যোগ বা বদল শুধু প্রধান অ্যাডমিন করতে পারেন।</div><button class="btn" style="width:100%" onclick="go(6)">📚 আগের বছরের হিসাব দেখুন</button><button class="btn ownonly" style="width:100%;margin-top:10px" onclick="PYnew()">✍️ বিগত বছরের হিসাব তুলুন (ফর্ম)</button><button class="btn ownonly" style="width:100%;margin-top:10px" onclick="go(6)">📄 PDF/Excel থেকে পড়ুন</button></div><details class="admonly admgrp" open><summary><span>⚙</span>অ্যাডমিন টুলস</summary><div class="admonly"><h2 class="serif">রমজান শুরুর তারিখ</h2><div class="card" style="padding:14px"><input id="st" type="date" aria-label="রমজান শুরুর তারিখ"></div>
-<h2 class="serif">ইফতারের সময় ও লক্ষ্য</h2><div class="card set"><label for="it">ইফতারের সময় (কাউন্টডাউনের জন্য)</label><input id="it" type="time"><label for="gl">সংগ্রহের লক্ষ্যমাত্রা (টাকা)</label><input id="gl" type="number" inputmode="numeric" placeholder="যেমন: ৫০০০০"></div></div><div class="ownonly"><h2 class="serif">দান গ্রহণের নম্বর</h2><div class="card set"><label for="pbk">বিকাশ নম্বর</label><input id="pbk" type="tel" inputmode="tel"><label for="png">নগদ নম্বর</label><input id="png" type="tel" inputmode="tel"><label for="pot">অন্যান্য (ব্যাংক হিসাব ইত্যাদি)</label><input id="pot"></div></div><div class="admonly"><h2 class="serif">শেয়ার ও PDF রিপোর্ট</h2><div class="card" style="padding:16px"><div><button class="btn" id="share">হিসাব শেয়ার করুন</button><button class="btn" id="dl2" style="margin-top:12px">পিডিএফ রিপোর্ট ডাউনলোড (A4)</button></div>
+<div class="lbl" style="margin-top:18px">লেখার সাইজ</div><div class="seg" id="txseg"><button data-v="0">সাধারণ</button><button data-v="1">বড়</button><button data-v="2">অতি বড়</button></div></div><div id="instBox"><h2 class="serif">অ্যাপ ইনস্টল</h2><div class="card" style="padding:16px"><div id="instS" class="note" style="font-size:15px;margin:0 0 10px">ফোনের হোম স্ক্রিনে অ্যাপ হিসেবে রাখুন — দ্রুত খুলবে, অফলাইনেও চলবে।</div><button class="btn" id="instBtn"><span class="ic ic-dl"></span>অ্যাপ ইনস্টল করুন</button></div></div><h2 class="serif">QR কোড</h2><div class="card" style="padding:16px"><div class="note" style="font-size:15px;margin:0 0 12px">আজকের ইফতার, ইফতার বুকিং ও দানের QR কোড দেখুন বা প্রিন্টের জন্য ডাউনলোড করুন।</div><button class="btn" id="qrOpen" style="width:100%"><span class="ic ic-qr"></span>QR কোড দেখুন</button><div class="admonly"><label for="lk" style="display:block;font-size:13px;color:var(--mut);margin-top:14px">অ্যাপের লিংক (অ্যাডমিন বদলাতে পারবেন)</label><input id="lk" placeholder="https://..."></div></div><h2 class="serif">বিগত বছরের হিসাব</h2><div class="card" style="padding:16px"><div class="note" style="font-size:15px;margin-bottom:12px">আগের বছরগুলোর হিসাব ও পিডিএফ ফাইল সবাই অ্যাপের ভেতরেই দেখতে পারবেন। নতুন যোগ বা বদল শুধু প্রধান অ্যাডমিন করতে পারেন।</div><button class="btn" style="width:100%" onclick="go(6)">📚 আগের বছরের হিসাব দেখুন</button><button class="btn ownonly" style="width:100%;margin-top:10px" onclick="PYnew()">✍️ নতুন সাল যোগ করুন (ধাপে ধাপে)</button></div><details class="admonly admgrp" open><summary><span>⚙</span>অ্যাডমিন টুলস</summary><div class="admonly"><h2 class="serif">রমজান শুরুর তারিখ</h2><div class="card" style="padding:14px"><input id="st" type="date" aria-label="রমজান শুরুর তারিখ"></div>
+<h2 class="serif">এ বছরের পরিচালকবৃন্দ</h2><div class="card acc" style="padding:16px"><div class="note" style="margin:0 0 10px">চলমান সাল: <b id="mgY"></b>। যাঁরা এ বছর ইফতার ব্যবস্থাপনা করছেন তাঁদের নাম ও দায়িত্ব দিন — বছর শেষে আর্কাইভ করলে নামসহ সংরক্ষিত থাকবে।</div><div id="mgL"></div><input id="mgN" placeholder="নাম"><input id="mgR" list="mgRl" placeholder="দায়িত্ব (যেমন: সভাপতি, কোষাধ্যক্ষ)"><datalist id="mgRl"><option value="সভাপতি"><option value="সাধারণ সম্পাদক"><option value="কোষাধ্যক্ষ"><option value="ইফতার সমন্বয়কারী"><option value="সদস্য"></datalist><button class="btn" id="mgA" type="button" style="margin-top:10px">যোগ করুন</button><div class="ownonly"><div class="lbl" style="margin-top:18px">বছর শেষে</div><button class="btn" id="arcB" type="button" style="width:100%">📦 এই বছরের পুরো হিসাব আর্কাইভে রাখুন</button><div class="note" style="margin:8px 0 0">দাতা, খরচ, ইফতারদাতা ও পরিচালকদের নাম "বিগত বছরের হিসাব"-এ চলে যাবে। বেনামী দাতার নাম লুকানো থাকবে।</div></div></div><h2 class="serif">ইফতারের সময় ও লক্ষ্য</h2><div class="card set"><label for="it">ইফতারের সময় (কাউন্টডাউনের জন্য)</label><input id="it" type="time"><label for="gl">সংগ্রহের লক্ষ্যমাত্রা (টাকা)</label><input id="gl" type="number" inputmode="numeric" placeholder="যেমন: ৫০০০০"></div></div><div class="ownonly"><h2 class="serif">দান গ্রহণের নম্বর</h2><div class="card set"><label for="pbk">বিকাশ নম্বর</label><input id="pbk" type="tel" inputmode="tel"><label for="png">নগদ নম্বর</label><input id="png" type="tel" inputmode="tel"><label for="pot">অন্যান্য (ব্যাংক হিসাব ইত্যাদি)</label><input id="pot"></div></div><div class="admonly"><h2 class="serif">শেয়ার ও PDF রিপোর্ট</h2><div class="card" style="padding:16px"><div><button class="btn" id="share">হিসাব শেয়ার করুন</button><button class="btn" id="dl2" style="margin-top:12px">পিডিএফ রিপোর্ট ডাউনলোড (A4)</button></div>
 </div></div><div class="admonly"><h2 class="serif">ব্যাকআপ ও এক্সপোর্ট</h2><div class="card set"><div class="two"><button class="btn sm" id="bk" style="width:100%">JSON ব্যাকআপ</button><button class="btn sm" id="csv" style="width:100%">Excel (CSV)</button></div><div class="ownonly"><label for="rs">ব্যাকআপ থেকে রিস্টোর</label><input id="rs" type="file" accept=".json,application/json"></div></div></div><div class="admonly"><h2 class="serif">নিরাপত্তা</h2><div class="card set"><label for="pn">অ্যাডমিন পিন (খালি রাখলে পিন বন্ধ)</label><input id="pn" type="password" inputmode="numeric" placeholder="নতুন পিন"><div class="two"><button class="btn sm" id="pset" style="width:100%">পিন সেট করুন</button><button class="btn sm" id="plock" style="width:100%;background:var(--line);color:var(--ink)">লক / আনলক</button></div></div></div><div class="ownonly"><h2 class="serif">পরিবর্তনের লগ (স্বচ্ছতা)</h2><div class="card" id="alogC" style="padding:6px 14px;max-height:480px;overflow:auto"></div></div><div class="ownonly" id="admBox"><h2 class="serif">অ্যাডমিন ব্যবস্থাপনা</h2><div class="card" style="padding:16px"><div class="note" style="margin:0 0 8px">আপনি প্রধান অ্যাডমিন। অ্যাডমিনরা আয়-ব্যয়, বুকিং ইত্যাদি সবই বদলাতে পারবেন; কিন্তু কাউকে অ্যাডমিন করা/সরানো, আপনাকে সরানো, বিগত বছরের হিসাব বদলানো পারবেন না।</div><div class="lbl">বর্তমান অ্যাডমিন</div><div id="admL"></div><div class="lbl" style="margin-top:14px">Google দিয়ে সাইন ইন করেছেন এমন সদস্য</div><div id="usrL"></div><div class="lbl" style="margin-top:14px">ইমেইল দিয়ে সরাসরি যোগ</div><input id="admE" type="email" inputmode="email" placeholder="example@gmail.com"><button class="btn" id="admA" style="margin-top:10px">অ্যাডমিন যোগ করুন</button></div></div><div class="admonly"><h2 class="serif">সিঙ্ক অবস্থা</h2><div class="card" style="padding:16px"><div id="net" class="pill"></div></div></div></details></section>
 
 <section class="v" id="v6"><div style="display:flex;justify-content:space-between;align-items:center"><h2 class="serif" style="margin-top:22px">বিগত বছরের হিসাব</h2><button class="x" onclick="go(0)">← ফিরে যান</button></div>
-<div class="card" style="padding:16px"><div class="lbl">সাল বেছে নিন</div><select id="pys" style="width:100%;font-size:18px;padding:12px;border-radius:14px"></select><button class="btn" id="pyd" style="width:100%;margin-top:14px;display:none">📄 এই সালের PDF ডাউনলোড</button><button class="btn ownonly" id="pydel" style="width:100%;margin-top:10px;display:none;background:#f3d3d3!important;color:#8a1c1c!important;box-shadow:none!important;text-shadow:none!important">🗑 এই সালের হিসাব মুছুন</button></div><div id="pyb"></div>
-<div id="pyup"><h2 class="serif">পুরোনো হিসাব আপলোড (অ্যাডমিন)</h2><div class="card" style="padding:16px"><div class="note" style="font-size:15px;margin-bottom:10px">আগের বছরের হিসাবের PDF বা Excel (.xlsx/.xls/.csv) ফাইল দিন। অ্যাপ নিজে পড়ে দাতা ও খরচ আলাদা করে দেখাবে; আপনি মিলিয়ে নিয়ে সংরক্ষণ করবেন। PDF-এ লেখা সিলেক্ট করা যেতে হবে (ছবি/স্ক্যান নয়)।</div><input id="pyf" type="file" accept="application/pdf,.pdf,.xlsx,.xls,.csv"><label for="pyy" style="display:block;margin-top:10px">সাল</label><input id="pyy" type="text" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="যেমন: 2024"><div id="pyp"></div></div></div></section>
-<section class="v" id="v7"><div style="display:flex;justify-content:space-between;align-items:center"><h2 class="serif" style="margin-top:22px">বিগত বছরের হিসাব তুলুন</h2><button class="x" onclick="go(6)">← ফিরে যান</button></div>
-<div class="card acc" style="padding:16px"><div class="lbl">সাল ও শুরুর তারিখ</div><input id="e7y" type="text" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="সাল, যেমন: 2024"><label for="e7s" style="display:block;margin-top:10px">রমজান শুরুর তারিখ</label><input id="e7s" type="date"><div class="note" id="e7sn" style="margin:8px 2px 0"></div><button type="button" class="x" id="e7sr" style="display:none;margin-top:6px">বাংলাদেশের তারিখ বসান</button><label for="e7l" style="display:block;margin-top:10px">আগে সংরক্ষিত সাল ঠিক করতে চাইলে</label><div class="two"><select id="e7l"></select><button class="btn sm" id="e7lb" type="button" style="width:100%">লোড করুন</button></div></div>
-<h2 class="serif">ইফতারের দায়িত্বশীল</h2><div class="card acc" style="padding:16px"><div class="lbl">ওই বছর ইফতারের দায়িত্ব পালনকারী</div><div id="e7rl"></div><div style="display:flex;gap:8px;margin-top:10px"><input id="e7r" placeholder="নাম লিখুন" style="margin:0"><button class="btn sm" id="e7rb" type="button" style="flex:none;width:auto">যোগ করুন</button></div><label class="chk"><input type="checkbox" id="e7rk">প্রতি বছরের স্থায়ী দায়িত্বশীলের তালিকায়ও রাখুন</label><div class="lbl" style="margin-top:16px">প্রতি বছর যারা দায়িত্ব পালন করেন</div><div id="e7reg" style="display:flex;flex-wrap:wrap;gap:8px"></div></div>
-<h2 class="serif">রমজানের ৩০ দিন — চাপ দিয়ে ইফতারদাতা বসান</h2><div class="leg"><span><s style="background:var(--amber)"></s>কারো ইফতার</span><span><s style="background:var(--mint)"></s>ইফতার ফান্ড</span><span><s style="border:1px dashed var(--mut)"></s>ফাঁকা</span></div><div class="grid" id="e7g"></div>
-<div class="card acc" id="e7p" style="padding:16px;margin-top:12px;display:none"><div class="lbl" id="e7pt"></div><input id="e7w" placeholder="ইফতারদাতার নাম (ফাঁকা রাখলে কেউ নেই)"><select id="e7k" style="margin-top:8px"><option value="h">কারো ইফতার</option><option value="m">ইফতার ফান্ড</option></select><input id="e7m" placeholder="মেনু (ঐচ্ছিক)"><input id="e7c" type="number" inputmode="numeric" placeholder="কত জনের ইফতার (ঐচ্ছিক)"></div>
-<h2 class="serif">দাতা যোগ করুন</h2><div class="card acc" style="padding:16px"><input id="e7dn" placeholder="দাতার নাম"><input id="e7da" type="number" inputmode="numeric" placeholder="টাকা"><button class="btn" id="e7db" type="button" style="width:100%;margin-top:10px">দাতা যোগ করুন</button></div><div class="card" id="e7dl" style="margin-top:10px"></div>
-<h2 class="serif">খরচ যোগ করুন</h2><div class="card acc" style="padding:16px"><select id="e7ec"></select><input id="e7ea" type="number" inputmode="numeric" placeholder="টাকা"><input id="e7en" placeholder="বিবরণ (ঐচ্ছিক)"><select id="e7ed" style="margin-top:8px"></select><button class="btn" id="e7eb" type="button" style="width:100%;margin-top:10px">খরচ যোগ করুন</button></div><div class="card" id="e7el" style="margin-top:10px"></div>
-<button class="btn" id="e7sv" type="button" style="width:100%;margin:22px 0 10px">✅ এই সালের হিসাব সংরক্ষণ করুন</button></section>
+<div class="chips" id="pyc" style="margin-top:4px"></div><select id="pys" hidden aria-hidden="true"></select>
+<div id="pyn"></div>
+<div id="pydat"><div id="pyb"></div><div class="card" style="padding:16px;margin-top:14px"><div class="note" style="margin:0 0 10px">উপরের তথ্য থেকে নিজে নিজে একটি পিডিএফ রিপোর্টও বানানো যায়।</div><button class="btn" id="pyd" style="width:100%;display:none">📄 তথ্য থেকে পিডিএফ তৈরি করুন</button><button class="btn ownonly" id="pydel" style="width:100%;margin-top:10px;display:none;background:#f3d3d3!important;color:#8a1c1c!important;box-shadow:none!important;text-shadow:none!important">🗑 এই সালের হিসাব মুছুন</button></div></div>
+<div class="ownonly"><div class="card" style="padding:16px;margin-top:14px"><div class="lbl">প্রধান অ্যাডমিন</div><button class="btn" style="width:100%" onclick="PYnew()">✍️ নতুন সাল যোগ করুন</button><button class="btn" id="pyed" style="width:100%;margin-top:10px;display:none">✏️ এই সালের তথ্য ঠিক করুন</button></div></div>
+<div id="pyup"><details class="card" style="padding:14px;margin-top:14px"><summary style="cursor:pointer;font-weight:700">🤖 পিডিএফ/এক্সেল থেকে স্বয়ংক্রিয় পড়া (পরীক্ষামূলক)</summary><div class="note" style="font-size:14px;margin:10px 0">আগের বছরের হিসাবের পিডিএফ বা Excel (.xlsx/.xls/.csv) দিন। অ্যাপ নিজে পড়ে দাতা ও খরচ আলাদা করবে; তারপর ফর্মে নিয়ে মিলিয়ে সংরক্ষণ করবেন। পিডিএফে লেখা সিলেক্ট করা যেতে হবে (ছবি/স্ক্যান নয়)।</div><input id="pyf" type="file" accept="application/pdf,.pdf,.xlsx,.xls,.csv"><label for="pyy" style="display:block;margin-top:10px">সাল</label><input id="pyy" type="text" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="যেমন: 2024"><div id="pyp"></div></details></div></section>
+<section class="v" id="v7"><div style="display:flex;justify-content:space-between;align-items:center"><h2 class="serif" style="margin-top:22px">নতুন সাল যোগ করুন</h2><button class="x" onclick="go(6)">← ফিরে যান</button></div>
+<div class="wz-steps" id="wzs"></div><div id="wzb"></div>
+<div class="wz-bar"><button type="button" class="x" id="wzp">← পেছনে</button><button type="button" class="btn" id="wzn">পরবর্তী →</button><button type="button" class="btn" id="e7sv" style="display:none">✅ সংরক্ষণ করুন</button></div></section>
 </div>
 <nav class="tab"><div>
 <button class="on" data-t="0"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>হোম</button>
@@ -359,6 +388,7 @@ body.noadm .tap{cursor:default}
 <label for="qdt">তারিখ</label><input id="qdt" type="date">
 <div style="display:flex;gap:10px;margin-top:16px"><button class="btn" id="qsave">সংরক্ষণ করুন</button><button class="btn" id="qdel" style="background:#f3d3d3;color:#8a1c1c;width:34%">মুছুন</button><button class="btn" style="background:var(--line);color:var(--ink);width:34%" onclick="$('qdg').close()">বাদ</button></div></dialog>
 <dialog id="cf"><form method="dialog"><p id="cfm" style="font-size:17px;margin:4px 0 10px"></p><input id="cfi" type="password" inputmode="numeric" style="display:none"><div style="display:flex;gap:10px;margin-top:14px"><button class="btn" value="ok">হ্যাঁ</button><button class="btn" value="no" style="background:var(--line);color:var(--ink)">না</button></div></form></dialog>
+<dialog id="pdv"><div class="pdh"><button type="button" id="pdc" aria-label="বন্ধ করুন">✕</button><b id="pdt"></b><button type="button" id="pdm" aria-label="ছোট করুন">−</button><button type="button" id="pdp" aria-label="বড় করুন">＋</button><a id="pdd" download aria-label="ডাউনলোড">⬇</a></div><div id="pdvb"></div></dialog>
 <div id="rep" aria-hidden="true"></div>
 <script src="firebase-config.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
@@ -408,17 +438,17 @@ const hosts=[...S.days.map((d,i)=>({i,n:d.w,a:sm(dayExp(i)),h:d.k=="h"&&d.w})).f
 $("hosts").innerHTML=hosts.map(x=>`<div class="row"><div class="av">${bn(x.i+1)}</div><div class="nm"><span>${esc(x.n)}</span><small style="color:var(--mut)">${bn(x.i+1)} রমজান · ${fmt(x.i)}</small></div><div class="amt out-c">${x.a?tk(x.a):"নিজ খরচে"}</div></div>`).join("")||'<div class="row nm">এখনো কেউ নেই।</div>';
 $("bl").innerHTML=[...BK].sort((a,b)=>a.day-b.day).map(b=>`<div class="row"><div class="av">${bn(b.day+1)}</div><div class="nm"><span>${esc(b.n)} <span class="bd ${b.st=="ok"?"ok":""}">${b.st=="ok"?"নিশ্চিত":"অপেক্ষমান"}</span></span><small style="color:var(--mut)">${fmt(b.day)}${adm?" · "+esc(b.p):""}</small></div>${adm?`${b.st=="ok"?"":`<button class="x" data-ok="${b.id}">নিশ্চিত</button>`}<button class="x" data-rm="${b.id}" aria-label="মুছুন">✕</button>`:""}</div>`).join("")||'<div class="row nm">এখনো কোনো বুকিং নেই।</div>';
 const t0=new Date(),s=c.start.split("-"),ti=Math.round((new Date(t0.getFullYear(),t0.getMonth(),t0.getDate(),12)-new Date(+s[0],s[1]-1,+s[2],12))/864e5),d=S.days[ti],bk=BK.find(b=>b.day==ti&&b.st=="ok"),who=d&&(d.w||(bk&&bk.n)),ex=d?dayExp(ti):[];
-$("today").innerHTML='<h2 class="serif">আজকের ইফতার</h2><div class="card" style="padding:14px">'+(d?`<div style="font-weight:700">${bn(ti+1)} রমজান · ${fmt(ti)}</div><div style="margin-top:6px">${who?"ইফতার দিচ্ছেন: <b>"+esc(who)+"</b>":"আজকের ইফতারদাতা এখনো ঠিক হয়নি"}</div>`+(ex.length?'<div class="note">'+ex.map(x=>esc(x.c)+(x.n?" "+esc(x.n):"")+" "+tk(x.a)).join(" · ")+`</div><div class="note">খরচ ${tk(sm(ex))} · ফান্ডে ${tk(balAfter(ti))}</div>`:""):`<div class="note" style="margin:0">আজ রমজানের দিন নয়। রমজান ২০২৬: ${fmt(0)} থেকে ${fmt(29)}।</div>`)+'<button class="btn sm" style="margin-top:12px" onclick="go(4)">ইফতার বুকিং দিন</button></div>'}
+$("today").innerHTML='<h2 class="serif">আজকের ইফতার</h2><div class="card" style="padding:14px">'+(d?`<div style="font-weight:700">${bn(ti+1)} রমজান · ${fmt(ti)}</div><div style="margin-top:6px">${who?"ইফতার দিচ্ছেন: <b>"+esc(who)+"</b>":"আজকের ইফতারদাতা এখনো ঠিক হয়নি"}</div>`+(ex.length?'<div class="note">'+ex.map(x=>esc(x.c)+(x.n?" "+esc(x.n):"")+" "+tk(x.a)).join(" · ")+`</div><div class="note">খরচ ${tk(sm(ex))} · ফান্ডে ${tk(balAfter(ti))}</div>`:""):`<div class="note" style="margin:0">আজ রমজানের দিন নয়। রমজান ${String(S.cfg.start.slice(0,4)).replace(/\d/g,d=>"০১২৩৪৫৬৭৮৯"[d])}: ${fmt(0)} থেকে ${fmt(29)}।</div>`)+'<button class="btn sm" style="margin-top:12px" onclick="go(4)">ইফতার বুকিং দিন</button></div>'}
 async function put(op,id,data){if(DB){const c=DB.collection("bookings");if(op=="add")await c.add(data);else if(op=="ok")await c.doc(id).update({st:"ok"});else await c.doc(id).delete()}else{if(op=="add")S.book.push({id:"l"+Date.now(),...data});else if(op=="ok")S.book.find(b=>b.id==id).st="ok";else S.book=S.book.filter(b=>b.id!=id);BK=S.book;save();rb()}}
 function repHtml(){const inn=tot(),out=spent(),by=CATS.map(c=>[c,sm(S.exp.filter(x=>isF(x)&&x.c==c))]).filter(x=>x[1]),now=new Date().toLocaleDateString(LOCL,{day:"numeric",month:"long",year:"numeric"}),hosts=S.days.map((d,i)=>[d,i]).filter(([d])=>d.w);
 const row=(a,b)=>`<div class="rr"><span>${a}</span><b>${b}</b></div>`;
-return `<div class="rh"><div><div class="rt">গোপীনাথপুর জামে মসজিদ</div><div class="rs">রমজানের পূর্ণাঙ্গ হিসাব · প্রতিবেদন ২০২৬</div></div><div class="rs">তারিখ: ${now}</div></div>
+return `<div class="rh"><div><div class="rt">গোপীনাথপুর জামে মসজিদ</div><div class="rs">রমজানের পূর্ণাঙ্গ হিসাব · প্রতিবেদন ${String(S.cfg.start.slice(0,4)).replace(/\d/g,d=>"০১২৩৪৫৬৭৮৯"[d])}</div></div><div class="rs">তারিখ: ${now}</div></div>
 <div class="r3"><div>ইফতার ফান্ড<b>${tk(inn)}</b></div><div>মোট খরচ<b>${tk(out)}</b></div><div>অবশিষ্ট<b>${tk(inn-out)}</b></div></div>
 <div class="r2"><div><h4>খাত অনুযায়ী খরচ</h4>${by.map(([c,v])=>row(esc(c),tk(v))).join("")||"<i>কোনো খরচ নেই</i>"}${row("মোট খরচ",tk(out))}<h4>ইফতারদাতা</h4>${hosts.map(([d,i])=>row(bn(i+1)+" রমজান · "+esc(d.w),tk(sm(dayExp(i))))).join("")||"<i>–</i>"}</div>
 <div><h4>দান তালিকা (${bn(S.don.length)} জন)</h4>${S.don.map(x=>row(esc(x.an?"বেনামী দাতা":x.n)+(x.pr?" (প্রবাসী)":""),tk(x.a))).join("")||"<i>–</i>"}${row("ইফতার ফান্ড",tk(inn))}</div></div>
 <h4>খরচের বিবরণ</h4><div class="rc">${S.exp.map(x=>row((x.day>=0?bn(x.day+1)+" রমজান · ":"")+esc(x.c)+(x.n?" · "+esc(x.n):""),tk(x.a))).join("")||"<i>–</i>"}</div>
 <div class="rg"><span>কোষাধ্যক্ষ</span><span>সভাপতি</span></div>`}
-$("dl2").onclick=async()=>{const b=$("dl2"),t=b.textContent;b.textContent="পিডিএফ তৈরি হচ্ছে…";try{const r=$("rep");r.innerHTML=repHtml();await document.fonts.ready;for(let f=13;f>=6;f-=.5){r.style.setProperty("--fs",f+"px");if(r.scrollHeight<=1123)break}const cv=await html2canvas(r,{scale:2,backgroundColor:"#fff",width:794,height:1123,windowWidth:794});const P=new window.jspdf.jsPDF({unit:"mm",format:"a4"});P.addImage(cv.toDataURL("image/jpeg",.95),"JPEG",0,0,210,297);const bl=P.output("blob"),fn="iftar-fund-2026-report.pdf",fl=new File([bl],fn,{type:"application/pdf"});if(navigator.canShare&&navigator.canShare({files:[fl]})){try{await navigator.share({files:[fl]})}catch(e){}}else{const a=document.createElement("a");a.href=URL.createObjectURL(bl);a.download=fn;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},4000)}}catch(e){b.textContent="পিডিএফ হয়নি, আবার চেষ্টা করুন";setTimeout(()=>b.textContent=t,2500);return}b.textContent=t};
+$("dl2").onclick=async()=>{const b=$("dl2"),t=b.textContent;b.textContent="পিডিএফ তৈরি হচ্ছে…";try{const r=$("rep");r.innerHTML=repHtml();await document.fonts.ready;for(let f=13;f>=6;f-=.5){r.style.setProperty("--fs",f+"px");if(r.scrollHeight<=1123)break}const cv=await html2canvas(r,{scale:2,backgroundColor:"#fff",width:794,height:1123,windowWidth:794});const P=new window.jspdf.jsPDF({unit:"mm",format:"a4"});P.addImage(cv.toDataURL("image/jpeg",.95),"JPEG",0,0,210,297);const bl=P.output("blob"),fn="iftar-fund-"+S.cfg.start.slice(0,4)+"-report.pdf",fl=new File([bl],fn,{type:"application/pdf"});if(navigator.canShare&&navigator.canShare({files:[fl]})){try{await navigator.share({files:[fl]})}catch(e){}}else{const a=document.createElement("a");a.href=URL.createObjectURL(bl);a.download=fn;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},4000)}}catch(e){b.textContent="পিডিএফ হয়নি, আবার চেষ্টা করুন";setTimeout(()=>b.textContent=t,2500);return}b.textContent=t};
 document.querySelectorAll(".tab button").forEach(b=>b.onclick=()=>go(+b.dataset.t));
 const hs=()=>{if(location.hash=="#book")go(4);else if(location.hash=="#today")go(0)};addEventListener("hashchange",hs);
 $("grid").onclick=e=>{const b=e.target.closest(".d");if(!b)return;cur=+b.dataset.i;const d=S.days[cur];$("dt").textContent=bn(cur+1)+" রমজান";$("x1").value=d.w;$("x2").value=d.k||"h";info();$("dlg").showModal()};
@@ -1201,47 +1231,184 @@ P.innerHTML=`<div class="pyq"><b>পাওয়া গেছে:</b><br>দা�
 $("pyk").onclick=()=>{window.PYedit(pend,$("pyy").value.trim());pend=null;P.innerHTML="";$("pyf").value=""}}catch(err){P.innerHTML='<div class="pyq">ফাইল পড়া যায়নি। ইন্টারনেট চালু আছে কিনা এবং ফাইলটি ঠিক আছে কিনা দেখুন।</div>'}};
 rp()})();
 
-;(()=>{let D=null,sd=-1,ly="";const sum=a=>a.reduce((x,y)=>x+y.a,0),T=n=>(n<0?"-":"")+"৳"+Math.abs(n).toLocaleString("bn-BD"),nw=()=>({y:"",start:"",days:Array.from({length:30},()=>({w:"",k:"h",m:"",c:""})),resp:(S.cfg.reg||[]).slice(),don:[],exp:[]});
-function eg(){$("e7g").innerHTML=D.days.map((d,i)=>`<button type="button" class="d ${d.w?d.k:"e"}${i==sd?" tod":""}" data-i="${i}"><i>${bn(i+1)}</i><small>${d.w?esc(d.w):"ফাঁকা"}</small>${/^\d{4}-\d{2}-\d{2}$/.test(D.start||"")?`<em>${sdt(i)}</em>`:""}</button>`).join("")}
-function el(){$("e7dl").innerHTML=D.don.map((x,i)=>`<div class="row"><div class="av">${esc(x.n[0])}</div><div class="nm"><span>${esc(x.n)}</span></div><div class="amt in-c">${T(x.a)}</div><button class="x" data-d="${i}">✕</button></div>`).join("")+(D.don.length?`<div class="row"><b class="nm">মোট ${bn(D.don.length)} জন</b><b>${T(sum(D.don))}</b></div>`:'<div class="row nm">এখনো কোনো দাতা নেই।</div>');
-$("e7el").innerHTML=D.exp.map((x,i)=>`<div class="row"><div class="av" style="width:34px;height:34px">${x.day>=0?bn(x.day+1):"–"}</div><div class="nm"><span>${esc(x.c)}${x.n&&x.n!=x.c?" · "+esc(x.n):""}</span></div><div class="amt out-c">−${T(x.a)}</div><button class="x" data-e="${i}">✕</button></div>`).join("")+(D.exp.length?`<div class="row"><b class="nm">মোট খরচ</b><b>${T(sum(D.exp))}</b></div>`:'<div class="row nm">এখনো কোনো খরচ নেই।</div>')}
-function ed(){$("e7y").value=D.y;$("e7s").value=D.start||"";$("e7p").style.display="none";sd=-1;eg();el();const ys=Object.keys(S.past).sort().reverse();$("e7l").innerHTML=ys.length?ys.map(y=>`<option>${y}</option>`).join(""):"<option value=''>— নেই —</option>";$("e7ec").innerHTML=(typeof CATS!="undefined"?CATS:["অন্যান্য"]).map(x=>`<option>${x}</option>`).join("");$("e7ed").innerHTML='<option value="-1">কোন দিনের নয়</option>'+D.days.map((d,i)=>`<option value="${i}">${bn(i+1)} রমজান</option>`).join("");er();autoSt=false;if(!D.start)autoStart();else stNote()}
-window.PYnew=()=>{D=nw();ly="";ed();go(7)};
-window.PYedit=(p,y)=>{D=nw();D.y=y;D.don=p.don.map(x=>({n:x.n,a:x.a}));D.exp=p.exp.map(x=>({c:x.c,n:x.n,a:x.a,day:-1}));ly="";ed();go(7);toast("ফর্মে এসেছে — মিলিয়ে ঠিক করে সংরক্ষণ করুন")};
-$("e7lb").onclick=()=>{const y=$("e7l").value,d=S.past[y];if(!d)return;D=JSON.parse(JSON.stringify(d));D.y=y;D.days=D.days||nw().days;D.start=D.start||"";D.resp=Array.isArray(D.resp)?D.resp:[];ly=y;ed()};
-let autoSt=false;
+;(()=>{
+/* ===== বিগত বছরের হিসাব তোলার ফর্ম: ৬ ধাপ, দ্রুত পেস্ট, যাচাই, খসড়া ===== */
+const DK="iftar-draft",DG="০১২৩৪৫৬৭৮৯",STEPS=["সাল","দায়িত্বশীল","ইফতারদাতা","দাতা","খরচ","যাচাই"];
+const toD=v=>String(v==null?"":v).replace(/[০-৯]/g,c=>DG.indexOf(c));
+const num=v=>{const n=parseFloat(toD(v).replace(/,/g,"").replace(/[^\d.]/g,""));return n>0?n:0};
+const T=n=>(n<0?"-":"")+"৳"+Math.abs(n).toLocaleString("bn-BD"),sum=a=>a.reduce((x,y)=>x+(+y.a||0),0);
+const blank=()=>({y:"",start:"",days:Array.from({length:30},()=>({w:"",k:"h",m:"",c:""})),mgr:[],don:[],exp:[]});
+let D=null,st=0,ly="",autoSt=false,lastDay=-1,lastCat="বাজার",dT=0,fid="",dbt="",ebt="";
 const BDR={2024:"2024-03-12",2025:"2025-03-02",2026:"2026-02-19"};
-const nd2=v=>v.replace(/[০-৯]/g,c=>"০১২৩৪৫৬৭৮৯".indexOf(c)).replace(/\D/g,"").slice(0,4);
+const nd2=v=>toD(v).replace(/\D/g,"").slice(0,4);
 function estRam(Y){const jd=h=>1+Math.ceil(29.5*8)+(h-1)*354+Math.floor((3+11*h)/30)+1948439.5-1,h0=Math.round((Y-622)*33/32+1);
-for(let h=h0-2;h<=h0+2;h++){const t=new Date((jd(h)-2440587.5)*864e5+864e5);if(t.getUTCFullYear()==Y)return t.toISOString().slice(0,10)}return ""}
+ for(let h=h0-2;h<=h0+2;h++){const t=new Date((jd(h)-2440587.5)*864e5+864e5);if(t.getUTCFullYear()==Y)return t.toISOString().slice(0,10)}return ""}
 const ramStart=y=>BDR[+y]?{d:BDR[+y],est:false}:{d:estRam(+y),est:true};
 const okY=y=>/^(19|20)\d\d$/.test(y||"");
-const fdl=x=>new Date(x+"T12:00").toLocaleDateString(LOCL,{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+const vs=()=>/^\d{4}-\d{2}-\d{2}$/.test(D.start||"");
+const fdl2=x=>new Date(x+"T12:00").toLocaleDateString(LOCL,{weekday:"long",day:"numeric",month:"long",year:"numeric"});
 const sdt=i=>{const[y,m,d]=D.start.split("-");return new Date(+y,m-1,+d+i,12).toLocaleDateString(LOCL,{day:"numeric",month:"short"})};
-function stNote(){const n=$("e7sn"),b=$("e7sr");if(!okY(D.y)){n.textContent="";b.style.display="none";return}const r=ramStart(D.y);
-n.textContent=D.y+" সালে বাংলাদেশে রমজানের প্রথম রোজা: "+fdl(r.d)+(r.est?" (আনুমানিক — চাঁদ দেখা সাপেক্ষে ১ দিন এদিক-ওদিক হতে পারে; মিলিয়ে নিন)":" (জাতীয় চাঁদ দেখা কমিটির ঘোষণা অনুযায়ী)");b.style.display=D.start!==r.d?"":"none"}
-function autoStart(){if(okY(D.y)&&(autoSt||!D.start)){const r=ramStart(D.y);D.start=r.d;$("e7s").value=r.d;autoSt=true}stNote();eg()}
-$("e7y").oninput=e=>{const v=nd2(e.target.value);if(e.target.value!==v)e.target.value=v;if(!D)return;D.y=v;autoStart()};
-$("e7s").onchange=e=>{D.start=e.target.value;autoSt=false;stNote();eg()};
-$("e7sr").onclick=()=>{autoSt=true;const r=ramStart(D.y);D.start=r.d;$("e7s").value=r.d;stNote();eg()};
+const dsave=()=>{clearTimeout(dT);dT=setTimeout(()=>{try{if(D)localStorage.setItem(DK,JSON.stringify({D,st,ly}))}catch(e){}},400)};
+const dclr=()=>{try{localStorage.removeItem(DK)}catch(e){}};
+const isP=x=>{const q=D.days[x.day];return !(q&&q.w&&q.k=="h")};
+const names=()=>{const s=new Set();D.days.forEach(d=>d.w&&s.add(d.w));D.don.forEach(x=>x.n&&s.add(x.n));D.mgr.forEach(x=>s.add(x.n));return[...s]};
+const dayOpt=i=>bn(i+1)+" রমজান"+(vs()?" · "+sdt(i):"")+(D.days[i].w?" · "+D.days[i].w:"");
+const dayOpts=sel=>'<option value="-1">কোন দিনের নয়</option>'+D.days.map((d,i)=>`<option value="${i}"${i==sel?" selected":""}>${esc(dayOpt(i))}</option>`).join("");
+function parseLines(t){const ok=[],bad=[];toD(t).split(/\n+/).forEach(raw=>{let l=raw.replace(/\s+/g," ").trim();if(!l)return;l=l.replace(/^\d+[.)]\s+/,"");
+ const m=l.match(/^(.*?)[\s:,\-–—৳=]*(\d[\d,]*(?:\.\d+)?)\s*(?:টাকা|৳|\/-|tk|taka)?\s*$/i);
+ if(!m){bad.push(raw.trim());return}const n=m[1].replace(/[:\-–—৳=,.\s]+$/,"").trim(),a=parseFloat(m[2].replace(/,/g,""));
+ if(!n||!(a>0)){bad.push(raw.trim());return}ok.push({n,a})});return{ok,bad}}
+function errs(){const e=[];if(!okY(D.y))e.push("সঠিক সাল লিখুন (যেমন 2024)");if(!vs())e.push("রমজান শুরুর তারিখ দিন");if(!D.don.length&&!D.exp.length)e.push("কমপক্ষে একজন দাতা বা একটি খরচ যোগ করুন");return e}
+function warns(){const w=[],inn=sum(D.don),out=sum(D.exp.filter(isP));
+ if(out>inn)w.push("ফান্ডের খরচ ("+T(out)+") আয়ের ("+T(inn)+") চেয়ে বেশি");
+ if(!D.don.length)w.push("কোনো দাতা নেই");
+ if(!D.days.some(d=>d.w))w.push("ইফতারদাতার তালিকা ফাঁকা");
+ const nd=D.exp.filter(x=>x.day<0).length;if(nd)w.push(bn(nd)+" টি খরচে দিন বাছা হয়নি");
+ const seen={},dup=[];D.don.forEach(x=>{const k=(x.n||"").trim();if(!k)return;seen[k]=(seen[k]||0)+1;if(seen[k]==2)dup.push(k)});if(dup.length)w.push("একই নাম একাধিকবার: "+dup.join("، "));
+ if(D.don.some(x=>!(x.n||"").trim()||!(x.a>0)))w.push("কিছু দাতার নাম বা টাকা ফাঁকা — সংরক্ষণে বাদ যাবে");
+ if(!D.mgr.length)w.push("পরিচালকদের নাম দেওয়া হয়নি");return w}
+/* ধাপের ভেতরের অংশ */
+function s0(){const ys=Object.keys(S.past).sort().reverse();
+ return `<div class="card wz"><div class="lbl">কোন সালের হিসাব?</div><input id="w_y" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="যেমন: 2024" value="${esc(D.y)}">
+<div class="lbl" style="margin:16px 0 0">রমজানের প্রথম রোজা</div><input id="w_s" type="date" value="${esc(D.start||"")}"><div class="note" id="w_sn" style="margin:8px 2px 0"></div><button type="button" class="x" id="w_sr" style="display:none;margin-top:6px">বাংলাদেশের তারিখ বসান</button></div>
+${ys.length?`<div class="card wz"><div class="lbl">আগে সংরক্ষিত সাল ঠিক করতে চান?</div><div class="chips" style="flex-wrap:wrap;overflow:visible">${ys.map(y=>`<button type="button" class="chip" data-ld="${y}">${y} খুলুন</button>`).join("")}</div></div>`:""}`}
+function s1(){const reg=(S.cfg.reg||[]).filter(n=>!D.mgr.some(m=>m.n==n));
+ return `<div class="card wz"><div class="lbl">ওই বছর যাঁরা ইফতার পরিচালনা করেছেন</div>${D.mgr.map((m,i)=>`<div class="row"><div class="av">${esc((m.n||"?")[0])}</div><div class="nm"><span>${esc(m.n)}</span>${m.r?`<small class="mu">${esc(m.r)}</small>`:""}</div><button type="button" class="x" data-md="${i}" aria-label="সরান">✕</button></div>`).join("")||'<div class="note" style="margin:4px 2px">এখনো কারো নাম যোগ করা হয়নি।</div>'}
+<input id="w_mn" placeholder="নাম"><input id="w_mr" list="wz_roles" placeholder="দায়িত্ব (যেমন: সভাপতি, কোষাধ্যক্ষ)"><datalist id="wz_roles"><option value="সভাপতি"><option value="সাধারণ সম্পাদক"><option value="কোষাধ্যক্ষ"><option value="ইফতার সমন্বয়কারী"><option value="সদস্য"></datalist>
+<label class="chk"><input type="checkbox" id="w_mk">প্রতি বছরের স্থায়ী তালিকায়ও রাখুন</label><button type="button" class="btn" data-act="madd" style="margin-top:10px">＋ যোগ করুন</button></div>
+${reg.length?`<div class="card wz"><div class="lbl">স্থায়ী তালিকা থেকে এক চাপে</div><div class="chips" style="flex-wrap:wrap;overflow:visible">${reg.map((n,i)=>`<button type="button" class="chip" data-mq="${esc(n)}">＋ ${esc(n)}</button>`).join("")}</div></div>`:""}`}
+function s2(){const c=D.days.filter(d=>d.w).length;
+ return `<div class="note" style="margin:0 2px 10px">যে দিনের ইফতারদাতা জানা নেই, ফাঁকা রাখুন। <b id="w_hc">${bn(c)}</b> দিনের নাম দেওয়া হয়েছে।</div><datalist id="wz_nm">${names().map(n=>`<option value="${esc(n)}">`).join("")}</datalist>
+<div class="card wz" style="padding:8px 14px">${D.days.map((d,i)=>`<div class="wzr"><b>${bn(i+1)}</b><div><small>${vs()?esc(sdt(i)):"রমজান"}</small><input data-h="${i}" list="wz_nm" placeholder="ফাঁকা" autocomplete="off" value="${esc(d.w)}"></div><select data-hk="${i}"><option value="h"${d.k=="h"?" selected":""}>নিজ খরচে</option><option value="m"${d.k=="m"?" selected":""}>ফান্ড থেকে</option></select></div>`).join("")}</div>`}
+const dtxt=()=>"মোট "+bn(D.don.length)+" জন · "+T(sum(D.don));
+function s3(){return `<div class="card wz"><div class="lbl">দ্রুত অনেকজন একসাথে</div><div class="note" style="margin:2px 0 0">প্রতি লাইনে একজন: <b>নাম টাকা</b> — যেমন “রহিম ৫০০”। পিডিএফ/খাতা দেখে টাইপ বা পেস্ট করুন।</div><textarea id="w_db" placeholder="রহিম 500&#10;করিম ১০০০&#10;সালমা বেগম 1,500">${esc(dbt)}</textarea><button type="button" class="btn" data-act="dbulk" style="margin-top:10px">তালিকা থেকে যোগ করুন</button></div>
+<div class="card wz"><div class="lbl">একজন একজন করে</div><input id="w_dn" list="wz_nm" autocomplete="off" placeholder="দাতার নাম"><input id="w_da" inputmode="numeric" placeholder="টাকা"><button type="button" class="btn" data-act="dadd" style="margin-top:10px">＋ দাতা যোগ করুন</button></div>
+<datalist id="wz_nm">${names().map(n=>`<option value="${esc(n)}">`).join("")}</datalist>
+<div class="card wz"><div class="lbl" id="w_dt">${dtxt()}</div>${[...D.don.keys()].reverse().map(i=>{const x=D.don[i];return `<div class="wzr2"><input data-dn="${i}" value="${esc(x.n)}" placeholder="নাম"><input data-da="${i}" inputmode="numeric" value="${x.a||""}" placeholder="টাকা"><button type="button" class="x" data-dd="${i}" aria-label="মুছুন">✕</button></div>`}).join("")||'<div class="note" style="margin:0">এখনো কোনো দাতা নেই।</div>'}</div>`}
+function s4(){return `<div class="card wz"><div class="lbl">নতুন খরচ</div><select id="w_ec">${CATS.map(c=>`<option${c==lastCat?" selected":""}>${esc(c)}</option>`).join("")}</select><select id="w_ed">${dayOpts(lastDay)}</select><input id="w_ea" inputmode="numeric" placeholder="টাকা"><input id="w_en" placeholder="বিবরণ (ঐচ্ছিক, যেমন: চাল ১০ কেজি)"><button type="button" class="btn" data-act="eadd" style="margin-top:10px">＋ খরচ যোগ করুন</button></div>
+<details class="card wz"><summary style="cursor:pointer;font-weight:700">অনেকগুলো একসাথে (জিনিস ও টাকা)</summary><div class="note" style="margin:8px 0 0">উপরে বাছা খাত ও দিন সবগুলোতে বসবে। প্রতি লাইনে: <b>জিনিস টাকা</b></div><textarea id="w_eb" placeholder="ছোলা 800&#10;পেঁয়াজ ৩৫০">${esc(ebt)}</textarea><button type="button" class="btn" data-act="ebulk" style="margin-top:10px">তালিকা থেকে যোগ করুন</button></details>
+<div class="card wz"><div class="lbl" id="w_et">মোট ${bn(D.exp.length)} টি · ${T(sum(D.exp))}</div>${[...D.exp.keys()].reverse().map(i=>{const x=D.exp[i];return `<div class="row"><div class="av" style="width:34px;height:34px;background:var(--hostBg)">${ICON[x.c]||"📦"}</div><div class="nm"><span>${esc(x.c)}${x.n?" · "+esc(x.n):""}</span><small class="mu">${x.day>=0?bn(x.day+1)+" রমজান":"দিন ছাড়া"}</small></div><div class="amt out-c">${T(x.a)}</div><button type="button" class="x" data-ed="${i}" aria-label="মুছুন">✕</button></div>`}).join("")||'<div class="note" style="margin:0">এখনো কোনো খরচ নেই।</div>'}</div>`}
+function s5(){const inn=sum(D.don),out=sum(D.exp.filter(isP)),E=errs(),Wn=warns();
+ return `<div class="card wz"><div class="lbl">${esc(D.y||"—")} সালের সারসংক্ষেপ</div><div class="kv"><div><small>ইফতার ফান্ড (আয়)</small><strong class="in-c">${T(inn)}</strong></div><div><small>ফান্ডের খরচ</small><strong class="out-c">${T(out)}</strong></div><div><small>অবশিষ্ট</small><strong>${T(inn-out)}</strong></div></div><div class="note">দাতা ${bn(D.don.length)} জন · খরচের এন্ট্রি ${bn(D.exp.length)} টি · ইফতারদাতা ${bn(D.days.filter(d=>d.w).length)} দিন · পরিচালক ${bn(D.mgr.length)} জন</div></div>
+<div class="card wz"><div class="lbl">যাচাই</div>${E.map(x=>`<div class="wzc bad">✕ ${esc(x)}</div>`).join("")}${Wn.map(x=>`<div class="wzc warn">⚠ ${esc(x)}</div>`).join("")}${!E.length&&!Wn.length?'<div class="wzc okk">✓ সব ঠিক আছে</div>':""}<div class="note">${E.length?"লাল চিহ্নগুলো ঠিক না করলে সংরক্ষণ হবে না।":"হলুদ চিহ্ন শুধু সতর্কতা; চাইলে এভাবেই সংরক্ষণ করতে পারেন।"}</div></div>`}
+function stp(){$("wzs").innerHTML=STEPS.map((s,i)=>`<button type="button" class="wz-s${i==st?" on":""}${i<st?" ok":""}" data-s="${i}"><b>${i<st?"✓":bn(i+1)}</b><span>${s}</span></button>`).join("")}
+function draw(){if(!D)return;stp();const last=st==STEPS.length-1;$("wzb").innerHTML=[s0,s1,s2,s3,s4,s5][st]();
+ $("wzp").style.visibility=st?"visible":"hidden";$("wzn").style.display=last?"none":"";$("e7sv").style.display=last?"":"none";
+ if(st==0)stNote();if(fid){const f=$(fid);if(f)f.focus();fid=""}dsave()}
+function stNote(){const n=$("w_sn"),b=$("w_sr");if(!n)return;if(!okY(D.y)){n.textContent="সাল লিখলে বাংলাদেশের রমজানের তারিখ নিজে বসে যাবে।";b.style.display="none";return}
+ const r=ramStart(D.y);n.textContent=D.y+" সালে বাংলাদেশে রমজানের প্রথম রোজা: "+fdl2(r.d)+(r.est?" (আনুমানিক — চাঁদ দেখা সাপেক্ষে ১ দিন এদিক-ওদিক হতে পারে; মিলিয়ে নিন)":" (জাতীয় চাঁদ দেখা কমিটির ঘোষণা অনুযায়ী)");b.style.display=D.start!==r.d?"":"none"}
+function autoStart(){if(okY(D.y)&&(autoSt||!D.start)){const r=ramStart(D.y);D.start=r.d;const e=$("w_s");if(e)e.value=r.d;autoSt=true}stNote()}
+function goStep(n){if(n>0&&(!okY(D.y)||!vs())){toast(!okY(D.y)?"আগে সঠিক সাল লিখুন":"আগে রমজান শুরুর তারিখ দিন");if(st!=0){st=0;draw()}return}st=Math.max(0,Math.min(STEPS.length-1,n));draw();scrollTo(0,0)}
+/* ইভেন্ট */
+const W=$("wzb");
+W.addEventListener("input",e=>{const t=e.target,d=t.dataset;if(!D)return;
+ if(t.id=="w_y"){const v=nd2(t.value);if(t.value!==v)t.value=v;D.y=v;autoStart()}
+ else if(d.h!=null){D.days[+d.h].w=t.value.trim();const c=$("w_hc");if(c)c.textContent=bn(D.days.filter(x=>x.w).length)}
+ else if(d.dn!=null)D.don[+d.dn].n=t.value;
+ else if(d.da!=null){D.don[+d.da].a=num(t.value);const l=$("w_dt");if(l)l.textContent=dtxt()}
+ dsave()});
+W.addEventListener("change",e=>{const t=e.target,d=t.dataset;if(!D)return;
+ if(t.id=="w_s"){D.start=t.value;autoSt=false;stNote()}
+ else if(d.hk!=null)D.days[+d.hk].k=t.value;
+ dsave()});
+function addM(n,r,keep){n=(n||"").trim();if(!n){toast("নাম লিখুন");return}if(D.mgr.some(m=>m.n==n)){toast("এই নাম আগেই আছে");return}
+ D.mgr.push({n,r:(r||"").trim()});if(keep){const g=S.cfg.reg=S.cfg.reg||[];if(!g.includes(n)){g.push(n);touchM()}}fid="w_mn";draw()}
+W.addEventListener("click",e=>{if(!D)return;const b=e.target.closest("button");if(!b)return;const d=b.dataset;
+ if(d.ld){const x=S.past[d.ld];if(x)window.PYload(d.ld);return}
+ if(b.id=="w_sr"){autoSt=true;const r=ramStart(D.y);D.start=r.d;$("w_s").value=r.d;stNote();dsave();return}
+ if(d.mq){addM(d.mq,"",false);return}
+ if(d.md!=null){D.mgr.splice(+d.md,1);draw();return}
+ if(d.dd!=null){D.don.splice(+d.dd,1);draw();return}
+ if(d.ed!=null){D.exp.splice(+d.ed,1);draw();return}
+ if(d.act=="madd"){addM($("w_mn").value,$("w_mr").value,$("w_mk").checked)}
+ else if(d.act=="dadd"){const n=$("w_dn").value.trim(),a=num($("w_da").value);if(!n||!a){toast("নাম ও টাকা দুটোই দিন");return}D.don.push({n,a});fid="w_dn";draw()}
+ else if(d.act=="dbulk"){const r=parseLines($("w_db").value);if(!r.ok.length){toast("কোনো লাইন বোঝা যায়নি। “নাম টাকা” এভাবে লিখুন");return}
+  r.ok.forEach(x=>D.don.push(x));dbt=r.bad.join("\n");toast(bn(r.ok.length)+" জন যোগ হয়েছে"+(r.bad.length?" · "+bn(r.bad.length)+" লাইন বোঝা যায়নি (নিচে রাখা আছে)":""));draw()}
+ else if(d.act=="eadd"){const a=num($("w_ea").value),c=$("w_ec").value,day=+$("w_ed").value,n=$("w_en").value.trim();if(!a){toast("টাকার পরিমাণ দিন");return}
+  D.exp.push({c,n,a,day});lastDay=day;lastCat=c;fid="w_ea";draw()}
+ else if(d.act=="ebulk"){const c=$("w_ec").value,day=+$("w_ed").value,r=parseLines($("w_eb").value);if(!r.ok.length){toast("কোনো লাইন বোঝা যায়নি। “জিনিস টাকা” এভাবে লিখুন");return}
+  r.ok.forEach(x=>D.exp.push({c,n:x.n,a:x.a,day}));lastDay=day;lastCat=c;ebt=r.bad.join("\n");toast(bn(r.ok.length)+" টি খরচ যোগ হয়েছে"+(r.bad.length?" · "+bn(r.bad.length)+" লাইন বোঝা যায়নি":""));draw()}});
+$("wzs").onclick=e=>{const b=e.target.closest("[data-s]");if(b&&D)goStep(+b.dataset.s)};
+$("wzn").onclick=()=>{if(D)goStep(st+1)};$("wzp").onclick=()=>{if(D)goStep(st-1)};
 $("pyy").oninput=e=>{const v=nd2(e.target.value);if(e.target.value!==v)e.target.value=v};
-function er(){D.resp=D.resp||[];const reg=S.cfg.reg||[];
-$("e7rl").innerHTML=D.resp.map((n,i)=>`<div class="row"><div class="av">${esc(n[0]||"?")}</div><div class="nm"><span>${esc(n)}${reg.includes(n)?' <span class="bd ok">স্থায়ী</span>':""}</span></div><button type="button" class="x" data-rx="${i}" aria-label="সরান">✕</button></div>`).join("")||'<div class="note" style="margin:4px 2px">এখনো কারো নাম যোগ করা হয়নি।</div>';
-$("e7reg").innerHTML=reg.map((n,i)=>`<span style="display:inline-flex;align-items:center;gap:3px"><button type="button" class="chip" data-radd="${i}">＋ ${esc(n)}</button><button type="button" class="x" data-rdel="${i}" aria-label="সরান">✕</button></span>`).join("")||'<div class="note" style="margin:0">এখনো কেউ নেই। নাম যোগ করার সময় উপরের টিক দিলে এখানে জমবে।</div>'}
-function addResp(n,keep){n=n.trim();if(!n||!D)return;D.resp=D.resp||[];if(!D.resp.includes(n))D.resp.push(n);if(keep){const r=S.cfg.reg=S.cfg.reg||[];if(!r.includes(n)){r.push(n);touchM()}}er()}
-$("e7rb").onclick=()=>{addResp($("e7r").value,$("e7rk").checked);$("e7r").value="";$("e7rk").checked=false};
-$("e7r").onkeydown=e=>{if(e.key=="Enter"){e.preventDefault();$("e7rb").click()}};
-$("e7rl").onclick=e=>{const i=e.target.dataset.rx;if(i!=null&&D){D.resp.splice(+i,1);er()}};
-$("e7reg").onclick=async e=>{const a=e.target.dataset.radd,r=e.target.dataset.rdel;if(!D)return;
-if(a!=null){const n=(S.cfg.reg||[])[+a];if(n&&!(D.resp||[]).includes(n)){(D.resp=D.resp||[]).push(n);er()}}
-else if(r!=null){const n=(S.cfg.reg||[])[+r];if(n&&await ask(n+" কে স্থায়ী তালিকা থেকে সরাবেন?")){S.cfg.reg.splice(+r,1);touchM();er()}}};
-$("e7g").onclick=e=>{const b=e.target.closest(".d");if(!b)return;sd=+b.dataset.i;const d=D.days[sd];$("e7pt").textContent=bn(sd+1)+" রমজান";$("e7w").value=d.w;$("e7k").value=d.k;$("e7m").value=d.m||"";$("e7c").value=d.c||"";$("e7p").style.display="block";eg();$("e7p").scrollIntoView({block:"nearest"})};
-const up=()=>{if(sd<0)return;const d=D.days[sd];d.w=$("e7w").value.trim();d.k=$("e7k").value;d.m=$("e7m").value.trim();d.c=$("e7c").value;eg()};["e7w","e7k","e7m","e7c"].forEach(i=>$(i).oninput=up);$("e7k").onchange=up;
-$("e7db").onclick=()=>{const n=$("e7dn").value.trim(),a=+$("e7da").value;if(!n||!(a>0)){toast("নাম ও টাকা দিন");return}D.don.push({n,a});$("e7dn").value=$("e7da").value="";el()};
-$("e7eb").onclick=()=>{const a=+$("e7ea").value;if(!(a>0)){toast("টাকা দিন");return}D.exp.push({c:$("e7ec").value,n:$("e7en").value.trim(),a,day:+$("e7ed").value});$("e7ea").value=$("e7en").value="";el()};
-$("e7dl").onclick=e=>{const i=e.target.dataset.d;if(i!=null&&confirm("মুছবেন?")){D.don.splice(+i,1);el()}};$("e7el").onclick=e=>{const i=e.target.dataset.e;if(i!=null&&confirm("মুছবেন?")){D.exp.splice(+i,1);el()}};
-$("e7sv").onclick=()=>{const y=String(D.y).trim();if(!/^\d{4}$/.test(y)){toast("সঠিক সাল লিখুন");return}if(S.past[y]&&y!=ly&&!confirm(y+" সালের হিসাব আগে থেকেই আছে। বদলাবেন?"))return;S.past[y]={start:D.start,days:D.days,resp:D.resp||[],don:D.don,exp:D.exp};save();window.PYrp();$("pys").value=y;window.PYrp();go(6);toast("সংরক্ষিত ✓")};
+/* খোলা ও লোড */
+function norm(x){const B=blank();x.days=(x.days&&x.days.length?x.days:B.days).map(d=>({w:d.w||"",k:d.k||"h",m:d.m||"",c:d.c||""}));while(x.days.length<30)x.days.push({w:"",k:"h",m:"",c:""});
+ x.mgr=Array.isArray(x.mgr)?x.mgr:[];x.don=Array.isArray(x.don)?x.don:[];x.exp=Array.isArray(x.exp)?x.exp:[];x.start=x.start||"";x.y=x.y||"";return x}
+function openW(){lastDay=-1;dbt="";ebt="";go(7);draw()}
+window.PYnew=async()=>{let dr=null;try{dr=JSON.parse(localStorage.getItem(DK))}catch(e){}
+ if(dr&&dr.D&&(dr.D.don.length||dr.D.exp.length||dr.D.y)&&await ask("আগের একটি অসমাপ্ত খসড়া আছে। সেটি চালিয়ে যাবেন? ('না' বললে নতুন শুরু হবে)")){D=norm(dr.D);st=dr.st||0;ly=dr.ly||"";autoSt=false}
+ else{D=blank();D.mgr=[];st=0;ly="";autoSt=false;dclr()}openW()};
+window.PYload=y=>{if(!OWN)return toast("শুধু প্রধান অ্যাডমিন বিগত বছরের হিসাব বদলাতে পারেন");const d=S.past[y];if(!d)return;D=norm(JSON.parse(JSON.stringify(d)));D.y=y;if(!D.mgr.length&&Array.isArray(d.resp))D.mgr=d.resp.map(n=>({n,r:""}));ly=y;st=0;autoSt=false;openW()};
+window.PYedit=(p,y)=>{D=blank();D.y=y||"";D.don=p.don.map(x=>({n:x.n,a:x.a}));D.exp=p.exp.map(x=>({c:x.c,n:x.n,a:x.a,day:-1}));ly="";st=0;autoSt=false;if(okY(D.y)){const r=ramStart(D.y);D.start=r.d;autoSt=true}openW();toast("ফর্মে এসেছে — মিলিয়ে ঠিক করে সংরক্ষণ করুন")};
+/* সংরক্ষণ (সিঙ্ক্রোনাস, যাতে নিচের প্রধান-অ্যাডমিন গার্ড কাজ করে) */
+$("e7sv").onclick=()=>{if(!D)return;const E=errs();if(E.length){toast(E[0]);draw();return}const y=String(D.y).trim();
+ if(S.past[y]&&y!=ly&&!confirm(y+" সালের হিসাব আগে থেকেই আছে। বদলে দেবেন?"))return;
+ const Wn=warns();if(Wn.length&&!confirm("সতর্কতা:\n• "+Wn.join("\n• ")+"\n\nতবুও সংরক্ষণ করবেন?"))return;
+ S.past[y]=JSON.parse(JSON.stringify({start:D.start,days:D.days.map(d=>({w:d.w||"",k:d.k||"h",m:d.m||"",c:d.c||""})),resp:[],mgr:D.mgr.map(m=>({n:m.n,r:m.r||""})),
+  don:D.don.filter(x=>(x.n||"").trim()&&x.a>0).map(x=>({n:x.n.trim(),a:x.a})),exp:D.exp.filter(x=>x.a>0).map(x=>({c:x.c,n:x.n||"",a:x.a,day:x.day}))}));
+ save();if(window.PQ)window.PQ(y);dclr();D=null;if(window.PYsel)window.PYsel(y);go(6);toast("সংরক্ষিত ✓")};
 })();
+
+/* ===== চলমান বছরের পরিচালক + বছর শেষে আর্কাইভ ===== */
+;(()=>{const yr=()=>String(S.cfg.start||"").slice(0,4);
+function mgUI(){const L=$("mgL");if(!L)return;S.cfg.mgr=S.cfg.mgr||[];$("mgY").textContent=yr();
+ L.innerHTML=S.cfg.mgr.map((m,i)=>`<div class="row"><div class="av">${esc((m.n||"?")[0])}</div><div class="nm"><span>${esc(m.n)}</span>${m.r?`<small class="mu">${esc(m.r)}</small>`:""}</div><button class="x" data-mx="${i}" aria-label="সরান">✕</button></div>`).join("")||'<div class="note" style="margin:0 0 8px">এখনো কাউকে যোগ করা হয়নি।</div>'}
+$("mgA").onclick=async()=>{if(!await need())return;const n=$("mgN").value.trim(),r=$("mgR").value.trim();if(!n){toast("নাম লিখুন");return}
+ S.cfg.mgr=S.cfg.mgr||[];if(S.cfg.mgr.some(m=>m.n==n)){toast("এই নাম আগেই আছে");return}
+ S.cfg.mgr.push({n,r});$("mgN").value=$("mgR").value="";touchM();mgUI();toast("যোগ হয়েছে ✓")};
+$("mgL").onclick=async e=>{const b=e.target.closest("[data-mx]");if(!b)return;if(!await need())return;S.cfg.mgr.splice(+b.dataset.mx,1);touchM();mgUI()};
+$("arcB").onclick=async()=>{if(!OWN){toast("শুধু প্রধান অ্যাডমিন আর্কাইভ করতে পারেন");return}
+ const y=yr();if(!/^\d{4}$/.test(y)){toast("আগে রমজান শুরুর তারিখ ঠিক করুন");return}
+ if(!S.don.length&&!S.exp.length){toast("আর্কাইভ করার মতো কোনো হিসাব নেই");return}
+ if(!await need())return;
+ if(!await ask(y+" সালের পুরো হিসাব (দাতা, খরচ, ইফতারদাতা, পরিচালক) বিগত বছরে রাখবেন?"+(S.past[y]?" ⚠ এই সালের আগের তথ্য বদলে যাবে।":"")))return;
+ const snap={start:S.cfg.start,days:S.days.map(d=>({w:d.w||"",k:d.k||"h",m:d.m||"",c:d.c||""})),resp:[],mgr:(S.cfg.mgr||[]).map(m=>({n:m.n,r:m.r||""})),
+  don:S.don.map(x=>({n:x.an?"বেনামী দাতা":x.n,a:x.a,...(x.pr?{pr:true}:{})})),
+  exp:S.exp.map(x=>({c:x.c,n:x.n||"",a:x.a,day:x.day,...(x.items&&x.items.length?{items:x.items.map(i=>({n:i.n||"",a:i.a||0}))}:{})}))};
+ S.past[y]=JSON.parse(JSON.stringify(snap));save();if(window.PQ)window.PQ(y);if(window.PYsel)window.PYsel(y);toast(y+" সালের হিসাব আর্কাইভ হয়েছে ✓")};
+const _f=fillSet;fillSet=function(){_f();mgUI()};
+mgUI()})();
+
+/* ===== বিগত বছর: সাল-চিপ, পিডিএফ ফাইল (অ্যাপের ভেতরেই দেখা), পরিচালকদের নাম ===== */
+;(()=>{const oldRp=window.PYrp;let M={},sel="",doc=null,tok=0,zoom=1,cur="";
+const nr=x=>typeof x=="string"?{n:x,r:""}:{n:(x&&(x.n||x.name))||"",r:(x&&(x.r||x.role))||""};
+const abs=f=>{try{return new URL(f,location.href).href}catch(e){return f}};
+const files=y=>{const m=M[y];if(!m)return[];const a=Array.isArray(m)?m:(m.files||[]);return a.map(x=>{const f=typeof x=="string"?x:(x.f||x.file||x.url||"");let t=(typeof x=="object"&&(x.t||x.title||x.name))||"";if(!t){try{t=decodeURIComponent(f.split("/").pop()||"")}catch(e){t=f}t=t.replace(/\.pdf$/i,"")}return{t,f}}).filter(x=>x.f)};
+const years=()=>[...new Set([...Object.keys(M),...Object.keys(S.past||{})])].filter(y=>/^\d{4}$/.test(y)).sort().reverse();
+function rp(){const ys=years();if(!ys.includes(sel))sel=ys[0]||"";
+ const d=S.past&&S.past[sel],fs=files(sel),mm=M[sel],mg=((d&&d.mgr&&d.mgr.length?d.mgr:(mm&&!Array.isArray(mm)?mm.mgr:null))||[]).map(nr).filter(m=>m.n);
+ $("pyc").innerHTML=ys.map(y=>`<button class="chip${y==sel?" on":""}" data-y="${y}">${y}</button>`).join("");
+ $("pys").innerHTML=`<option>${sel}</option>`;$("pys").value=sel;
+ if(d&&oldRp)oldRp();
+ $("pydat").style.display=d?"":"none";$("pyed").style.display=d?"":"none";
+ let h="";
+ if(fs.length)h+=`<h2 class="serif">📎 ${sel} সালের হিসাবের ফাইল</h2><div class="card">${fs.map((x,i)=>`<div class="pdr"><div class="nm"><b>${esc(x.t)}</b><small class="mu" style="display:block">পিডিএফ · চাপ দিয়ে অ্যাপেই দেখুন</small></div><button class="x" data-pv="${i}">👁 দেখুন</button><a class="x" href="${esc(abs(x.f))}" download aria-label="ডাউনলোড">⬇</a></div>`).join("")}</div>`;
+ if(mg.length)h+=`<h2 class="serif">${sel} সালে পরিচালনায়</h2><div class="card">${mg.map(m=>`<div class="row"><div class="av">${esc(m.n[0]||"?")}</div><div class="nm"><span>${esc(m.n)}</span>${m.r?`<small class="mu">${esc(m.r)}</small>`:""}</div></div>`).join("")}</div>`;
+ if(!ys.length)h='<div class="card" style="padding:14px;margin-top:14px">এখনো কোনো বছরের হিসাব যোগ করা হয়নি।</div>';
+ else if(!fs.length&&!d)h+='<div class="card" style="padding:14px;margin-top:14px">এই সালের কোনো তথ্য এখনো যোগ হয়নি।</div>';
+ $("pyn").innerHTML=h}
+$("pyc").onclick=e=>{const b=e.target.closest("[data-y]");if(b){sel=b.dataset.y;rp();scrollTo(0,0)}};
+$("pyn").onclick=e=>{const b=e.target.closest("[data-pv]");if(!b)return;const f=files(sel)[+b.dataset.pv];if(f)openP(f)};
+$("pyed").onclick=()=>{if(window.PYload)window.PYload(sel)};
+/* পিডিএফ ভিউয়ার */
+async function lib(){if(window.pdfjsLib)return;await new Promise((ok,no)=>{const e=document.createElement("script");e.src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js";e.onload=ok;e.onerror=no;document.head.appendChild(e)});pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"}
+async function draw(){const my=++tok,b=$("pdvb");b.innerHTML='<div class="pdm">লোড হচ্ছে…</div>';
+ try{await lib();if(!doc)doc=await pdfjsLib.getDocument({url:cur}).promise;if(my!=tok)return;
+  const wrap=document.createElement("div");wrap.className="pgs";b.innerHTML="";b.appendChild(wrap);
+  const W=Math.min(b.clientWidth-16,900),dpr=Math.min(window.devicePixelRatio||1,2);
+  for(let p=1;p<=doc.numPages;p++){const pg=await doc.getPage(p);if(my!=tok)return;
+   const v1=pg.getViewport({scale:1}),k=W/v1.width*zoom,sc=Math.min(k*dpr,3200/v1.width),vp=pg.getViewport({scale:sc}),c=document.createElement("canvas");
+   c.width=Math.floor(vp.width);c.height=Math.floor(vp.height);c.style.width=Math.floor(k*v1.width)+"px";c.style.height=Math.floor(k*v1.height)+"px";wrap.appendChild(c);
+   await pg.render({canvasContext:c.getContext("2d"),viewport:vp}).promise}
+ }catch(e){if(my==tok)b.innerHTML='<div class="pdm">ফাইলটি খোলা যায়নি। ইন্টারনেট দেখুন, অথবা ⬇ চেপে ডাউনলোড করুন।</div>'}}
+function openP(x){cur=abs(x.f);zoom=1;if(doc){try{doc.destroy()}catch(e){}doc=null}
+ $("pdt").textContent=x.t;$("pdd").href=cur;$("pdd").setAttribute("download",x.t+".pdf");$("pdv").showModal();draw()}
+function closeP(){tok++;if(doc){try{doc.destroy()}catch(e){}doc=null}$("pdvb").innerHTML="";if($("pdv").open)$("pdv").close()}
+$("pdc").onclick=closeP;$("pdv").addEventListener("close",()=>{tok++;if(doc){try{doc.destroy()}catch(e){}doc=null}});
+$("pdm").onclick=()=>{zoom=Math.max(.6,zoom-.4);draw()};$("pdp").onclick=()=>{zoom=Math.min(3,zoom+.4);draw()};
+window.PYrp=rp;window.PYsel=y=>{sel=y;rp()};
+fetch("past/index.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&typeof j=="object"){M=j.years||j;rp()}}).catch(()=>{});
+rp()})();
 
 /* ===== অ্যাপ ইনস্টল (Android/Chrome) + iPhone হোম স্ক্রিন গাইড ===== */
 ;(()=>{
